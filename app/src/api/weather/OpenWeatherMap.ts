@@ -74,6 +74,8 @@ class OpenWeatherMap implements WeatherStation {
         return WeatherIcon.Snow
       case '50d':
         return WeatherIcon.Fog
+      default:
+        return WeatherIcon.Moon
     }
   }
 }

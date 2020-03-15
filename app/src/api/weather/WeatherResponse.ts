@@ -9,6 +9,7 @@ export enum WeatherIcon {
   Lightning,
   Snow,
   Fog,
+  Moon,
 }
 
 // Response that must be returned by any Weather Api controller
