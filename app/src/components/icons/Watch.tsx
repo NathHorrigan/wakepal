@@ -1,8 +1,8 @@
 import React from 'react'
 import Svg, { G, Path, Defs, ClipPath } from 'react-native-svg'
-import Icon from './base'
+import { Icon } from './base'
 
-const Watch: Icon = ({ fill = 'white' }) => (
+const WatchIcon: Icon = ({ fill = 'white' }) => (
   <Svg width={30} height={30} viewBox="0 0 30 30" fill="none">
     <G clipPath="url(#prefix__clip0)">
       <Path
@@ -19,5 +19,4 @@ const Watch: Icon = ({ fill = 'white' }) => (
   </Svg>
 )
 
-const MemoWatch = React.memo(Watch)
-export default MemoWatch
+export const Watch = React.memo(WatchIcon)

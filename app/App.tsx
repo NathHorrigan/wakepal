@@ -3,11 +3,11 @@ import Storybook from './storybook'
 import { SafeAreaView, Text, StatusBar } from 'react-native'
 
 declare var global: { HermesInternal: null | {} }
-declare const RENDER_STORYBOOK = true
+const RENDER_STORYBOOK = true
 
 const App = () => {
   return RENDER_STORYBOOK ? (
-    Storybook
+    <Storybook />
   ) : (
     <>
       <StatusBar barStyle="dark-content" />

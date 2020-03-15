@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react-native'
 import CenterView from './CenterView'
 import ActionButton from '@components/ActionButton'
 import WaterButton from '@components/WaterButton'
-import { Watch, Friends, Water } from '@components/icons'
+import { Watch, Friends } from '@components/icons'
 import { colors } from '@utils/theme'
 
 storiesOf('Buttons', module)

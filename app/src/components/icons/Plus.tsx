@@ -1,8 +1,8 @@
 import React from 'react'
 import Svg, { Path, Defs, ClipPath, G } from 'react-native-svg'
-import Icon from './base'
+import { Icon } from './base'
 
-const Plus: Icon = ({ fill = 'white' }) => (
+const PlusIcon: Icon = ({ fill = 'white' }) => (
   <Svg width={24} height={24} fill="none">
     <G clipPath="url(#prefix__clip0)">
       <Path
@@ -18,5 +18,4 @@ const Plus: Icon = ({ fill = 'white' }) => (
   </Svg>
 )
 
-const MemoPlus = React.memo(Plus)
-export default MemoPlus
+export const Plus = React.memo(PlusIcon)

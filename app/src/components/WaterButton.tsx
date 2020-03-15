@@ -1,10 +1,9 @@
 import React, { SFC } from 'react'
-import { View } from 'react-native'
 import styled from 'styled-components/native'
 import Svg, { Path } from 'react-native-svg'
 
 import { Water, Plus } from '@components/icons'
-import { colors, fonts } from '@utils/theme'
+import { colors } from '@utils/theme'
 import {
   WideStyledButton as BaseStyledButton,
   ButtonText as BaseButtonText,
