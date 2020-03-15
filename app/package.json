@@ -42,13 +42,18 @@
     "jest": "^24.9.0",
     "lint-staged": "^10.0.8",
     "metro-react-native-babel-preset": "^0.56.0",
+    "node-fetch": "^2.6.0",
     "prettier": "1.19.1",
     "react-dom": "^16.9.0",
+    "react-native-jest-mocks": "^1.5.0",
     "react-test-renderer": "16.9.0",
     "typescript": "^3.7.3"
   },
   "jest": {
     "preset": "react-native",
+    "setupFiles": [
+      "./jest-setup.js"
+    ],
     "moduleFileExtensions": [
       "ts",
       "tsx",
