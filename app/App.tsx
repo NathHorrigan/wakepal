@@ -1,10 +1,14 @@
 import React from 'react'
+import Storybook from './storybook'
 import { SafeAreaView, Text, StatusBar } from 'react-native'
 
 declare var global: { HermesInternal: null | {} }
+declare const RENDER_STORYBOOK = true
 
 const App = () => {
-  return (
+  return RENDER_STORYBOOK ? (
+    Storybook
+  ) : (
     <>
       <StatusBar barStyle="dark-content" />
       <SafeAreaView>
@@ -14,4 +18,4 @@ const App = () => {
   )
 }
 
-export default from './storybook'
+export default App
