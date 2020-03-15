@@ -50,6 +50,7 @@ export const WideStyledButton = styled(StyledButton)`
   width: 220px;
   align-items: flex-start;
   padding-left: 15px;
+  padding-bottom: 10px;
 `
 
 export const ButtonText = styled.Text`

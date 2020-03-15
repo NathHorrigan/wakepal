@@ -28,7 +28,7 @@
     "@storybook/addon-links": "^5.3.14",
     "@storybook/addons": "^5.3.14",
     "@storybook/react-native": "^5.3.14",
-    "@storybook/react-native-server": "^5.3.14",
+    "@storybook/react-native-server": "^5.3.17",
     "@types/jest": "^24.0.24",
     "@types/react-native": "^0.60.25",
     "@types/react-test-renderer": "16.9.1",

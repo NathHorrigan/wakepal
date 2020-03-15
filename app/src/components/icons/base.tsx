@@ -6,4 +6,4 @@ interface IconProps {
 }
 
 // The type that all icons should inherit
-type Icon = React.SFC<IconProps>
+export type Icon = React.SFC<IconProps>
