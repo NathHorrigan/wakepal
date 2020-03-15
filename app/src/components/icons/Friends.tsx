@@ -1,8 +1,8 @@
 import React from 'react'
 import Svg, { Path } from 'react-native-svg'
-import Icon from './base'
+import { Icon } from './base'
 
-const Friends: Icon = ({ fill = 'white' }) => (
+const FriendsIcon: Icon = ({ fill = 'white' }) => (
   <Svg width={37} height={26} viewBox="0 0 37 26" fill="none">
     <Path
       fillRule="evenodd"
@@ -14,5 +14,4 @@ const Friends: Icon = ({ fill = 'white' }) => (
   </Svg>
 )
 
-const MemoFriends = React.memo(Friends)
-export default MemoFriends
+export const Friends = React.memo(FriendsIcon)
