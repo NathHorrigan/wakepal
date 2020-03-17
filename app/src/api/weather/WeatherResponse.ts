@@ -1,15 +1,15 @@
 // Enum that maps the weather description to an icon supported by the UI
 export enum WeatherIcon {
-  Sunny,
-  PartlySunny,
-  Cloudy,
-  Gloomy,
-  Rainy,
-  SunnySpells,
-  Lightning,
-  Snow,
-  Fog,
-  Moon,
+  Sunny = 'Sunny',
+  PartlySunny = 'PartlySunny',
+  Cloudy = 'Cloudy',
+  Gloomy = 'Gloomy',
+  Rainy = 'Rainy',
+  SunnySpells = 'SunnySpells',
+  Lightning = 'Lightning',
+  Snow = 'Snow',
+  Fog = 'Fog',
+  Moon = 'Moon',
 }
 
 // Response that must be returned by any Weather Api controller
