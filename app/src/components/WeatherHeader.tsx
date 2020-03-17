@@ -85,6 +85,7 @@ const DateText = styled.Text`
 
 const WeatherText = styled(DateText)`
   font-size: 20px;
+  text-transform: capitalize;
 `
 
 const HighlightText = styled.Text`

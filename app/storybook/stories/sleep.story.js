@@ -8,7 +8,7 @@ import { WeatherResponse, WeatherIcon } from '@api/weather/WeatherResponse'
 const exampleWeather = new WeatherResponse(
   Date.now,
   6,
-  'Cloudy',
+  'cloudy',
   WeatherIcon.PartlySunny
 )
 
