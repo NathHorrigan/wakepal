@@ -8,5 +8,8 @@
     },
     "rules": {
         "semi": false
+    },
+    "globals": {
+        "navigator": true
     }
 }
