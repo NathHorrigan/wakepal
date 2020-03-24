@@ -17,11 +17,17 @@ const ActionButton: SFC<ActionButtonProps> = ({
   wide,
   color = colors.coral,
   onPress,
+  ...props
 }) => {
   const ButtonContainer = wide ? WideStyledButton : StyledButton
 
   return (
-    <ButtonContainer activeOpacity={0.85} onPress={onPress} color={color}>
+    <ButtonContainer
+      activeOpacity={0.85}
+      onPress={onPress}
+      color={color}
+      {...props}
+    >
       <IconContainer>
         <Icon />
       </IconContainer>

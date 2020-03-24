@@ -1,3 +1,5 @@
+import Config from 'react-native-config'
+
 import { WeatherStation } from '@api/weather/WeatherStation'
 import { WeatherResponse, WeatherIcon } from '@api/weather/WeatherResponse'
 
@@ -10,8 +12,8 @@ class OpenWeatherMap implements WeatherStation {
   private static API_KEY: string
   private static client: OpenWeatherMap
 
-  static getClient(key: string): OpenWeatherMap {
-    OpenWeatherMap.API_KEY = key
+  static getClient(key?: string): OpenWeatherMap {
+    OpenWeatherMap.API_KEY = key || Config.WEATHER_API_KEY
     if (!OpenWeatherMap.client) {
       OpenWeatherMap.client = new OpenWeatherMap()
     }

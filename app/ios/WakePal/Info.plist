@@ -66,5 +66,16 @@
 		<string>SFProRounded-Semibold.ttf</string>
 		<string>SFProRounded-Thin.ttf</string>
 	</array>
+	<key>CFBundleURLTypes</key>
+	<array>
+	<dict>
+		<key>CFBundleURLName</key>
+		<string>com.wakepal</string>
+		<key>CFBundleURLSchemes</key>
+		<array>
+		<string>com.wakepal</string>
+		</array>
+	</dict>
+	</array>
 </dict>
 </plist>

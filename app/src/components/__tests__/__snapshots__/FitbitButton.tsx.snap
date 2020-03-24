@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  accessible={true}
+  focusable={true}
+  isTVSelectable={true}
+  onClick={[Function]}
+  onResponderGrant={[Function]}
+  onResponderMove={[Function]}
+  onResponderRelease={[Function]}
+  onResponderTerminate={[Function]}
+  onResponderTerminationRequest={[Function]}
+  onStartShouldSetResponder={[Function]}
+  style={
+    Object {
+      "alignItems": "center",
+      "backgroundColor": "#4dadb7",
+      "borderRadius": 10,
+      "color": "white",
+      "display": "flex",
+      "flexDirection": "row",
+      "height": 50,
+      "justifyContent": "center",
+      "opacity": 1,
+      "overflow": "hidden",
+      "paddingBottom": 0,
+      "paddingLeft": 15,
+      "shadowColor": "rgba(0, 0, 0, 0.25)",
+      "shadowOffset": Object {
+        "height": 2,
+        "width": 0,
+      },
+      "shadowOpacity": 1,
+      "shadowRadius": 2,
+      "width": 250,
+    }
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "marginRight": 10,
+        },
+      ]
+    }
+  >
+    <RNSVGSvgView
+      align="xMidYMid"
+      bbHeight={20}
+      bbWidth={20}
+      focusable={false}
+      height={20}
+      meetOrSlice={0}
+      minX={0}
+      minY={0}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "transparent",
+            "borderWidth": 0,
+          },
+          Object {
+            "flex": 0,
+            "height": 20,
+            "width": 20,
+          },
+        ]
+      }
+      vbHeight={29.5}
+      vbWidth={29.6}
+      width={20}
+    >
+      <RNSVGGroup>
+        <RNSVGGroup>
+          <RNSVGPath
+            d="M16.4 2.2a2.2 2.2 0 11-4.4 0 2.2 2.2 0 114.4 0zm-2.2 4a2.3 2.3 0 102.3 2.3 2.263 2.263 0 00-2.3-2.3zm0 6.2a2.4 2.4 0 102.4 2.4 2.433 2.433 0 00-2.4-2.4zm0 6.3a2.3 2.3 0 102.3 2.3 2.326 2.326 0 00-2.3-2.3zm0 6.4a2.2 2.2 0 102.2 2.2 2.22 2.22 0 00-2.2-2.2zm6.1-19.2a2.647 2.647 0 00-2.6 2.6 2.6 2.6 0 105.2 0 2.647 2.647 0 00-2.6-2.6zm0 6.2a2.7 2.7 0 102.7 2.7 2.689 2.689 0 00-2.7-2.7zm0 6.3a2.6 2.6 0 102.6 2.6 2.647 2.647 0 00-2.6-2.6zm6.3-6.6a3 3 0 000 6 2.946 2.946 0 003-3 3.075 3.075 0 00-3-3zM8 6.5a2 2 0 102 2 2.006 2.006 0 00-2-2zm0 6.2a2.1 2.1 0 000 4.2 2.1 2.1 0 000-4.2zM8 19a2 2 0 102 2 2.006 2.006 0 00-2-2zm-6.2-6a1.8 1.8 0 101.8 1.8A1.793 1.793 0 001.8 13z"
+            fill={4294967295}
+            propList={
+              Array [
+                "fill",
+              ]
+            }
+          />
+        </RNSVGGroup>
+      </RNSVGGroup>
+    </RNSVGSvgView>
+  </View>
+  <Text
+    style={
+      Array [
+        Object {
+          "color": "white",
+          "fontFamily": "SFProRounded-SemiBold",
+          "fontSize": 17,
+        },
+      ]
+    }
+  >
+    Use Fitbit Smartband
+  </Text>
+</View>
+`;
