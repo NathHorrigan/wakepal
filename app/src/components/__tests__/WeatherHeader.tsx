@@ -12,7 +12,9 @@ export const exampleWeather = new WeatherResponse(
 
 it('renders correctly', () => {
   const tree = renderer
-    .create(<WeatherHeader dateLabel="Today" weather={exampleWeather} />)
+    .create(
+      <WeatherHeader name="Nathan" dateLabel="Today" weather={exampleWeather} />
+    )
     .toJSON()
   expect(tree).toMatchSnapshot()
 })

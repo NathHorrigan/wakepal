@@ -6,6 +6,7 @@ export const colors = {
   paleGreen: '#A3D9A5',
   darkBlue: '#2680C2',
   orange: '#F97F51',
+  fitbit: '#4dadb7',
 }
 
 export const fonts = {
