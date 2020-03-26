@@ -1,5 +1,6 @@
 // Utility functions to access theming
 export const colors = {
+  lightGrey: '#E1E1E1',
   grey: '#9E9E9E',
   coral: '#F86A6A',
   cyan: '#0E7C86',
@@ -7,6 +8,7 @@ export const colors = {
   darkBlue: '#2680C2',
   orange: '#F97F51',
   fitbit: '#4dadb7',
+  paleBlue: '#62B0E8',
 }
 
 export const fonts = {
