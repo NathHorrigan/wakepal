@@ -1,0 +1,735 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<View
+  style={
+    Array [
+      Object {
+        "maxWidth": "100%",
+      },
+    ]
+  }
+>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "center",
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "marginBottom": 20,
+            "marginLeft": 7,
+            "marginRight": 7,
+            "marginTop": 20,
+          },
+        ]
+      }
+    >
+      <View
+        color="#035388"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#035388",
+              "borderRadius": 7,
+              "height": 6,
+              "marginRight": 5,
+              "width": 6,
+            },
+          ]
+        }
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#999999",
+              "fontFamily": "SFProRounded-Medium",
+              "fontSize": 9,
+            },
+          ]
+        }
+      >
+        Rem
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "marginBottom": 20,
+            "marginLeft": 7,
+            "marginRight": 7,
+            "marginTop": 20,
+          },
+        ]
+      }
+    >
+      <View
+        color="#2680C2"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#2680C2",
+              "borderRadius": 7,
+              "height": 6,
+              "marginRight": 5,
+              "width": 6,
+            },
+          ]
+        }
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#999999",
+              "fontFamily": "SFProRounded-Medium",
+              "fontSize": 9,
+            },
+          ]
+        }
+      >
+        Deep
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "marginBottom": 20,
+            "marginLeft": 7,
+            "marginRight": 7,
+            "marginTop": 20,
+          },
+        ]
+      }
+    >
+      <View
+        color="#62B0E8"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#62B0E8",
+              "borderRadius": 7,
+              "height": 6,
+              "marginRight": 5,
+              "width": 6,
+            },
+          ]
+        }
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#999999",
+              "fontFamily": "SFProRounded-Medium",
+              "fontSize": 9,
+            },
+          ]
+        }
+      >
+        Light
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+            "flexDirection": "row",
+            "justifyContent": "center",
+            "marginBottom": 20,
+            "marginLeft": 7,
+            "marginRight": 7,
+            "marginTop": 20,
+          },
+        ]
+      }
+    >
+      <View
+        color="#A3D9A5"
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#A3D9A5",
+              "borderRadius": 7,
+              "height": 6,
+              "marginRight": 5,
+              "width": 6,
+            },
+          ]
+        }
+      />
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#999999",
+              "fontFamily": "SFProRounded-Medium",
+              "fontSize": 9,
+            },
+          ]
+        }
+      >
+        Awake
+      </Text>
+    </View>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "height": 7,
+          "marginBottom": 12,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      color="#035388"
+      left={230.76923076923077}
+      right={461.53846153846155}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#035388",
+            "borderRadius": 7,
+            "height": 7,
+            "left": 230.76923076923077,
+            "position": "absolute",
+            "right": 461.53846153846155,
+            "width": 230.76923076923077,
+          },
+        ]
+      }
+      width={230.76923076923077}
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgba(0, 0, 0, 0.08)",
+            "height": 1,
+            "width": "100%",
+            "zIndex": -1,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "height": 7,
+          "marginBottom": 12,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      color="#2680C2"
+      left={461.53846153846155}
+      right={740}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#2680C2",
+            "borderRadius": 7,
+            "height": 7,
+            "left": 461.53846153846155,
+            "position": "absolute",
+            "right": 740,
+            "width": 278.46153846153845,
+          },
+        ]
+      }
+      width={278.46153846153845}
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgba(0, 0, 0, 0.08)",
+            "height": 1,
+            "width": "100%",
+            "zIndex": -1,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "height": 7,
+          "marginBottom": 12,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      color="#62B0E8"
+      left={115.38461538461539}
+      right={230.76923076923077}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#62B0E8",
+            "borderRadius": 7,
+            "height": 7,
+            "left": 115.38461538461539,
+            "position": "absolute",
+            "right": 230.76923076923077,
+            "width": 115.38461538461539,
+          },
+        ]
+      }
+      width={115.38461538461539}
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgba(0, 0, 0, 0.08)",
+            "height": 1,
+            "width": "100%",
+            "zIndex": -1,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "height": 7,
+          "marginBottom": 12,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <View
+      color="#A3D9A5"
+      left={10}
+      right={115.38461538461539}
+      style={
+        Array [
+          Object {
+            "backgroundColor": "#A3D9A5",
+            "borderRadius": 7,
+            "height": 7,
+            "left": 10,
+            "position": "absolute",
+            "right": 115.38461538461539,
+            "width": 105.38461538461539,
+          },
+        ]
+      }
+      width={105.38461538461539}
+    />
+    <View
+      style={
+        Array [
+          Object {
+            "backgroundColor": "rgba(0, 0, 0, 0.08)",
+            "height": 1,
+            "width": "100%",
+            "zIndex": -1,
+          },
+        ]
+      }
+    />
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "alignItems": "center",
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "space-between",
+          "marginTop": 2,
+          "paddingBottom": 0,
+          "paddingLeft": 10,
+          "paddingRight": 10,
+          "paddingTop": 0,
+          "width": "100%",
+        },
+      ]
+    }
+  >
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgba(0, 0, 0, 0.4)",
+            "fontFamily": "SFProRounded-Bold",
+            "fontSize": 7,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      19
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgba(0, 0, 0, 0.4)",
+            "fontFamily": "SFProRounded-Bold",
+            "fontSize": 7,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      20
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgba(0, 0, 0, 0.4)",
+            "fontFamily": "SFProRounded-Bold",
+            "fontSize": 7,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      21
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgba(0, 0, 0, 0.4)",
+            "fontFamily": "SFProRounded-Bold",
+            "fontSize": 7,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      22
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgba(0, 0, 0, 0.4)",
+            "fontFamily": "SFProRounded-Bold",
+            "fontSize": 7,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      23
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgba(0, 0, 0, 0.4)",
+            "fontFamily": "SFProRounded-Bold",
+            "fontSize": 7,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      00
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgba(0, 0, 0, 0.4)",
+            "fontFamily": "SFProRounded-Bold",
+            "fontSize": 7,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      01
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgba(0, 0, 0, 0.4)",
+            "fontFamily": "SFProRounded-Bold",
+            "fontSize": 7,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      02
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgba(0, 0, 0, 0.4)",
+            "fontFamily": "SFProRounded-Bold",
+            "fontSize": 7,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      03
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgba(0, 0, 0, 0.4)",
+            "fontFamily": "SFProRounded-Bold",
+            "fontSize": 7,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      04
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgba(0, 0, 0, 0.4)",
+            "fontFamily": "SFProRounded-Bold",
+            "fontSize": 7,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      05
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgba(0, 0, 0, 0.4)",
+            "fontFamily": "SFProRounded-Bold",
+            "fontSize": 7,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      06
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgba(0, 0, 0, 0.4)",
+            "fontFamily": "SFProRounded-Bold",
+            "fontSize": 7,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      07
+    </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgba(0, 0, 0, 0.4)",
+            "fontFamily": "SFProRounded-Bold",
+            "fontSize": 7,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      08
+    </Text>
+  </View>
+  <View
+    style={
+      Array [
+        Object {
+          "display": "flex",
+          "flexDirection": "row",
+          "justifyContent": "space-evenly",
+          "marginTop": 35,
+        },
+      ]
+    }
+  >
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+          },
+        ]
+      }
+    >
+      <Text
+        color="#62B0E8"
+        style={
+          Array [
+            Object {
+              "color": "#62B0E8",
+              "fontFamily": "SFProRounded-Bold",
+              "fontSize": 25,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        11
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#9e9e9e",
+              "fontFamily": "SFProRounded-Medium",
+              "fontSize": 11,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Hours Asleep
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+          },
+        ]
+      }
+    >
+      <Text
+        color="#A3D9A5"
+        style={
+          Array [
+            Object {
+              "color": "#A3D9A5",
+              "fontFamily": "SFProRounded-Bold",
+              "fontSize": 25,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        2
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#9e9e9e",
+              "fontFamily": "SFProRounded-Medium",
+              "fontSize": 11,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Hours Awake
+      </Text>
+    </View>
+    <View
+      style={
+        Array [
+          Object {
+            "alignItems": "center",
+            "display": "flex",
+          },
+        ]
+      }
+    >
+      <Text
+        color="#F86A6A"
+        style={
+          Array [
+            Object {
+              "color": "#F86A6A",
+              "fontFamily": "SFProRounded-Bold",
+              "fontSize": 25,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        85
+      </Text>
+      <Text
+        style={
+          Array [
+            Object {
+              "color": "#9e9e9e",
+              "fontFamily": "SFProRounded-Medium",
+              "fontSize": 11,
+              "textAlign": "center",
+            },
+          ]
+        }
+      >
+        Sleep Efficiency
+      </Text>
+    </View>
+  </View>
+</View>
+`;

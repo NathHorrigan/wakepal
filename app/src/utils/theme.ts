@@ -5,10 +5,11 @@ export const colors = {
   coral: '#F86A6A',
   cyan: '#0E7C86',
   paleGreen: '#A3D9A5',
-  darkBlue: '#2680C2',
+  darkBlue: '#035388',
+  blue: '#2680C2',
+  paleBlue: '#62B0E8',
   orange: '#F97F51',
   fitbit: '#4dadb7',
-  paleBlue: '#62B0E8',
 }
 
 export const fonts = {
