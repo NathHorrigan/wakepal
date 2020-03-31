@@ -1,0 +1,2476 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`water modal renders correctly 1`] = `
+<Modal
+  animationType="none"
+  hardwareAccelerated={false}
+  hideModalContentWhileAnimating={false}
+  onModalHide={[Function]}
+  onModalWillHide={[Function]}
+  onModalWillShow={[Function]}
+  onRequestClose={[Function]}
+  scrollHorizontal={false}
+  scrollOffset={0}
+  scrollOffsetMax={0}
+  scrollTo={null}
+  supportedOrientations={
+    Array [
+      "portrait",
+      "landscape",
+    ]
+  }
+  swipeDirection={
+    Array [
+      "down",
+    ]
+  }
+  swipeThreshold={100}
+  transparent={true}
+  visible={true}
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "black",
+        "bottom": 0,
+        "height": 1334,
+        "left": 0,
+        "opacity": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": 750,
+      }
+    }
+  />
+  <View
+    onLayout={[Function]}
+    pointerEvents="box-none"
+    style={
+      Array [
+        Array [
+          Object {
+            "margin": 37.5,
+            "transform": Array [
+              Object {
+                "translateY": 0,
+              },
+            ],
+          },
+          Object {
+            "flex": 1,
+            "justifyContent": "center",
+          },
+          Array [
+            Object {
+              "justifyContent": "flex-end",
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+            },
+          ],
+          Object {
+            "margin": 0,
+          },
+        ],
+        Object {
+          "paddingBottom": 0,
+        },
+      ]
+    }
+  >
+    <View
+      hideModalContentWhileAnimating={false}
+      onModalHide={[Function]}
+      onModalWillHide={[Function]}
+      onModalWillShow={[Function]}
+      onMoveShouldSetResponder={[Function]}
+      onMoveShouldSetResponderCapture={[Function]}
+      onResponderEnd={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderReject={[Function]}
+      onResponderRelease={[Function]}
+      onResponderStart={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      onStartShouldSetResponderCapture={[Function]}
+      pointerEvents="box-none"
+      scrollHorizontal={false}
+      scrollOffset={0}
+      scrollOffsetMax={0}
+      scrollTo={null}
+      style={
+        Object {
+          "flex": 1,
+          "justifyContent": "flex-end",
+          "left": 0,
+          "margin": 37.5,
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "top": 0,
+          "transform": Array [
+            Object {
+              "translateY": 1334,
+            },
+          ],
+        }
+      }
+      supportedOrientations={
+        Array [
+          "portrait",
+          "landscape",
+        ]
+      }
+      swipeDirection={
+        Array [
+          "down",
+        ]
+      }
+      swipeThreshold={100}
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#62b0e8",
+              "borderBottomLeftRadius": 0,
+              "borderBottomRightRadius": 0,
+              "borderRadius": 40,
+              "height": 754,
+              "paddingTop": 224.10555555555555,
+              "position": "relative",
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <View
+          style={
+            Array [
+              Object {
+                "left": -2,
+                "position": "absolute",
+                "right": -2,
+                "top": 0,
+                "width": "100%",
+                "zIndex": 1,
+              },
+            ]
+          }
+        >
+          <RNSVGSvgView
+            align="xMidYMid"
+            bbHeight={224.10555555555555}
+            bbWidth={754}
+            focusable={false}
+            height={224.10555555555555}
+            meetOrSlice={0}
+            minX={0}
+            minY={0}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "flex": 0,
+                  "height": 224,
+                  "width": 754,
+                },
+              ]
+            }
+            vbHeight={428.191}
+            vbWidth={1440}
+            width={754}
+          >
+            <RNSVGGroup>
+              <RNSVGPath
+                d="M1439.849 143.157A149.718 149.718 0 001290.28 0H149.72A149.718 149.718 0 00.151 143.157H0v101.786l40 5.678c40 6.107 120 16.822 200 51.429 80 33.964 160 91.82 240 114.32s160 11.786 240-22.821c80-33.964 160-91.821 240-102.857 80-11.464 160 22.822 240 39.964s160 17.144 200 17.144h40V143.156z"
+                fill={4278229503}
+                propList={
+                  Array [
+                    "fill",
+                  ]
+                }
+              />
+            </RNSVGGroup>
+          </RNSVGSvgView>
+        </View>
+        <View
+          accessible={true}
+          focusable={false}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+              "position": "absolute",
+              "right": 30,
+              "top": 30,
+              "zIndex": 2,
+            }
+          }
+        >
+          <RNSVGSvgView
+            align="xMidYMid"
+            bbHeight={15}
+            bbWidth={15}
+            fill="none"
+            focusable={false}
+            height={15}
+            meetOrSlice={0}
+            minX={0}
+            minY={0}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "flex": 0,
+                  "height": 15,
+                  "width": 15,
+                },
+              ]
+            }
+            vbHeight={15}
+            vbWidth={15}
+            width={15}
+          >
+            <RNSVGGroup
+              fill={null}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+            >
+              <RNSVGGroup
+                clipPath="prefix__clip0"
+              >
+                <RNSVGPath
+                  d="M15 12.617l-5.197-5.13 5.125-5.176L12.618 0 7.484 5.199 2.291.072 0 2.363l5.2 5.15L.073 12.71 2.363 15l5.148-5.199 5.178 5.127L15 12.618z"
+                  fill={4294967295}
+                  fillOpacity={0.95}
+                  propList={
+                    Array [
+                      "fill",
+                      "fillOpacity",
+                    ]
+                  }
+                />
+              </RNSVGGroup>
+              <RNSVGDefs>
+                <RNSVGClipPath
+                  name="prefix__clip0"
+                >
+                  <RNSVGPath
+                    d="M0 0h15v15H0z"
+                    fill={4294967295}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                  />
+                </RNSVGClipPath>
+              </RNSVGDefs>
+            </RNSVGGroup>
+          </RNSVGSvgView>
+        </View>
+        <Text
+          style={
+            Array [
+              Object {
+                "color": "rgba(255, 255, 255, 0.9)",
+                "fontFamily": "SFProRounded-SemiBold",
+                "fontSize": 25,
+                "left": 90,
+                "position": "absolute",
+                "top": 284.10555555555555,
+              },
+            ]
+          }
+        >
+          4 Pints to go...
+        </Text>
+        <View
+          style={
+            Array [
+              Object {
+                "marginBottom": 10,
+                "marginLeft": 20,
+                "marginRight": 20,
+                "marginTop": 10,
+              },
+            ]
+          }
+        >
+          <RNSVGSvgView
+            align="xMidYMid"
+            bbHeight={80}
+            bbWidth={80}
+            fill="none"
+            focusable={false}
+            height={80}
+            meetOrSlice={0}
+            minX={0}
+            minY={0}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "flex": 0,
+                  "height": 80,
+                  "width": 80,
+                },
+              ]
+            }
+            vbHeight={48}
+            vbWidth={44}
+            width={80}
+          >
+            <RNSVGGroup
+              fill={null}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+            >
+              <RNSVGPath
+                d="M19.926 12.175c-7.238 10.697-11.89 17.386-11.89 23.89 0 6.507 5.32 11.778 11.89 11.778s11.89-5.27 11.89-11.778c0-6.504-4.651-13.193-11.89-23.89zm-.041 7.607c.697 1.078 1.527 2.955 1.527 4.935 0 5.807-5.944 6.76-5.944 3.224 0-2.426 2.954-6.006 4.416-8.159zm-4.754-7.587C13.916 8.947 11.414 5.275 8.037.286 3.21 7.418.11 11.878.11 16.212c0 4.218 3.358 7.63 7.573 7.817 1.88-3.517 4.429-7.37 7.447-11.834zM5.065 10.798c0-1.617 1.97-4.004 2.944-5.44.466.718 1.019 1.97 1.019 3.29 0 3.872-3.963 4.506-3.963 2.15zm30.714-4.567c-3.381 4.995-5.886 8.671-7.1 11.92 2.804 4.364 4.886 8.129 6.051 11.755 5.002.656 8.975-3.188 8.975-7.75 0-4.333-3.1-8.794-7.926-15.925zm-2.973 10.512c0-1.617 1.97-4.005 2.945-5.44.465.718 1.018 1.97 1.018 3.29 0 3.872-3.963 4.506-3.963 2.15z"
+                fill={4294967295}
+                fillOpacity={0.9}
+                propList={
+                  Array [
+                    "fill",
+                    "fillOpacity",
+                  ]
+                }
+              />
+            </RNSVGGroup>
+          </RNSVGSvgView>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "flexDirection": "row",
+                "marginBottom": 0,
+                "marginLeft": "auto",
+                "marginRight": "auto",
+                "marginTop": 40,
+              },
+            ]
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            isTVSelectable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "marginBottom": 0,
+                "marginLeft": 20,
+                "marginRight": 20,
+                "marginTop": 0,
+                "opacity": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 20,
+              }
+            }
+          >
+            <RNSVGSvgView
+              bbHeight={24}
+              bbWidth={24}
+              fill="none"
+              focusable={false}
+              height={24}
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  Object {
+                    "flex": 0,
+                    "height": 24,
+                    "width": 24,
+                  },
+                ]
+              }
+              width={24}
+            >
+              <RNSVGGroup
+                fill={null}
+                propList={
+                  Array [
+                    "fill",
+                  ]
+                }
+              >
+                <RNSVGPath
+                  d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm6 13H6v-2h12v2z"
+                  fill={4294967295}
+                  propList={
+                    Array [
+                      "fill",
+                    ]
+                  }
+                />
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+          <TextInput
+            allowFontScaling={true}
+            keyboardType="numeric"
+            maxLength={2}
+            onChangeText={[Function]}
+            onSubmit={[Function]}
+            rejectResponderTermination={true}
+            returnKeyType="done"
+            style={
+              Array [
+                Object {
+                  "color": "white",
+                  "fontFamily": "SFProRounded-Bold",
+                  "fontSize": 35,
+                },
+              ]
+            }
+            underlineColorAndroid="transparent"
+          >
+            2
+          </TextInput>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "white",
+                  "fontFamily": "SFProRounded-SemiBold",
+                  "fontSize": 27,
+                  "marginLeft": 5,
+                  "marginTop": 4,
+                  "opacity": 0.6,
+                },
+              ]
+            }
+          >
+            Pints
+          </Text>
+          <View
+            accessible={true}
+            focusable={true}
+            isTVSelectable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "marginBottom": 0,
+                "marginLeft": 20,
+                "marginRight": 20,
+                "marginTop": 0,
+                "opacity": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 20,
+              }
+            }
+          >
+            <RNSVGSvgView
+              bbHeight={24}
+              bbWidth={24}
+              fill="none"
+              focusable={false}
+              height={24}
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  Object {
+                    "flex": 0,
+                    "height": 24,
+                    "width": 24,
+                  },
+                ]
+              }
+              width={24}
+            >
+              <RNSVGGroup
+                fill={null}
+                propList={
+                  Array [
+                    "fill",
+                  ]
+                }
+              >
+                <RNSVGGroup
+                  clipPath="prefix__clip0"
+                >
+                  <RNSVGPath
+                    d="M12.29 2.81c5.225 0 9.476 4.25 9.476 9.476 0 5.226-4.251 9.477-9.477 9.477-5.225 0-9.477-4.251-9.477-9.477 0-5.225 4.252-9.477 9.477-9.477zm0-1.896C6.008.914.916 6.006.916 12.286s5.092 11.372 11.372 11.372 11.373-5.092 11.373-11.372S18.57.914 12.289.914zm5.685 12.32h-4.738v4.738h-1.895v-4.738H6.603v-1.896h4.739V6.6h1.895v4.739h4.738v1.895z"
+                    fill={4294967295}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                  />
+                </RNSVGGroup>
+                <RNSVGDefs>
+                  <RNSVGClipPath
+                    name="prefix__clip0"
+                  >
+                    <RNSVGPath
+                      d="M.917.914h22.745v22.744H.917z"
+                      fill={4294967295}
+                      propList={
+                        Array [
+                          "fill",
+                        ]
+                      }
+                    />
+                  </RNSVGClipPath>
+                </RNSVGDefs>
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</Modal>
+`;
+
+exports[`weight modal renders correctly 1`] = `
+<Modal
+  animationType="none"
+  hardwareAccelerated={false}
+  hideModalContentWhileAnimating={false}
+  onModalHide={[Function]}
+  onModalWillHide={[Function]}
+  onModalWillShow={[Function]}
+  onRequestClose={[Function]}
+  scrollHorizontal={false}
+  scrollOffset={0}
+  scrollOffsetMax={0}
+  scrollTo={null}
+  supportedOrientations={
+    Array [
+      "portrait",
+      "landscape",
+    ]
+  }
+  swipeDirection={
+    Array [
+      "down",
+    ]
+  }
+  swipeThreshold={100}
+  transparent={true}
+  visible={true}
+>
+  <View
+    accessible={true}
+    focusable={true}
+    onClick={[Function]}
+    onResponderGrant={[Function]}
+    onResponderMove={[Function]}
+    onResponderRelease={[Function]}
+    onResponderTerminate={[Function]}
+    onResponderTerminationRequest={[Function]}
+    onStartShouldSetResponder={[Function]}
+    style={
+      Object {
+        "backgroundColor": "black",
+        "bottom": 0,
+        "height": 1334,
+        "left": 0,
+        "opacity": 0,
+        "position": "absolute",
+        "right": 0,
+        "top": 0,
+        "width": 750,
+      }
+    }
+  />
+  <View
+    onLayout={[Function]}
+    pointerEvents="box-none"
+    style={
+      Array [
+        Array [
+          Object {
+            "margin": 37.5,
+            "transform": Array [
+              Object {
+                "translateY": 0,
+              },
+            ],
+          },
+          Object {
+            "flex": 1,
+            "justifyContent": "center",
+          },
+          Array [
+            Object {
+              "justifyContent": "flex-end",
+              "marginBottom": 0,
+              "marginLeft": 0,
+              "marginRight": 0,
+              "marginTop": 0,
+            },
+          ],
+          Object {
+            "margin": 0,
+          },
+        ],
+        Object {
+          "paddingBottom": 0,
+        },
+      ]
+    }
+  >
+    <View
+      hideModalContentWhileAnimating={false}
+      onModalHide={[Function]}
+      onModalWillHide={[Function]}
+      onModalWillShow={[Function]}
+      onMoveShouldSetResponder={[Function]}
+      onMoveShouldSetResponderCapture={[Function]}
+      onResponderEnd={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderReject={[Function]}
+      onResponderRelease={[Function]}
+      onResponderStart={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      onStartShouldSetResponderCapture={[Function]}
+      pointerEvents="box-none"
+      scrollHorizontal={false}
+      scrollOffset={0}
+      scrollOffsetMax={0}
+      scrollTo={null}
+      style={
+        Object {
+          "flex": 1,
+          "justifyContent": "flex-end",
+          "left": 0,
+          "margin": 37.5,
+          "marginBottom": 0,
+          "marginLeft": 0,
+          "marginRight": 0,
+          "marginTop": 0,
+          "top": 0,
+          "transform": Array [
+            Object {
+              "translateY": 1334,
+            },
+          ],
+        }
+      }
+      supportedOrientations={
+        Array [
+          "portrait",
+          "landscape",
+        ]
+      }
+      swipeDirection={
+        Array [
+          "down",
+        ]
+      }
+      swipeThreshold={100}
+    >
+      <View
+        style={
+          Array [
+            Object {
+              "backgroundColor": "#A3D9A5",
+              "borderBottomLeftRadius": 0,
+              "borderBottomRightRadius": 0,
+              "borderRadius": 40,
+              "height": 450,
+              "paddingTop": 60,
+              "position": "relative",
+              "width": "100%",
+            },
+          ]
+        }
+      >
+        <View
+          accessible={true}
+          focusable={false}
+          isTVSelectable={true}
+          onClick={[Function]}
+          onResponderGrant={[Function]}
+          onResponderMove={[Function]}
+          onResponderRelease={[Function]}
+          onResponderTerminate={[Function]}
+          onResponderTerminationRequest={[Function]}
+          onStartShouldSetResponder={[Function]}
+          style={
+            Object {
+              "opacity": 1,
+              "position": "absolute",
+              "right": 30,
+              "top": 30,
+              "zIndex": 2,
+            }
+          }
+        >
+          <RNSVGSvgView
+            align="xMidYMid"
+            bbHeight={15}
+            bbWidth={15}
+            fill="none"
+            focusable={false}
+            height={15}
+            meetOrSlice={0}
+            minX={0}
+            minY={0}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "flex": 0,
+                  "height": 15,
+                  "width": 15,
+                },
+              ]
+            }
+            vbHeight={15}
+            vbWidth={15}
+            width={15}
+          >
+            <RNSVGGroup
+              fill={null}
+              propList={
+                Array [
+                  "fill",
+                ]
+              }
+            >
+              <RNSVGGroup
+                clipPath="prefix__clip0"
+              >
+                <RNSVGPath
+                  d="M15 12.617l-5.197-5.13 5.125-5.176L12.618 0 7.484 5.199 2.291.072 0 2.363l5.2 5.15L.073 12.71 2.363 15l5.148-5.199 5.178 5.127L15 12.618z"
+                  fill={4294967295}
+                  fillOpacity={0.95}
+                  propList={
+                    Array [
+                      "fill",
+                      "fillOpacity",
+                    ]
+                  }
+                />
+              </RNSVGGroup>
+              <RNSVGDefs>
+                <RNSVGClipPath
+                  name="prefix__clip0"
+                >
+                  <RNSVGPath
+                    d="M0 0h15v15H0z"
+                    fill={4294967295}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                  />
+                </RNSVGClipPath>
+              </RNSVGDefs>
+            </RNSVGGroup>
+          </RNSVGSvgView>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "flexDirection": "row",
+                "marginBottom": 15,
+                "marginLeft": 20,
+              },
+            ]
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            isTVSelectable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "backgroundColor": "rgba(255, 255, 255, 1)",
+                "borderRadius": 10,
+                "marginRight": 5,
+                "opacity": 1,
+                "paddingBottom": 3,
+                "paddingLeft": 7,
+                "paddingRight": 7,
+                "paddingTop": 3,
+              }
+            }
+          >
+            <Text
+              active={true}
+              style={
+                Array [
+                  Object {
+                    "color": "#A3D9A5",
+                    "fontFamily": "SFProRounded-Medium",
+                    "fontSize": 12,
+                  },
+                ]
+              }
+            >
+              1 Week
+            </Text>
+          </View>
+          <View
+            accessible={true}
+            focusable={true}
+            isTVSelectable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                "borderRadius": 10,
+                "marginRight": 5,
+                "opacity": 1,
+                "paddingBottom": 3,
+                "paddingLeft": 7,
+                "paddingRight": 7,
+                "paddingTop": 3,
+              }
+            }
+          >
+            <Text
+              active={false}
+              style={
+                Array [
+                  Object {
+                    "color": "white",
+                    "fontFamily": "SFProRounded-Medium",
+                    "fontSize": 12,
+                  },
+                ]
+              }
+            >
+              4 Weeks
+            </Text>
+          </View>
+          <View
+            accessible={true}
+            focusable={true}
+            isTVSelectable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                "borderRadius": 10,
+                "marginRight": 5,
+                "opacity": 1,
+                "paddingBottom": 3,
+                "paddingLeft": 7,
+                "paddingRight": 7,
+                "paddingTop": 3,
+              }
+            }
+          >
+            <Text
+              active={false}
+              style={
+                Array [
+                  Object {
+                    "color": "white",
+                    "fontFamily": "SFProRounded-Medium",
+                    "fontSize": 12,
+                  },
+                ]
+              }
+            >
+              3 Months
+            </Text>
+          </View>
+          <View
+            accessible={true}
+            focusable={true}
+            isTVSelectable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "backgroundColor": "rgba(255, 255, 255, 0.2)",
+                "borderRadius": 10,
+                "marginRight": 5,
+                "opacity": 1,
+                "paddingBottom": 3,
+                "paddingLeft": 7,
+                "paddingRight": 7,
+                "paddingTop": 3,
+              }
+            }
+          >
+            <Text
+              active={false}
+              style={
+                Array [
+                  Object {
+                    "color": "white",
+                    "fontFamily": "SFProRounded-Medium",
+                    "fontSize": 12,
+                  },
+                ]
+              }
+            >
+              6 Months
+            </Text>
+          </View>
+        </View>
+        <View
+          style={Object {}}
+        >
+          <RNSVGSvgView
+            bbHeight={200}
+            bbWidth={750}
+            focusable={false}
+            height={200}
+            style={
+              Array [
+                Object {
+                  "backgroundColor": "transparent",
+                  "borderWidth": 0,
+                },
+                Object {
+                  "flex": 0,
+                  "height": 200,
+                  "width": 750,
+                },
+              ]
+            }
+            width={750}
+          >
+            <RNSVGGroup>
+              <RNSVGRect
+                fill={
+                  Array [
+                    1,
+                    "backgroundGradient",
+                  ]
+                }
+                height={200}
+                propList={
+                  Array [
+                    "fill",
+                  ]
+                }
+                rx={0}
+                ry={0}
+                width="100%"
+                x={0}
+                y={0}
+              />
+              <RNSVGGroup
+                matrix={
+                  Array [
+                    1,
+                    0,
+                    0,
+                    1,
+                    0,
+                    0,
+                  ]
+                }
+              >
+                <RNSVGDefs>
+                  <RNSVGLinearGradient
+                    gradient={
+                      Array [
+                        0,
+                        -6039131,
+                        1,
+                        -6039131,
+                      ]
+                    }
+                    gradientTransform={null}
+                    gradientUnits={0}
+                    name="backgroundGradient"
+                    x1="0"
+                    x2={750}
+                    y1={200}
+                    y2={0}
+                  />
+                  <RNSVGLinearGradient
+                    gradient={
+                      Array [
+                        0,
+                        452984831,
+                        1,
+                        16777215,
+                      ]
+                    }
+                    gradientTransform={null}
+                    gradientUnits={0}
+                    name="fillShadowGradient"
+                    x1={0}
+                    x2={0}
+                    y1={0}
+                    y2={200}
+                  />
+                </RNSVGDefs>
+                <RNSVGGroup>
+                  <RNSVGLine
+                    propList={
+                      Array [
+                        "stroke",
+                        "strokeWidth",
+                        "strokeDasharray",
+                      ]
+                    }
+                    stroke={872415231}
+                    strokeDasharray={
+                      Array [
+                        "5",
+                        "10",
+                      ]
+                    }
+                    strokeWidth={1}
+                    x1={64}
+                    x2={750}
+                    y1={16}
+                    y2={16}
+                  />
+                  <RNSVGLine
+                    propList={
+                      Array [
+                        "stroke",
+                        "strokeWidth",
+                        "strokeDasharray",
+                      ]
+                    }
+                    stroke={872415231}
+                    strokeDasharray={
+                      Array [
+                        "5",
+                        "10",
+                      ]
+                    }
+                    strokeWidth={1}
+                    x1={64}
+                    x2={750}
+                    y1={53.5}
+                    y2={53.5}
+                  />
+                  <RNSVGLine
+                    propList={
+                      Array [
+                        "stroke",
+                        "strokeWidth",
+                        "strokeDasharray",
+                      ]
+                    }
+                    stroke={872415231}
+                    strokeDasharray={
+                      Array [
+                        "5",
+                        "10",
+                      ]
+                    }
+                    strokeWidth={1}
+                    x1={64}
+                    x2={750}
+                    y1={91}
+                    y2={91}
+                  />
+                  <RNSVGLine
+                    propList={
+                      Array [
+                        "stroke",
+                        "strokeWidth",
+                        "strokeDasharray",
+                      ]
+                    }
+                    stroke={872415231}
+                    strokeDasharray={
+                      Array [
+                        "5",
+                        "10",
+                      ]
+                    }
+                    strokeWidth={1}
+                    x1={64}
+                    x2={750}
+                    y1={128.5}
+                    y2={128.5}
+                  />
+                  <RNSVGLine
+                    propList={
+                      Array [
+                        "stroke",
+                        "strokeWidth",
+                        "strokeDasharray",
+                      ]
+                    }
+                    stroke={872415231}
+                    strokeDasharray={
+                      Array [
+                        "5",
+                        "10",
+                      ]
+                    }
+                    strokeWidth={1}
+                    x1={64}
+                    x2={750}
+                    y1={166}
+                    y2={166}
+                  />
+                </RNSVGGroup>
+                <RNSVGGroup>
+                  <RNSVGText
+                    content={null}
+                    dx={Array []}
+                    dy={Array []}
+                    fill={3439329279}
+                    font={
+                      Object {
+                        "fontSize": 12,
+                        "textAnchor": "end",
+                      }
+                    }
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        -0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotate={Array []}
+                    x={
+                      Array [
+                        52,
+                      ]
+                    }
+                    y={
+                      Array [
+                        166,
+                      ]
+                    }
+                  >
+                    <RNSVGTSpan
+                      content="69kg"
+                      dx={Array []}
+                      dy={Array []}
+                      font={Object {}}
+                      rotate={Array []}
+                      x={Array []}
+                      y={Array []}
+                    />
+                  </RNSVGText>
+                  <RNSVGText
+                    content={null}
+                    dx={Array []}
+                    dy={Array []}
+                    fill={3439329279}
+                    font={
+                      Object {
+                        "fontSize": 12,
+                        "textAnchor": "end",
+                      }
+                    }
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        -0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotate={Array []}
+                    x={
+                      Array [
+                        52,
+                      ]
+                    }
+                    y={
+                      Array [
+                        128.5,
+                      ]
+                    }
+                  >
+                    <RNSVGTSpan
+                      content="71kg"
+                      dx={Array []}
+                      dy={Array []}
+                      font={Object {}}
+                      rotate={Array []}
+                      x={Array []}
+                      y={Array []}
+                    />
+                  </RNSVGText>
+                  <RNSVGText
+                    content={null}
+                    dx={Array []}
+                    dy={Array []}
+                    fill={3439329279}
+                    font={
+                      Object {
+                        "fontSize": 12,
+                        "textAnchor": "end",
+                      }
+                    }
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        -0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotate={Array []}
+                    x={
+                      Array [
+                        52,
+                      ]
+                    }
+                    y={
+                      Array [
+                        91,
+                      ]
+                    }
+                  >
+                    <RNSVGTSpan
+                      content="74kg"
+                      dx={Array []}
+                      dy={Array []}
+                      font={Object {}}
+                      rotate={Array []}
+                      x={Array []}
+                      y={Array []}
+                    />
+                  </RNSVGText>
+                  <RNSVGText
+                    content={null}
+                    dx={Array []}
+                    dy={Array []}
+                    fill={3439329279}
+                    font={
+                      Object {
+                        "fontSize": 12,
+                        "textAnchor": "end",
+                      }
+                    }
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        -0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotate={Array []}
+                    x={
+                      Array [
+                        52,
+                      ]
+                    }
+                    y={
+                      Array [
+                        53.5,
+                      ]
+                    }
+                  >
+                    <RNSVGTSpan
+                      content="76kg"
+                      dx={Array []}
+                      dy={Array []}
+                      font={Object {}}
+                      rotate={Array []}
+                      x={Array []}
+                      y={Array []}
+                    />
+                  </RNSVGText>
+                  <RNSVGText
+                    content={null}
+                    dx={Array []}
+                    dy={Array []}
+                    fill={3439329279}
+                    font={
+                      Object {
+                        "fontSize": 12,
+                        "textAnchor": "end",
+                      }
+                    }
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        -0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotate={Array []}
+                    x={
+                      Array [
+                        52,
+                      ]
+                    }
+                    y={
+                      Array [
+                        16,
+                      ]
+                    }
+                  >
+                    <RNSVGTSpan
+                      content="78kg"
+                      dx={Array []}
+                      dy={Array []}
+                      font={Object {}}
+                      rotate={Array []}
+                      x={Array []}
+                      y={Array []}
+                    />
+                  </RNSVGText>
+                </RNSVGGroup>
+                <RNSVGGroup>
+                  <RNSVGLine
+                    propList={
+                      Array [
+                        "stroke",
+                        "strokeWidth",
+                        "strokeDasharray",
+                      ]
+                    }
+                    stroke={872415231}
+                    strokeDasharray={
+                      Array [
+                        "5",
+                        "10",
+                      ]
+                    }
+                    strokeWidth={1}
+                    x1={64}
+                    x2={64}
+                    y1={0}
+                    y2={166}
+                  />
+                  <RNSVGLine
+                    propList={
+                      Array [
+                        "stroke",
+                        "strokeWidth",
+                        "strokeDasharray",
+                      ]
+                    }
+                    stroke={872415231}
+                    strokeDasharray={
+                      Array [
+                        "5",
+                        "10",
+                      ]
+                    }
+                    strokeWidth={1}
+                    x1={162}
+                    x2={162}
+                    y1={0}
+                    y2={166}
+                  />
+                  <RNSVGLine
+                    propList={
+                      Array [
+                        "stroke",
+                        "strokeWidth",
+                        "strokeDasharray",
+                      ]
+                    }
+                    stroke={872415231}
+                    strokeDasharray={
+                      Array [
+                        "5",
+                        "10",
+                      ]
+                    }
+                    strokeWidth={1}
+                    x1={260}
+                    x2={260}
+                    y1={0}
+                    y2={166}
+                  />
+                  <RNSVGLine
+                    propList={
+                      Array [
+                        "stroke",
+                        "strokeWidth",
+                        "strokeDasharray",
+                      ]
+                    }
+                    stroke={872415231}
+                    strokeDasharray={
+                      Array [
+                        "5",
+                        "10",
+                      ]
+                    }
+                    strokeWidth={1}
+                    x1={358}
+                    x2={358}
+                    y1={0}
+                    y2={166}
+                  />
+                  <RNSVGLine
+                    propList={
+                      Array [
+                        "stroke",
+                        "strokeWidth",
+                        "strokeDasharray",
+                      ]
+                    }
+                    stroke={872415231}
+                    strokeDasharray={
+                      Array [
+                        "5",
+                        "10",
+                      ]
+                    }
+                    strokeWidth={1}
+                    x1={456}
+                    x2={456}
+                    y1={0}
+                    y2={166}
+                  />
+                  <RNSVGLine
+                    propList={
+                      Array [
+                        "stroke",
+                        "strokeWidth",
+                        "strokeDasharray",
+                      ]
+                    }
+                    stroke={872415231}
+                    strokeDasharray={
+                      Array [
+                        "5",
+                        "10",
+                      ]
+                    }
+                    strokeWidth={1}
+                    x1={554}
+                    x2={554}
+                    y1={0}
+                    y2={166}
+                  />
+                  <RNSVGLine
+                    propList={
+                      Array [
+                        "stroke",
+                        "strokeWidth",
+                        "strokeDasharray",
+                      ]
+                    }
+                    stroke={872415231}
+                    strokeDasharray={
+                      Array [
+                        "5",
+                        "10",
+                      ]
+                    }
+                    strokeWidth={1}
+                    x1={652}
+                    x2={652}
+                    y1={0}
+                    y2={166}
+                  />
+                </RNSVGGroup>
+                <RNSVGGroup>
+                  <RNSVGText
+                    content={null}
+                    dx={Array []}
+                    dy={Array []}
+                    fill={3439329279}
+                    font={
+                      Object {
+                        "fontSize": 12,
+                        "textAnchor": "middle",
+                      }
+                    }
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        -0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotate={Array []}
+                    x={
+                      Array [
+                        64,
+                      ]
+                    }
+                    y={
+                      Array [
+                        190,
+                      ]
+                    }
+                  >
+                    <RNSVGTSpan
+                      content="25th"
+                      dx={Array []}
+                      dy={Array []}
+                      font={Object {}}
+                      rotate={Array []}
+                      x={Array []}
+                      y={Array []}
+                    />
+                  </RNSVGText>
+                  <RNSVGText
+                    content={null}
+                    dx={Array []}
+                    dy={Array []}
+                    fill={3439329279}
+                    font={
+                      Object {
+                        "fontSize": 12,
+                        "textAnchor": "middle",
+                      }
+                    }
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        -0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotate={Array []}
+                    x={
+                      Array [
+                        162,
+                      ]
+                    }
+                    y={
+                      Array [
+                        190,
+                      ]
+                    }
+                  >
+                    <RNSVGTSpan
+                      content="26th"
+                      dx={Array []}
+                      dy={Array []}
+                      font={Object {}}
+                      rotate={Array []}
+                      x={Array []}
+                      y={Array []}
+                    />
+                  </RNSVGText>
+                  <RNSVGText
+                    content={null}
+                    dx={Array []}
+                    dy={Array []}
+                    fill={3439329279}
+                    font={
+                      Object {
+                        "fontSize": 12,
+                        "textAnchor": "middle",
+                      }
+                    }
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        -0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotate={Array []}
+                    x={
+                      Array [
+                        260,
+                      ]
+                    }
+                    y={
+                      Array [
+                        190,
+                      ]
+                    }
+                  >
+                    <RNSVGTSpan
+                      content="27th"
+                      dx={Array []}
+                      dy={Array []}
+                      font={Object {}}
+                      rotate={Array []}
+                      x={Array []}
+                      y={Array []}
+                    />
+                  </RNSVGText>
+                  <RNSVGText
+                    content={null}
+                    dx={Array []}
+                    dy={Array []}
+                    fill={3439329279}
+                    font={
+                      Object {
+                        "fontSize": 12,
+                        "textAnchor": "middle",
+                      }
+                    }
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        -0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotate={Array []}
+                    x={
+                      Array [
+                        358,
+                      ]
+                    }
+                    y={
+                      Array [
+                        190,
+                      ]
+                    }
+                  >
+                    <RNSVGTSpan
+                      content="28th"
+                      dx={Array []}
+                      dy={Array []}
+                      font={Object {}}
+                      rotate={Array []}
+                      x={Array []}
+                      y={Array []}
+                    />
+                  </RNSVGText>
+                  <RNSVGText
+                    content={null}
+                    dx={Array []}
+                    dy={Array []}
+                    fill={3439329279}
+                    font={
+                      Object {
+                        "fontSize": 12,
+                        "textAnchor": "middle",
+                      }
+                    }
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        -0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotate={Array []}
+                    x={
+                      Array [
+                        456,
+                      ]
+                    }
+                    y={
+                      Array [
+                        190,
+                      ]
+                    }
+                  >
+                    <RNSVGTSpan
+                      content="29th"
+                      dx={Array []}
+                      dy={Array []}
+                      font={Object {}}
+                      rotate={Array []}
+                      x={Array []}
+                      y={Array []}
+                    />
+                  </RNSVGText>
+                  <RNSVGText
+                    content={null}
+                    dx={Array []}
+                    dy={Array []}
+                    fill={3439329279}
+                    font={
+                      Object {
+                        "fontSize": 12,
+                        "textAnchor": "middle",
+                      }
+                    }
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        -0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotate={Array []}
+                    x={
+                      Array [
+                        554,
+                      ]
+                    }
+                    y={
+                      Array [
+                        190,
+                      ]
+                    }
+                  >
+                    <RNSVGTSpan
+                      content="30th"
+                      dx={Array []}
+                      dy={Array []}
+                      font={Object {}}
+                      rotate={Array []}
+                      x={Array []}
+                      y={Array []}
+                    />
+                  </RNSVGText>
+                  <RNSVGText
+                    content={null}
+                    dx={Array []}
+                    dy={Array []}
+                    fill={3439329279}
+                    font={
+                      Object {
+                        "fontSize": 12,
+                        "textAnchor": "middle",
+                      }
+                    }
+                    matrix={
+                      Array [
+                        1,
+                        0,
+                        -0,
+                        1,
+                        0,
+                        0,
+                      ]
+                    }
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                    rotate={Array []}
+                    x={
+                      Array [
+                        652,
+                      ]
+                    }
+                    y={
+                      Array [
+                        190,
+                      ]
+                    }
+                  >
+                    <RNSVGTSpan
+                      content="31st"
+                      dx={Array []}
+                      dy={Array []}
+                      font={Object {}}
+                      rotate={Array []}
+                      x={Array []}
+                      y={Array []}
+                    />
+                  </RNSVGText>
+                </RNSVGGroup>
+                <RNSVGGroup>
+                  <RNSVGPath
+                    d="M64 166 162 132.66666666666666 260 116 358 99.33333333333334 456 82.66666666666666 554 82.66666666666666 652 16"
+                    fill={null}
+                    propList={
+                      Array [
+                        "fill",
+                        "stroke",
+                        "strokeWidth",
+                      ]
+                    }
+                    stroke={872415231}
+                    strokeWidth={3}
+                  />
+                </RNSVGGroup>
+                <RNSVGGroup>
+                  <RNSVGPath
+                    d="M64 166 162 132.66666666666666 260 116 358 99.33333333333334 456 82.66666666666666 554 82.66666666666666 652 16 652 166 64 166z"
+                    fill={
+                      Array [
+                        1,
+                        "fillShadowGradient",
+                      ]
+                    }
+                    propList={
+                      Array [
+                        "fill",
+                        "strokeWidth",
+                      ]
+                    }
+                    strokeWidth={0}
+                  />
+                </RNSVGGroup>
+                <RNSVGGroup>
+                  <RNSVGCircle
+                    cx={64}
+                    cy={166}
+                    fill={3875536895}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    propList={
+                      Array [
+                        "fill",
+                        "stroke",
+                        "strokeWidth",
+                      ]
+                    }
+                    r="5"
+                    responsible={true}
+                    stroke={2583691263}
+                    strokeWidth="2"
+                  />
+                  <RNSVGCircle
+                    cx={64}
+                    cy={166}
+                    fill={4294967295}
+                    fillOpacity={0}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    propList={
+                      Array [
+                        "fill",
+                        "fillOpacity",
+                      ]
+                    }
+                    r="14"
+                    responsible={true}
+                  />
+                  <RNSVGCircle
+                    cx={162}
+                    cy={132.66666666666666}
+                    fill={3875536895}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    propList={
+                      Array [
+                        "fill",
+                        "stroke",
+                        "strokeWidth",
+                      ]
+                    }
+                    r="5"
+                    responsible={true}
+                    stroke={2583691263}
+                    strokeWidth="2"
+                  />
+                  <RNSVGCircle
+                    cx={162}
+                    cy={132.66666666666666}
+                    fill={4294967295}
+                    fillOpacity={0}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    propList={
+                      Array [
+                        "fill",
+                        "fillOpacity",
+                      ]
+                    }
+                    r="14"
+                    responsible={true}
+                  />
+                  <RNSVGCircle
+                    cx={260}
+                    cy={116}
+                    fill={3875536895}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    propList={
+                      Array [
+                        "fill",
+                        "stroke",
+                        "strokeWidth",
+                      ]
+                    }
+                    r="5"
+                    responsible={true}
+                    stroke={2583691263}
+                    strokeWidth="2"
+                  />
+                  <RNSVGCircle
+                    cx={260}
+                    cy={116}
+                    fill={4294967295}
+                    fillOpacity={0}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    propList={
+                      Array [
+                        "fill",
+                        "fillOpacity",
+                      ]
+                    }
+                    r="14"
+                    responsible={true}
+                  />
+                  <RNSVGCircle
+                    cx={358}
+                    cy={99.33333333333334}
+                    fill={3875536895}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    propList={
+                      Array [
+                        "fill",
+                        "stroke",
+                        "strokeWidth",
+                      ]
+                    }
+                    r="5"
+                    responsible={true}
+                    stroke={2583691263}
+                    strokeWidth="2"
+                  />
+                  <RNSVGCircle
+                    cx={358}
+                    cy={99.33333333333334}
+                    fill={4294967295}
+                    fillOpacity={0}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    propList={
+                      Array [
+                        "fill",
+                        "fillOpacity",
+                      ]
+                    }
+                    r="14"
+                    responsible={true}
+                  />
+                  <RNSVGCircle
+                    cx={456}
+                    cy={82.66666666666666}
+                    fill={3875536895}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    propList={
+                      Array [
+                        "fill",
+                        "stroke",
+                        "strokeWidth",
+                      ]
+                    }
+                    r="5"
+                    responsible={true}
+                    stroke={2583691263}
+                    strokeWidth="2"
+                  />
+                  <RNSVGCircle
+                    cx={456}
+                    cy={82.66666666666666}
+                    fill={4294967295}
+                    fillOpacity={0}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    propList={
+                      Array [
+                        "fill",
+                        "fillOpacity",
+                      ]
+                    }
+                    r="14"
+                    responsible={true}
+                  />
+                  <RNSVGCircle
+                    cx={554}
+                    cy={82.66666666666666}
+                    fill={3875536895}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    propList={
+                      Array [
+                        "fill",
+                        "stroke",
+                        "strokeWidth",
+                      ]
+                    }
+                    r="5"
+                    responsible={true}
+                    stroke={2583691263}
+                    strokeWidth="2"
+                  />
+                  <RNSVGCircle
+                    cx={554}
+                    cy={82.66666666666666}
+                    fill={4294967295}
+                    fillOpacity={0}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    propList={
+                      Array [
+                        "fill",
+                        "fillOpacity",
+                      ]
+                    }
+                    r="14"
+                    responsible={true}
+                  />
+                  <RNSVGCircle
+                    cx={652}
+                    cy={16}
+                    fill={3875536895}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    propList={
+                      Array [
+                        "fill",
+                        "stroke",
+                        "strokeWidth",
+                      ]
+                    }
+                    r="5"
+                    responsible={true}
+                    stroke={2583691263}
+                    strokeWidth="2"
+                  />
+                  <RNSVGCircle
+                    cx={652}
+                    cy={16}
+                    fill={4294967295}
+                    fillOpacity={0}
+                    onResponderGrant={[Function]}
+                    onResponderMove={[Function]}
+                    onResponderRelease={[Function]}
+                    onResponderTerminate={[Function]}
+                    onResponderTerminationRequest={[Function]}
+                    onStartShouldSetResponder={[Function]}
+                    propList={
+                      Array [
+                        "fill",
+                        "fillOpacity",
+                      ]
+                    }
+                    r="14"
+                    responsible={true}
+                  />
+                </RNSVGGroup>
+                <RNSVGGroup />
+              </RNSVGGroup>
+            </RNSVGGroup>
+          </RNSVGSvgView>
+        </View>
+        <View
+          style={
+            Array [
+              Object {
+                "alignItems": "center",
+                "display": "flex",
+                "flexDirection": "row",
+                "marginBottom": 0,
+                "marginLeft": "auto",
+                "marginRight": "auto",
+                "marginTop": 40,
+              },
+            ]
+          }
+        >
+          <View
+            accessible={true}
+            focusable={true}
+            isTVSelectable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "marginBottom": 0,
+                "marginLeft": 20,
+                "marginRight": 20,
+                "marginTop": 0,
+                "opacity": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 20,
+              }
+            }
+          >
+            <RNSVGSvgView
+              bbHeight={24}
+              bbWidth={24}
+              fill="none"
+              focusable={false}
+              height={24}
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  Object {
+                    "flex": 0,
+                    "height": 24,
+                    "width": 24,
+                  },
+                ]
+              }
+              width={24}
+            >
+              <RNSVGGroup
+                fill={null}
+                propList={
+                  Array [
+                    "fill",
+                  ]
+                }
+              >
+                <RNSVGPath
+                  d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm6 13H6v-2h12v2z"
+                  fill={4294967295}
+                  propList={
+                    Array [
+                      "fill",
+                    ]
+                  }
+                />
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+          <TextInput
+            allowFontScaling={true}
+            keyboardType="numeric"
+            maxLength={3}
+            onChangeText={[Function]}
+            onSubmit={[Function]}
+            rejectResponderTermination={true}
+            returnKeyType="done"
+            style={
+              Array [
+                Object {
+                  "color": "white",
+                  "fontFamily": "SFProRounded-Bold",
+                  "fontSize": 35,
+                },
+              ]
+            }
+            underlineColorAndroid="transparent"
+          >
+            78
+          </TextInput>
+          <Text
+            style={
+              Array [
+                Object {
+                  "color": "white",
+                  "fontFamily": "SFProRounded-SemiBold",
+                  "fontSize": 27,
+                  "marginLeft": 5,
+                  "marginTop": 4,
+                  "opacity": 0.6,
+                },
+              ]
+            }
+          >
+            kg
+          </Text>
+          <View
+            accessible={true}
+            focusable={true}
+            isTVSelectable={true}
+            onClick={[Function]}
+            onResponderGrant={[Function]}
+            onResponderMove={[Function]}
+            onResponderRelease={[Function]}
+            onResponderTerminate={[Function]}
+            onResponderTerminationRequest={[Function]}
+            onStartShouldSetResponder={[Function]}
+            style={
+              Object {
+                "marginBottom": 0,
+                "marginLeft": 20,
+                "marginRight": 20,
+                "marginTop": 0,
+                "opacity": 1,
+                "paddingBottom": 20,
+                "paddingLeft": 20,
+                "paddingRight": 20,
+                "paddingTop": 20,
+              }
+            }
+          >
+            <RNSVGSvgView
+              bbHeight={24}
+              bbWidth={24}
+              fill="none"
+              focusable={false}
+              height={24}
+              style={
+                Array [
+                  Object {
+                    "backgroundColor": "transparent",
+                    "borderWidth": 0,
+                  },
+                  Object {
+                    "flex": 0,
+                    "height": 24,
+                    "width": 24,
+                  },
+                ]
+              }
+              width={24}
+            >
+              <RNSVGGroup
+                fill={null}
+                propList={
+                  Array [
+                    "fill",
+                  ]
+                }
+              >
+                <RNSVGGroup
+                  clipPath="prefix__clip0"
+                >
+                  <RNSVGPath
+                    d="M12.29 2.81c5.225 0 9.476 4.25 9.476 9.476 0 5.226-4.251 9.477-9.477 9.477-5.225 0-9.477-4.251-9.477-9.477 0-5.225 4.252-9.477 9.477-9.477zm0-1.896C6.008.914.916 6.006.916 12.286s5.092 11.372 11.372 11.372 11.373-5.092 11.373-11.372S18.57.914 12.289.914zm5.685 12.32h-4.738v4.738h-1.895v-4.738H6.603v-1.896h4.739V6.6h1.895v4.739h4.738v1.895z"
+                    fill={4294967295}
+                    propList={
+                      Array [
+                        "fill",
+                      ]
+                    }
+                  />
+                </RNSVGGroup>
+                <RNSVGDefs>
+                  <RNSVGClipPath
+                    name="prefix__clip0"
+                  >
+                    <RNSVGPath
+                      d="M.917.914h22.745v22.744H.917z"
+                      fill={4294967295}
+                      propList={
+                        Array [
+                          "fill",
+                        ]
+                      }
+                    />
+                  </RNSVGClipPath>
+                </RNSVGDefs>
+              </RNSVGGroup>
+            </RNSVGSvgView>
+          </View>
+        </View>
+      </View>
+    </View>
+  </View>
+</Modal>
+`;
