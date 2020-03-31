@@ -184,24 +184,27 @@ const WeightModal: React.SFC<WeightModalProps> = ({
         />
 
         {/* Widget used to increase/decrease the value used by the modal */}
-        <ControlRow>
-          <IconButton onPress={() => updateValue(value - 1)}>
-            <Minus />
-          </IconButton>
-          <ValueText
-            maxLength={3}
-            onSubmit={Keyboard.dismiss}
-            returnKeyType="done"
-            keyboardType={'numeric'}
-            onChangeText={newValue => updateValue(newValue)}
-          >
-            {value}
-          </ValueText>
-          <UnitText>{unit}</UnitText>
-          <IconButton onPress={() => updateValue(value + 1)}>
-            <Plus />
-          </IconButton>
-        </ControlRow>
+        <WeightControl>
+          <WeightLabel>Today's Weight</WeightLabel>
+          <ControlRow>
+            <IconButton onPress={() => updateValue(value - 1)}>
+              <Minus />
+            </IconButton>
+            <ValueText
+              maxLength={3}
+              onSubmit={Keyboard.dismiss}
+              returnKeyType="done"
+              keyboardType={'numeric'}
+              onChangeText={newValue => updateValue(newValue)}
+            >
+              {value}
+            </ValueText>
+            <UnitText>{unit}</UnitText>
+            <IconButton onPress={() => updateValue(value + 1)}>
+              <Plus />
+            </IconButton>
+          </ControlRow>
+        </WeightControl>
       </ModalContent>
     </StyledModal>
   )
@@ -232,7 +235,7 @@ const FiltersContainer = styled.View`
 `
 
 const FilterBubble = styled.TouchableOpacity`
-  padding: 3px 7px;
+  padding: 4px 8px;
   border-radius: 10px;
   margin-right: 5px;
   background: rgba(255, 255, 255, ${props => (props.active ? 1 : 0.2)});
@@ -240,7 +243,7 @@ const FilterBubble = styled.TouchableOpacity`
 
 const FilterText = styled.Text`
   color: ${props => (props.active ? colors.paleGreen : 'white')};
-  font-size: 12px;
+  font-size: 13px;
   font-family: ${fonts.medium};
 `
 
@@ -251,12 +254,25 @@ const CrossButton = styled.TouchableOpacity`
   z-index: 2;
 `
 
+const WeightControl = styled.View`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 20px;
+`
+
+const WeightLabel = styled.Text`
+  font-family: ${fonts.semiBold};
+  color: white;
+  font-size: 14px;
+`
+
 const ControlRow = styled.View`
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: 0 auto;
-  margin-top: 40px;
 `
 
 const ValueText = styled.TextInput`

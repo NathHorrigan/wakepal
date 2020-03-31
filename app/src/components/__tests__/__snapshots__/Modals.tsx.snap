@@ -864,10 +864,10 @@ exports[`weight modal renders correctly 1`] = `
                 "borderRadius": 10,
                 "marginRight": 5,
                 "opacity": 1,
-                "paddingBottom": 3,
-                "paddingLeft": 7,
-                "paddingRight": 7,
-                "paddingTop": 3,
+                "paddingBottom": 4,
+                "paddingLeft": 8,
+                "paddingRight": 8,
+                "paddingTop": 4,
               }
             }
           >
@@ -878,7 +878,7 @@ exports[`weight modal renders correctly 1`] = `
                   Object {
                     "color": "#A3D9A5",
                     "fontFamily": "SFProRounded-Medium",
-                    "fontSize": 12,
+                    "fontSize": 13,
                   },
                 ]
               }
@@ -903,10 +903,10 @@ exports[`weight modal renders correctly 1`] = `
                 "borderRadius": 10,
                 "marginRight": 5,
                 "opacity": 1,
-                "paddingBottom": 3,
-                "paddingLeft": 7,
-                "paddingRight": 7,
-                "paddingTop": 3,
+                "paddingBottom": 4,
+                "paddingLeft": 8,
+                "paddingRight": 8,
+                "paddingTop": 4,
               }
             }
           >
@@ -917,7 +917,7 @@ exports[`weight modal renders correctly 1`] = `
                   Object {
                     "color": "white",
                     "fontFamily": "SFProRounded-Medium",
-                    "fontSize": 12,
+                    "fontSize": 13,
                   },
                 ]
               }
@@ -942,10 +942,10 @@ exports[`weight modal renders correctly 1`] = `
                 "borderRadius": 10,
                 "marginRight": 5,
                 "opacity": 1,
-                "paddingBottom": 3,
-                "paddingLeft": 7,
-                "paddingRight": 7,
-                "paddingTop": 3,
+                "paddingBottom": 4,
+                "paddingLeft": 8,
+                "paddingRight": 8,
+                "paddingTop": 4,
               }
             }
           >
@@ -956,7 +956,7 @@ exports[`weight modal renders correctly 1`] = `
                   Object {
                     "color": "white",
                     "fontFamily": "SFProRounded-Medium",
-                    "fontSize": 12,
+                    "fontSize": 13,
                   },
                 ]
               }
@@ -981,10 +981,10 @@ exports[`weight modal renders correctly 1`] = `
                 "borderRadius": 10,
                 "marginRight": 5,
                 "opacity": 1,
-                "paddingBottom": 3,
-                "paddingLeft": 7,
-                "paddingRight": 7,
-                "paddingTop": 3,
+                "paddingBottom": 4,
+                "paddingLeft": 8,
+                "paddingRight": 8,
+                "paddingTop": 4,
               }
             }
           >
@@ -995,7 +995,7 @@ exports[`weight modal renders correctly 1`] = `
                   Object {
                     "color": "white",
                     "fontFamily": "SFProRounded-Medium",
-                    "fontSize": 12,
+                    "fontSize": 13,
                   },
                 ]
               }
@@ -2271,177 +2271,97 @@ exports[`weight modal renders correctly 1`] = `
               Object {
                 "alignItems": "center",
                 "display": "flex",
-                "flexDirection": "row",
-                "marginBottom": 0,
-                "marginLeft": "auto",
-                "marginRight": "auto",
-                "marginTop": 40,
+                "flexDirection": "column",
+                "justifyContent": "flex-end",
+                "marginTop": 20,
               },
             ]
           }
         >
-          <View
-            accessible={true}
-            focusable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
-            style={
-              Object {
-                "marginBottom": 0,
-                "marginLeft": 20,
-                "marginRight": 20,
-                "marginTop": 0,
-                "opacity": 1,
-                "paddingBottom": 20,
-                "paddingLeft": 20,
-                "paddingRight": 20,
-                "paddingTop": 20,
-              }
-            }
-          >
-            <RNSVGSvgView
-              bbHeight={24}
-              bbWidth={24}
-              fill="none"
-              focusable={false}
-              height={24}
-              style={
-                Array [
-                  Object {
-                    "backgroundColor": "transparent",
-                    "borderWidth": 0,
-                  },
-                  Object {
-                    "flex": 0,
-                    "height": 24,
-                    "width": 24,
-                  },
-                ]
-              }
-              width={24}
-            >
-              <RNSVGGroup
-                fill={null}
-                propList={
-                  Array [
-                    "fill",
-                  ]
-                }
-              >
-                <RNSVGPath
-                  d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm6 13H6v-2h12v2z"
-                  fill={4294967295}
-                  propList={
-                    Array [
-                      "fill",
-                    ]
-                  }
-                />
-              </RNSVGGroup>
-            </RNSVGSvgView>
-          </View>
-          <TextInput
-            allowFontScaling={true}
-            keyboardType="numeric"
-            maxLength={3}
-            onChangeText={[Function]}
-            onSubmit={[Function]}
-            rejectResponderTermination={true}
-            returnKeyType="done"
-            style={
-              Array [
-                Object {
-                  "color": "white",
-                  "fontFamily": "SFProRounded-Bold",
-                  "fontSize": 35,
-                },
-              ]
-            }
-            underlineColorAndroid="transparent"
-          >
-            78
-          </TextInput>
           <Text
             style={
               Array [
                 Object {
                   "color": "white",
                   "fontFamily": "SFProRounded-SemiBold",
-                  "fontSize": 27,
-                  "marginLeft": 5,
-                  "marginTop": 4,
-                  "opacity": 0.6,
+                  "fontSize": 14,
                 },
               ]
             }
           >
-            kg
+            Today's Weight
           </Text>
           <View
-            accessible={true}
-            focusable={true}
-            isTVSelectable={true}
-            onClick={[Function]}
-            onResponderGrant={[Function]}
-            onResponderMove={[Function]}
-            onResponderRelease={[Function]}
-            onResponderTerminate={[Function]}
-            onResponderTerminationRequest={[Function]}
-            onStartShouldSetResponder={[Function]}
             style={
-              Object {
-                "marginBottom": 0,
-                "marginLeft": 20,
-                "marginRight": 20,
-                "marginTop": 0,
-                "opacity": 1,
-                "paddingBottom": 20,
-                "paddingLeft": 20,
-                "paddingRight": 20,
-                "paddingTop": 20,
-              }
+              Array [
+                Object {
+                  "alignItems": "center",
+                  "display": "flex",
+                  "flexDirection": "row",
+                  "marginBottom": 0,
+                  "marginLeft": "auto",
+                  "marginRight": "auto",
+                  "marginTop": 0,
+                },
+              ]
             }
           >
-            <RNSVGSvgView
-              bbHeight={24}
-              bbWidth={24}
-              fill="none"
-              focusable={false}
-              height={24}
+            <View
+              accessible={true}
+              focusable={true}
+              isTVSelectable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
               style={
-                Array [
-                  Object {
-                    "backgroundColor": "transparent",
-                    "borderWidth": 0,
-                  },
-                  Object {
-                    "flex": 0,
-                    "height": 24,
-                    "width": 24,
-                  },
-                ]
+                Object {
+                  "marginBottom": 0,
+                  "marginLeft": 20,
+                  "marginRight": 20,
+                  "marginTop": 0,
+                  "opacity": 1,
+                  "paddingBottom": 20,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "paddingTop": 20,
+                }
               }
-              width={24}
             >
-              <RNSVGGroup
-                fill={null}
-                propList={
+              <RNSVGSvgView
+                bbHeight={24}
+                bbWidth={24}
+                fill="none"
+                focusable={false}
+                height={24}
+                style={
                   Array [
-                    "fill",
+                    Object {
+                      "backgroundColor": "transparent",
+                      "borderWidth": 0,
+                    },
+                    Object {
+                      "flex": 0,
+                      "height": 24,
+                      "width": 24,
+                    },
                   ]
                 }
+                width={24}
               >
                 <RNSVGGroup
-                  clipPath="prefix__clip0"
+                  fill={null}
+                  propList={
+                    Array [
+                      "fill",
+                    ]
+                  }
                 >
                   <RNSVGPath
-                    d="M12.29 2.81c5.225 0 9.476 4.25 9.476 9.476 0 5.226-4.251 9.477-9.477 9.477-5.225 0-9.477-4.251-9.477-9.477 0-5.225 4.252-9.477 9.477-9.477zm0-1.896C6.008.914.916 6.006.916 12.286s5.092 11.372 11.372 11.372 11.373-5.092 11.373-11.372S18.57.914 12.289.914zm5.685 12.32h-4.738v4.738h-1.895v-4.738H6.603v-1.896h4.739V6.6h1.895v4.739h4.738v1.895z"
+                    d="M12 2c5.514 0 10 4.486 10 10s-4.486 10-10 10S2 17.514 2 12 6.486 2 12 2zm0-2C5.373 0 0 5.373 0 12s5.373 12 12 12 12-5.373 12-12S18.627 0 12 0zm6 13H6v-2h12v2z"
                     fill={4294967295}
                     propList={
                       Array [
@@ -2450,12 +2370,104 @@ exports[`weight modal renders correctly 1`] = `
                     }
                   />
                 </RNSVGGroup>
-                <RNSVGDefs>
-                  <RNSVGClipPath
-                    name="prefix__clip0"
+              </RNSVGSvgView>
+            </View>
+            <TextInput
+              allowFontScaling={true}
+              keyboardType="numeric"
+              maxLength={3}
+              onChangeText={[Function]}
+              onSubmit={[Function]}
+              rejectResponderTermination={true}
+              returnKeyType="done"
+              style={
+                Array [
+                  Object {
+                    "color": "white",
+                    "fontFamily": "SFProRounded-Bold",
+                    "fontSize": 35,
+                  },
+                ]
+              }
+              underlineColorAndroid="transparent"
+            >
+              78
+            </TextInput>
+            <Text
+              style={
+                Array [
+                  Object {
+                    "color": "white",
+                    "fontFamily": "SFProRounded-SemiBold",
+                    "fontSize": 27,
+                    "marginLeft": 5,
+                    "marginTop": 4,
+                    "opacity": 0.6,
+                  },
+                ]
+              }
+            >
+              kg
+            </Text>
+            <View
+              accessible={true}
+              focusable={true}
+              isTVSelectable={true}
+              onClick={[Function]}
+              onResponderGrant={[Function]}
+              onResponderMove={[Function]}
+              onResponderRelease={[Function]}
+              onResponderTerminate={[Function]}
+              onResponderTerminationRequest={[Function]}
+              onStartShouldSetResponder={[Function]}
+              style={
+                Object {
+                  "marginBottom": 0,
+                  "marginLeft": 20,
+                  "marginRight": 20,
+                  "marginTop": 0,
+                  "opacity": 1,
+                  "paddingBottom": 20,
+                  "paddingLeft": 20,
+                  "paddingRight": 20,
+                  "paddingTop": 20,
+                }
+              }
+            >
+              <RNSVGSvgView
+                bbHeight={24}
+                bbWidth={24}
+                fill="none"
+                focusable={false}
+                height={24}
+                style={
+                  Array [
+                    Object {
+                      "backgroundColor": "transparent",
+                      "borderWidth": 0,
+                    },
+                    Object {
+                      "flex": 0,
+                      "height": 24,
+                      "width": 24,
+                    },
+                  ]
+                }
+                width={24}
+              >
+                <RNSVGGroup
+                  fill={null}
+                  propList={
+                    Array [
+                      "fill",
+                    ]
+                  }
+                >
+                  <RNSVGGroup
+                    clipPath="prefix__clip0"
                   >
                     <RNSVGPath
-                      d="M.917.914h22.745v22.744H.917z"
+                      d="M12.29 2.81c5.225 0 9.476 4.25 9.476 9.476 0 5.226-4.251 9.477-9.477 9.477-5.225 0-9.477-4.251-9.477-9.477 0-5.225 4.252-9.477 9.477-9.477zm0-1.896C6.008.914.916 6.006.916 12.286s5.092 11.372 11.372 11.372 11.373-5.092 11.373-11.372S18.57.914 12.289.914zm5.685 12.32h-4.738v4.738h-1.895v-4.738H6.603v-1.896h4.739V6.6h1.895v4.739h4.738v1.895z"
                       fill={4294967295}
                       propList={
                         Array [
@@ -2463,10 +2475,25 @@ exports[`weight modal renders correctly 1`] = `
                         ]
                       }
                     />
-                  </RNSVGClipPath>
-                </RNSVGDefs>
-              </RNSVGGroup>
-            </RNSVGSvgView>
+                  </RNSVGGroup>
+                  <RNSVGDefs>
+                    <RNSVGClipPath
+                      name="prefix__clip0"
+                    >
+                      <RNSVGPath
+                        d="M.917.914h22.745v22.744H.917z"
+                        fill={4294967295}
+                        propList={
+                          Array [
+                            "fill",
+                          ]
+                        }
+                      />
+                    </RNSVGClipPath>
+                  </RNSVGDefs>
+                </RNSVGGroup>
+              </RNSVGSvgView>
+            </View>
           </View>
         </View>
       </View>
