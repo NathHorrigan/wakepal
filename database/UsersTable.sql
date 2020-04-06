@@ -1,4 +1,6 @@
-CREATE TABLE Users
+DROP TABLE IF EXISTS dbo.Users
+
+CREATE TABLE dbo.Users
 ( 
     userId INT NOT NULL,
     firstName VARCHAR(25) NOT NULL,

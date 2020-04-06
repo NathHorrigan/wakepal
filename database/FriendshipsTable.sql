@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS dbo.Friendships
+  
 CREATE TABLE dbo.Friendships
 ( 
     friendshipId INT NOT NULL,

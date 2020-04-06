@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS dbo.PasswordResets
+
 CREATE TABLE dbo.PasswordResets
 (
     resetId INT NOT NULL,
@@ -11,4 +13,3 @@ CREATE TABLE dbo.PasswordResets
 ALTER TABLE dbo.PasswordResets
 ADD CONSTRAINT FK_ResetUser
 FOREIGN KEY (resetId) REFERENCES dbo.Users(userId)
-

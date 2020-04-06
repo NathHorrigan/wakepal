@@ -1,3 +1,5 @@
+DROP TABLE IF EXISTS dbo.DailyFitness
+
 CREATE TABLE dbo.DailyFitness
 (
     fitnessId INT NOT NULL,
