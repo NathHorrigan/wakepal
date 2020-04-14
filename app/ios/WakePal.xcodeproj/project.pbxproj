@@ -84,7 +84,6 @@
 		63616F6B2445E8F100AD6540 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		63616F6D2445E8FA00AD6540 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		63616F6F2445E95900AD6540 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework; sourceTree = "<group>"; };
-		63616F732445ED1200AD6540 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
 		63DA8F4A2445F00E00258068 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = Pods/GoogleSignIn/Resources/GoogleSignIn.bundle; sourceTree = "<group>"; };
 		63EE350232B6969CA660CB05 /* libPods-WakePal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WakePal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		706E92E4E181244F14081429 /* Pods-WakePal-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakePal-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-WakePal-tvOS/Pods-WakePal-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
@@ -241,7 +240,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				63616F732445ED1200AD6540 /* GoogleSignIn.bundle */,
 				13B07FAE1A68108700A75B9A /* WakePal */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* WakePalTests */,
