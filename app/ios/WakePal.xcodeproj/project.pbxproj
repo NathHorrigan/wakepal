@@ -22,6 +22,13 @@
 		3138B6C481E24602A224FE43 /* SFProRounded-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27737AC6FCCD48C88ECBC23D /* SFProRounded-Heavy.ttf */; };
 		418D62E610DF85DAB5398F2A /* libPods-WakePal-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A831315AF5515D5B7AB6D0E7 /* libPods-WakePal-tvOSTests.a */; };
 		4BDBB72D34D44CB597809182 /* SFProRounded-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B23492AE341476D9E1C6AC9 /* SFProRounded-Light.ttf */; };
+		63616F642445E73500AD6540 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63616F632445E73500AD6540 /* GoogleService-Info.plist */; };
+		63616F682445E8E400AD6540 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63616F672445E8E400AD6540 /* AddressBook.framework */; };
+		63616F6A2445E8EB00AD6540 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63616F692445E8EB00AD6540 /* SafariServices.framework */; };
+		63616F6C2445E8F100AD6540 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63616F6B2445E8F100AD6540 /* SystemConfiguration.framework */; };
+		63616F6E2445E8FA00AD6540 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 63616F6D2445E8FA00AD6540 /* libz.tbd */; };
+		63DA8F4B2445F00E00258068 /* GoogleSignIn.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DA8F4A2445F00E00258068 /* GoogleSignIn.bundle */; };
+		63DA8F4C2445F02400258068 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63616F6F2445E95900AD6540 /* GoogleSignIn.framework */; };
 		81479427683D48038ED08FA8 /* SFProRounded-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4A66B53406B410D815D21F0 /* SFProRounded-Medium.ttf */; };
 		AB879E8F20A737C23041CF58 /* libPods-WakePal-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E621573CA5395C3435662A9 /* libPods-WakePal-tvOS.a */; };
 		D6B9121321EC435F9B73EF51 /* SFProRounded-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24D908E2A4CC4151817BD2B7 /* SFProRounded-Bold.ttf */; };
@@ -69,6 +76,16 @@
 		58045044DB4BB4877A12432F /* Pods-WakePalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakePalTests.debug.xcconfig"; path = "Target Support Files/Pods-WakePalTests/Pods-WakePalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5CFD04C9667F43F81A376BE4 /* Pods_WakePalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WakePalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63616F5C2445D07A00AD6540 /* liblottie-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "liblottie-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63616F5F2445E4F400AD6540 /* RNGoogleSignin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RNGoogleSignin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63616F632445E73500AD6540 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		63616F652445E89500AD6540 /* RNGoogleSignin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RNGoogleSignin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63616F672445E8E400AD6540 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		63616F692445E8EB00AD6540 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		63616F6B2445E8F100AD6540 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		63616F6D2445E8FA00AD6540 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		63616F6F2445E95900AD6540 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework; sourceTree = "<group>"; };
+		63616F732445ED1200AD6540 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GoogleSignIn.bundle; sourceTree = "<group>"; };
+		63DA8F4A2445F00E00258068 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = Pods/GoogleSignIn/Resources/GoogleSignIn.bundle; sourceTree = "<group>"; };
 		63EE350232B6969CA660CB05 /* libPods-WakePal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WakePal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		706E92E4E181244F14081429 /* Pods-WakePal-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakePal-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-WakePal-tvOS/Pods-WakePal-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		7581516714DE4F7EA6F6EA43 /* SFProRounded-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProRounded-Thin.ttf"; path = "../src/assets/fonts/SFProRounded-Thin.ttf"; sourceTree = "<group>"; };
@@ -100,6 +117,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				63616F6E2445E8FA00AD6540 /* libz.tbd in Frameworks */,
+				63DA8F4B2445F00E00258068 /* GoogleSignIn.bundle in Frameworks */,
+				63DA8F4C2445F02400258068 /* GoogleSignIn.framework in Frameworks */,
+				63616F6C2445E8F100AD6540 /* SystemConfiguration.framework in Frameworks */,
+				63616F6A2445E8EB00AD6540 /* SafariServices.framework in Frameworks */,
+				63616F682445E8E400AD6540 /* AddressBook.framework in Frameworks */,
 				0C89B89557B08E33BA004D1D /* Pods_WakePal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -173,6 +196,7 @@
 		13B07FAE1A68108700A75B9A /* WakePal */ = {
 			isa = PBXGroup;
 			children = (
+				63616F632445E73500AD6540 /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -187,6 +211,14 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				63616F6D2445E8FA00AD6540 /* libz.tbd */,
+				63616F6B2445E8F100AD6540 /* SystemConfiguration.framework */,
+				63DA8F4A2445F00E00258068 /* GoogleSignIn.bundle */,
+				63616F692445E8EB00AD6540 /* SafariServices.framework */,
+				63616F672445E8E400AD6540 /* AddressBook.framework */,
+				63616F652445E89500AD6540 /* RNGoogleSignin.framework */,
+				63616F6F2445E95900AD6540 /* GoogleSignIn.framework */,
+				63616F5F2445E4F400AD6540 /* RNGoogleSignin.framework */,
 				63616F5C2445D07A00AD6540 /* liblottie-ios.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
@@ -209,6 +241,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				63616F732445ED1200AD6540 /* GoogleSignIn.bundle */,
 				13B07FAE1A68108700A75B9A /* WakePal */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* WakePalTests */,
@@ -266,6 +299,7 @@
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
 				A3FA5FD8113FD16E8B71FDD4 /* [CP] Embed Pods Frameworks */,
+				ADBD7D64717473F739E3F3B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -386,6 +420,7 @@
 				81479427683D48038ED08FA8 /* SFProRounded-Medium.ttf in Resources */,
 				FEE25C2FED0E48A4876FB6EE /* SFProRounded-Regular.ttf in Resources */,
 				FC9466313DC84378895001E6 /* SFProRounded-Semibold.ttf in Resources */,
+				63616F642445E73500AD6540 /* GoogleService-Info.plist in Resources */,
 				0AD699C265D54C50AE6D936F /* SFProRounded-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -420,7 +455,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		232FB02654D05AD95B0E451D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -491,6 +526,10 @@
 				"${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework",
 				"${BUILT_PRODUCTS_DIR}/FBReactNativeSpec/FBReactNativeSpec.framework",
 				"${BUILT_PRODUCTS_DIR}/Folly/folly.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
 				"${BUILT_PRODUCTS_DIR}/RCTTypeSafety/RCTTypeSafety.framework",
 				"${BUILT_PRODUCTS_DIR}/RNSVG/RNSVG.framework",
 				"${BUILT_PRODUCTS_DIR}/React-Core/React.framework",
@@ -513,6 +552,7 @@
 				"${BUILT_PRODUCTS_DIR}/glog/glog.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
 				"${BUILT_PRODUCTS_DIR}/lottie-react-native/lottie_react_native.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 				"${BUILT_PRODUCTS_DIR}/react-native-app-auth/react_native_app_auth.framework",
 				"${BUILT_PRODUCTS_DIR}/react-native-config/react_native_config.framework",
 			);
@@ -522,6 +562,10 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoubleConversion.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBReactNativeSpec.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/folly.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTTypeSafety.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNSVG.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
@@ -544,6 +588,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/lottie_react_native.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_app_auth.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_config.framework",
 			);
@@ -572,6 +617,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADBD7D64717473F739E3F3B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WakePal/Pods-WakePal-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WakePal/Pods-WakePal-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FBB4BC73C8D27FEA52CA0645 /* [CP] Check Pods Manifest.lock */ = {
@@ -754,6 +817,10 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = WLVPA79URR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleSignIn/Frameworks",
+				);
 				INFOPLIST_FILE = WakePal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -781,6 +848,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WLVPA79URR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleSignIn/Frameworks",
+				);
 				INFOPLIST_FILE = WakePal/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

@@ -38,6 +38,9 @@ target 'WakePal' do
 
   pod 'react-native-config', :path => '../node_modules/react-native-config'
 
+  pod 'GoogleSignIn', '~> 5.0.2'
+  pod 'Firebase/Analytics'
+
   target 'WakePalTests' do
     inherit! :search_paths
     # Pods for testing

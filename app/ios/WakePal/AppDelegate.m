@@ -10,6 +10,8 @@
 #import <React/RCTBridge.h>
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import <RNGoogleSignin/RNGoogleSignin.h>
+@import Firebase;
 
 @implementation AppDelegate
 
@@ -25,6 +27,7 @@
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
   UIViewController *rootViewController = [UIViewController new];
   rootViewController.view = rootView;
+  [FIRApp configure];
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
   return YES;
@@ -40,7 +43,7 @@
 }
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *, id> *) options {
-  return [self.authorizationFlowManagerDelegate resumeExternalUserAgentFlowWithURL:url];
+  return [RNGoogleSignin application:app openURL:url options:options] || [self.authorizationFlowManagerDelegate resumeExternalUserAgentFlowWithURL:url];
 }
 
 @end
