@@ -2,6 +2,7 @@ platform :ios, '9.0'
 require_relative '../node_modules/@react-native-community/cli-platform-ios/native_modules'
 
 target 'WakePal' do
+  use_frameworks!
   # Pods for WakePal
   pod 'FBLazyVector', :path => "../node_modules/react-native/Libraries/FBLazyVector"
   pod 'FBReactNativeSpec', :path => "../node_modules/react-native/Libraries/FBReactNativeSpec"
@@ -33,8 +34,12 @@ target 'WakePal' do
   pod 'DoubleConversion', :podspec => '../node_modules/react-native/third-party-podspecs/DoubleConversion.podspec'
   pod 'glog', :podspec => '../node_modules/react-native/third-party-podspecs/glog.podspec'
   pod 'Folly', :podspec => '../node_modules/react-native/third-party-podspecs/Folly.podspec'
+  pod 'lottie-ios'
 
   pod 'react-native-config', :path => '../node_modules/react-native-config'
+
+  pod 'GoogleSignIn', '~> 5.0.2'
+  pod 'Firebase/Analytics'
 
   target 'WakePalTests' do
     inherit! :search_paths

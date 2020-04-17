@@ -8,26 +8,33 @@
 
 /* Begin PBXBuildFile section */
 		00E356F31AD99517003FC87E /* WakePalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* WakePalTests.m */; };
+		0AD699C265D54C50AE6D936F /* SFProRounded-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7581516714DE4F7EA6F6EA43 /* SFProRounded-Thin.ttf */; };
+		0C89B89557B08E33BA004D1D /* Pods_WakePal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 903F0E67B307D703A2878A8D /* Pods_WakePal.framework */; };
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		16718F29FA2D0420DC1BFCB9 /* Pods_WakePalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CFD04C9667F43F81A376BE4 /* Pods_WakePalTests.framework */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* WakePalTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* WakePalTests.m */; };
-		418D62E610DF85DAB5398F2A /* libPods-WakePal-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A831315AF5515D5B7AB6D0E7 /* libPods-WakePal-tvOSTests.a */; };
-		AB879E8F20A737C23041CF58 /* libPods-WakePal-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E621573CA5395C3435662A9 /* libPods-WakePal-tvOS.a */; };
-		C5F316F0CA57F72CD1120029 /* libPods-WakePal.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 63EE350232B6969CA660CB05 /* libPods-WakePal.a */; };
-		EF0D33987FB1A85A6E60B800 /* libPods-WakePalTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AA0FC1E5505045A3FA31E52F /* libPods-WakePalTests.a */; };
-		FD77E7A5F578445882046B9D /* SFProRounded-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 051F75AA25314AA68D2639FF /* SFProRounded-Black.ttf */; };
-		D6B9121321EC435F9B73EF51 /* SFProRounded-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24D908E2A4CC4151817BD2B7 /* SFProRounded-Bold.ttf */; };
 		3138B6C481E24602A224FE43 /* SFProRounded-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27737AC6FCCD48C88ECBC23D /* SFProRounded-Heavy.ttf */; };
+		418D62E610DF85DAB5398F2A /* libPods-WakePal-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A831315AF5515D5B7AB6D0E7 /* libPods-WakePal-tvOSTests.a */; };
 		4BDBB72D34D44CB597809182 /* SFProRounded-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B23492AE341476D9E1C6AC9 /* SFProRounded-Light.ttf */; };
+		63616F642445E73500AD6540 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63616F632445E73500AD6540 /* GoogleService-Info.plist */; };
+		63616F682445E8E400AD6540 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63616F672445E8E400AD6540 /* AddressBook.framework */; };
+		63616F6A2445E8EB00AD6540 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63616F692445E8EB00AD6540 /* SafariServices.framework */; };
+		63616F6C2445E8F100AD6540 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63616F6B2445E8F100AD6540 /* SystemConfiguration.framework */; };
+		63616F6E2445E8FA00AD6540 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 63616F6D2445E8FA00AD6540 /* libz.tbd */; };
+		63DA8F4B2445F00E00258068 /* GoogleSignIn.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DA8F4A2445F00E00258068 /* GoogleSignIn.bundle */; };
+		63DA8F4C2445F02400258068 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63616F6F2445E95900AD6540 /* GoogleSignIn.framework */; };
 		81479427683D48038ED08FA8 /* SFProRounded-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4A66B53406B410D815D21F0 /* SFProRounded-Medium.ttf */; };
-		FEE25C2FED0E48A4876FB6EE /* SFProRounded-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F1D6DEA96DD406C8962D21C /* SFProRounded-Regular.ttf */; };
+		AB879E8F20A737C23041CF58 /* libPods-WakePal-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E621573CA5395C3435662A9 /* libPods-WakePal-tvOS.a */; };
+		D6B9121321EC435F9B73EF51 /* SFProRounded-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24D908E2A4CC4151817BD2B7 /* SFProRounded-Bold.ttf */; };
 		FC9466313DC84378895001E6 /* SFProRounded-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF20C228035949019C7C4AD7 /* SFProRounded-Semibold.ttf */; };
-		0AD699C265D54C50AE6D936F /* SFProRounded-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 7581516714DE4F7EA6F6EA43 /* SFProRounded-Thin.ttf */; };
+		FD77E7A5F578445882046B9D /* SFProRounded-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 051F75AA25314AA68D2639FF /* SFProRounded-Black.ttf */; };
+		FEE25C2FED0E48A4876FB6EE /* SFProRounded-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F1D6DEA96DD406C8962D21C /* SFProRounded-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +59,8 @@
 		00E356EE1AD99517003FC87E /* WakePalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WakePalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* WakePalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WakePalTests.m; sourceTree = "<group>"; };
+		051F75AA25314AA68D2639FF /* SFProRounded-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProRounded-Black.ttf"; path = "../src/assets/fonts/SFProRounded-Black.ttf"; sourceTree = "<group>"; };
+		0F1D6DEA96DD406C8962D21C /* SFProRounded-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProRounded-Regular.ttf"; path = "../src/assets/fonts/SFProRounded-Regular.ttf"; sourceTree = "<group>"; };
 		13B07F961A680F5B00A75B9A /* WakePal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakePal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = WakePal/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = WakePal/AppDelegate.m; sourceTree = "<group>"; };
@@ -59,30 +68,39 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = WakePal/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = WakePal/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = WakePal/main.m; sourceTree = "<group>"; };
+		24D908E2A4CC4151817BD2B7 /* SFProRounded-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProRounded-Bold.ttf"; path = "../src/assets/fonts/SFProRounded-Bold.ttf"; sourceTree = "<group>"; };
+		27737AC6FCCD48C88ECBC23D /* SFProRounded-Heavy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProRounded-Heavy.ttf"; path = "../src/assets/fonts/SFProRounded-Heavy.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* WakePal-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WakePal-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* WakePal-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WakePal-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		393E0DD91A04B88D26A3A8D5 /* Pods-WakePal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakePal.release.xcconfig"; path = "Target Support Files/Pods-WakePal/Pods-WakePal.release.xcconfig"; sourceTree = "<group>"; };
 		58045044DB4BB4877A12432F /* Pods-WakePalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakePalTests.debug.xcconfig"; path = "Target Support Files/Pods-WakePalTests/Pods-WakePalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5CFD04C9667F43F81A376BE4 /* Pods_WakePalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WakePalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63616F5C2445D07A00AD6540 /* liblottie-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "liblottie-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		63616F5F2445E4F400AD6540 /* RNGoogleSignin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RNGoogleSignin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63616F632445E73500AD6540 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		63616F652445E89500AD6540 /* RNGoogleSignin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RNGoogleSignin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		63616F672445E8E400AD6540 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		63616F692445E8EB00AD6540 /* SafariServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SafariServices.framework; path = System/Library/Frameworks/SafariServices.framework; sourceTree = SDKROOT; };
+		63616F6B2445E8F100AD6540 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		63616F6D2445E8FA00AD6540 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		63616F6F2445E95900AD6540 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework; sourceTree = "<group>"; };
+		63DA8F4A2445F00E00258068 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = Pods/GoogleSignIn/Resources/GoogleSignIn.bundle; sourceTree = "<group>"; };
 		63EE350232B6969CA660CB05 /* libPods-WakePal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WakePal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		706E92E4E181244F14081429 /* Pods-WakePal-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakePal-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-WakePal-tvOS/Pods-WakePal-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
+		7581516714DE4F7EA6F6EA43 /* SFProRounded-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProRounded-Thin.ttf"; path = "../src/assets/fonts/SFProRounded-Thin.ttf"; sourceTree = "<group>"; };
 		76565A95D006110F55A2AB42 /* Pods-WakePalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakePalTests.release.xcconfig"; path = "Target Support Files/Pods-WakePalTests/Pods-WakePalTests.release.xcconfig"; sourceTree = "<group>"; };
+		8B23492AE341476D9E1C6AC9 /* SFProRounded-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProRounded-Light.ttf"; path = "../src/assets/fonts/SFProRounded-Light.ttf"; sourceTree = "<group>"; };
+		903F0E67B307D703A2878A8D /* Pods_WakePal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WakePal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E621573CA5395C3435662A9 /* libPods-WakePal-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WakePal-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D01D9F702BC6391A185C94 /* Pods-WakePal-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakePal-tvOS.release.xcconfig"; path = "Target Support Files/Pods-WakePal-tvOS/Pods-WakePal-tvOS.release.xcconfig"; sourceTree = "<group>"; };
 		A831315AF5515D5B7AB6D0E7 /* libPods-WakePal-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WakePal-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		AA0FC1E5505045A3FA31E52F /* libPods-WakePalTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WakePalTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF20C228035949019C7C4AD7 /* SFProRounded-Semibold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProRounded-Semibold.ttf"; path = "../src/assets/fonts/SFProRounded-Semibold.ttf"; sourceTree = "<group>"; };
+		D4A66B53406B410D815D21F0 /* SFProRounded-Medium.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProRounded-Medium.ttf"; path = "../src/assets/fonts/SFProRounded-Medium.ttf"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
 		F2804D0E0CB3E29E173939E0 /* Pods-WakePal-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakePal-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-WakePal-tvOSTests/Pods-WakePal-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		F5BAEAC8B59532F4FE8BC4DF /* Pods-WakePal.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakePal.debug.xcconfig"; path = "Target Support Files/Pods-WakePal/Pods-WakePal.debug.xcconfig"; sourceTree = "<group>"; };
 		F68C4660C358176430AFF576 /* Pods-WakePal-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakePal-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-WakePal-tvOSTests/Pods-WakePal-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
-		051F75AA25314AA68D2639FF /* SFProRounded-Black.ttf */ = {isa = PBXFileReference; name = "SFProRounded-Black.ttf"; path = "../src/assets/fonts/SFProRounded-Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		24D908E2A4CC4151817BD2B7 /* SFProRounded-Bold.ttf */ = {isa = PBXFileReference; name = "SFProRounded-Bold.ttf"; path = "../src/assets/fonts/SFProRounded-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		27737AC6FCCD48C88ECBC23D /* SFProRounded-Heavy.ttf */ = {isa = PBXFileReference; name = "SFProRounded-Heavy.ttf"; path = "../src/assets/fonts/SFProRounded-Heavy.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		8B23492AE341476D9E1C6AC9 /* SFProRounded-Light.ttf */ = {isa = PBXFileReference; name = "SFProRounded-Light.ttf"; path = "../src/assets/fonts/SFProRounded-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		D4A66B53406B410D815D21F0 /* SFProRounded-Medium.ttf */ = {isa = PBXFileReference; name = "SFProRounded-Medium.ttf"; path = "../src/assets/fonts/SFProRounded-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		0F1D6DEA96DD406C8962D21C /* SFProRounded-Regular.ttf */ = {isa = PBXFileReference; name = "SFProRounded-Regular.ttf"; path = "../src/assets/fonts/SFProRounded-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		AF20C228035949019C7C4AD7 /* SFProRounded-Semibold.ttf */ = {isa = PBXFileReference; name = "SFProRounded-Semibold.ttf"; path = "../src/assets/fonts/SFProRounded-Semibold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
-		7581516714DE4F7EA6F6EA43 /* SFProRounded-Thin.ttf */ = {isa = PBXFileReference; name = "SFProRounded-Thin.ttf"; path = "../src/assets/fonts/SFProRounded-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +108,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EF0D33987FB1A85A6E60B800 /* libPods-WakePalTests.a in Frameworks */,
+				16718F29FA2D0420DC1BFCB9 /* Pods_WakePalTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +116,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C5F316F0CA57F72CD1120029 /* libPods-WakePal.a in Frameworks */,
+				63616F6E2445E8FA00AD6540 /* libz.tbd in Frameworks */,
+				63DA8F4B2445F00E00258068 /* GoogleSignIn.bundle in Frameworks */,
+				63DA8F4C2445F02400258068 /* GoogleSignIn.framework in Frameworks */,
+				63616F6C2445E8F100AD6540 /* SystemConfiguration.framework in Frameworks */,
+				63616F6A2445E8EB00AD6540 /* SafariServices.framework in Frameworks */,
+				63616F682445E8E400AD6540 /* AddressBook.framework in Frameworks */,
+				0C89B89557B08E33BA004D1D /* Pods_WakePal.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,6 +162,21 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		087FEB77AE164E7BBC4BBE11 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				051F75AA25314AA68D2639FF /* SFProRounded-Black.ttf */,
+				24D908E2A4CC4151817BD2B7 /* SFProRounded-Bold.ttf */,
+				27737AC6FCCD48C88ECBC23D /* SFProRounded-Heavy.ttf */,
+				8B23492AE341476D9E1C6AC9 /* SFProRounded-Light.ttf */,
+				D4A66B53406B410D815D21F0 /* SFProRounded-Medium.ttf */,
+				0F1D6DEA96DD406C8962D21C /* SFProRounded-Regular.ttf */,
+				AF20C228035949019C7C4AD7 /* SFProRounded-Semibold.ttf */,
+				7581516714DE4F7EA6F6EA43 /* SFProRounded-Thin.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
 		0A7CAB06D0C7462049BF0454 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,6 +195,7 @@
 		13B07FAE1A68108700A75B9A /* WakePal */ = {
 			isa = PBXGroup;
 			children = (
+				63616F632445E73500AD6540 /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
@@ -170,12 +210,22 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				63616F6D2445E8FA00AD6540 /* libz.tbd */,
+				63616F6B2445E8F100AD6540 /* SystemConfiguration.framework */,
+				63DA8F4A2445F00E00258068 /* GoogleSignIn.bundle */,
+				63616F692445E8EB00AD6540 /* SafariServices.framework */,
+				63616F672445E8E400AD6540 /* AddressBook.framework */,
+				63616F652445E89500AD6540 /* RNGoogleSignin.framework */,
+				63616F6F2445E95900AD6540 /* GoogleSignIn.framework */,
+				63616F5F2445E4F400AD6540 /* RNGoogleSignin.framework */,
+				63616F5C2445D07A00AD6540 /* liblottie-ios.a */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				63EE350232B6969CA660CB05 /* libPods-WakePal.a */,
 				9E621573CA5395C3435662A9 /* libPods-WakePal-tvOS.a */,
 				A831315AF5515D5B7AB6D0E7 /* libPods-WakePal-tvOSTests.a */,
-				AA0FC1E5505045A3FA31E52F /* libPods-WakePalTests.a */,
+				903F0E67B307D703A2878A8D /* Pods_WakePal.framework */,
+				5CFD04C9667F43F81A376BE4 /* Pods_WakePalTests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -214,22 +264,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		087FEB77AE164E7BBC4BBE11 /* Resources */ = {
-			isa = "PBXGroup";
-			children = (
-				051F75AA25314AA68D2639FF /* SFProRounded-Black.ttf */,
-				24D908E2A4CC4151817BD2B7 /* SFProRounded-Bold.ttf */,
-				27737AC6FCCD48C88ECBC23D /* SFProRounded-Heavy.ttf */,
-				8B23492AE341476D9E1C6AC9 /* SFProRounded-Light.ttf */,
-				D4A66B53406B410D815D21F0 /* SFProRounded-Medium.ttf */,
-				0F1D6DEA96DD406C8962D21C /* SFProRounded-Regular.ttf */,
-				AF20C228035949019C7C4AD7 /* SFProRounded-Semibold.ttf */,
-				7581516714DE4F7EA6F6EA43 /* SFProRounded-Thin.ttf */,
-			);
-			name = Resources;
-			sourceTree = "<group>";
-			path = "";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -262,6 +296,8 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
+				A3FA5FD8113FD16E8B71FDD4 /* [CP] Embed Pods Frameworks */,
+				ADBD7D64717473F739E3F3B3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -382,6 +418,7 @@
 				81479427683D48038ED08FA8 /* SFProRounded-Medium.ttf in Resources */,
 				FEE25C2FED0E48A4876FB6EE /* SFProRounded-Regular.ttf in Resources */,
 				FC9466313DC84378895001E6 /* SFProRounded-Semibold.ttf in Resources */,
+				63616F642445E73500AD6540 /* GoogleService-Info.plist in Resources */,
 				0AD699C265D54C50AE6D936F /* SFProRounded-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,7 +453,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
+			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
 		};
 		232FB02654D05AD95B0E451D /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -476,6 +513,88 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		A3FA5FD8113FD16E8B71FDD4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WakePal/Pods-WakePal-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AppAuth/AppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/DoubleConversion/DoubleConversion.framework",
+				"${BUILT_PRODUCTS_DIR}/FBReactNativeSpec/FBReactNativeSpec.framework",
+				"${BUILT_PRODUCTS_DIR}/Folly/folly.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMAppAuth/GTMAppAuth.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/RCTTypeSafety/RCTTypeSafety.framework",
+				"${BUILT_PRODUCTS_DIR}/RNSVG/RNSVG.framework",
+				"${BUILT_PRODUCTS_DIR}/React-Core/React.framework",
+				"${BUILT_PRODUCTS_DIR}/React-CoreModules/CoreModules.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTActionSheet/RCTActionSheet.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTAnimation/RCTAnimation.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTBlob/RCTBlob.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTImage/RCTImage.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTLinking/RCTLinking.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTNetwork/RCTNetwork.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTSettings/RCTSettings.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTText/RCTText.framework",
+				"${BUILT_PRODUCTS_DIR}/React-RCTVibration/RCTVibration.framework",
+				"${BUILT_PRODUCTS_DIR}/React-cxxreact/cxxreact.framework",
+				"${BUILT_PRODUCTS_DIR}/React-jsi/jsi.framework",
+				"${BUILT_PRODUCTS_DIR}/React-jsiexecutor/jsireact.framework",
+				"${BUILT_PRODUCTS_DIR}/React-jsinspector/jsinspector.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactCommon/ReactCommon.framework",
+				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
+				"${BUILT_PRODUCTS_DIR}/glog/glog.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-ios/Lottie.framework",
+				"${BUILT_PRODUCTS_DIR}/lottie-react-native/lottie_react_native.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${BUILT_PRODUCTS_DIR}/react-native-app-auth/react_native_app_auth.framework",
+				"${BUILT_PRODUCTS_DIR}/react-native-config/react_native_config.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DoubleConversion.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBReactNativeSpec.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/folly.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMAppAuth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTTypeSafety.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNSVG.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreModules.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTActionSheet.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTAnimation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTBlob.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTLinking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTNetwork.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTSettings.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTText.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTVibration.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/cxxreact.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsi.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsireact.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/jsinspector.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactCommon.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/glog.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Lottie.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/lottie_react_native.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_app_auth.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_config.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WakePal/Pods-WakePal-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		AA0B999ECA0E6DDDA16A9DC9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -496,6 +615,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ADBD7D64717473F739E3F3B3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WakePal/Pods-WakePal-resources.sh",
+				"${PODS_ROOT}/GoogleSignIn/Resources/GoogleSignIn.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleSignIn.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WakePal/Pods-WakePal-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FBB4BC73C8D27FEA52CA0645 /* [CP] Check Pods Manifest.lock */ = {
@@ -678,7 +815,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEAD_CODE_STRIPPING = NO;
 				DEVELOPMENT_TEAM = WLVPA79URR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleSignIn/Frameworks",
+				);
 				INFOPLIST_FILE = WakePal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 0.0.1;
 				OTHER_LDFLAGS = (
@@ -689,6 +831,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.WakePal;
 				PRODUCT_NAME = WakePal;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRIP_SWIFT_SYMBOLS = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};
@@ -703,7 +846,12 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = WLVPA79URR;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/GoogleSignIn/Frameworks",
+				);
 				INFOPLIST_FILE = WakePal/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MARKETING_VERSION = 0.0.1;
 				OTHER_LDFLAGS = (
@@ -714,6 +862,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.WakePal;
 				PRODUCT_NAME = WakePal;
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				STRIP_SWIFT_SYMBOLS = NO;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 			};

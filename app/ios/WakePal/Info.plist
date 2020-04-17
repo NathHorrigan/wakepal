@@ -20,6 +20,25 @@
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
+	<key>CFBundleURLTypes</key>
+	<array>
+		<dict>
+			<key>CFBundleURLName</key>
+			<string>com.wakepal</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.wakepal</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>com.googleusercontent.apps.275175457924-lds4ksfc0dvij2p3go8abimetilthq2c</string>
+			</array>
+		</dict>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>LSRequiresIPhoneOS</key>
@@ -38,7 +57,18 @@
 		</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string/>
+	<string></string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>SFProRounded-Black.ttf</string>
+		<string>SFProRounded-Bold.ttf</string>
+		<string>SFProRounded-Heavy.ttf</string>
+		<string>SFProRounded-Light.ttf</string>
+		<string>SFProRounded-Medium.ttf</string>
+		<string>SFProRounded-Regular.ttf</string>
+		<string>SFProRounded-Semibold.ttf</string>
+		<string>SFProRounded-Thin.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIRequiredDeviceCapabilities</key>
@@ -55,27 +85,5 @@
 	</array>
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
-	<key>UIAppFonts</key>
-	<array>
-		<string>SFProRounded-Black.ttf</string>
-		<string>SFProRounded-Bold.ttf</string>
-		<string>SFProRounded-Heavy.ttf</string>
-		<string>SFProRounded-Light.ttf</string>
-		<string>SFProRounded-Medium.ttf</string>
-		<string>SFProRounded-Regular.ttf</string>
-		<string>SFProRounded-Semibold.ttf</string>
-		<string>SFProRounded-Thin.ttf</string>
-	</array>
-	<key>CFBundleURLTypes</key>
-	<array>
-	<dict>
-		<key>CFBundleURLName</key>
-		<string>com.wakepal</string>
-		<key>CFBundleURLSchemes</key>
-		<array>
-		<string>com.wakepal</string>
-		</array>
-	</dict>
-	</array>
 </dict>
 </plist>
