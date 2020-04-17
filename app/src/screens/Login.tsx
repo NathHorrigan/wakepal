@@ -36,15 +36,7 @@ const LoginScreen: SFC = () => {
       <Logo>WakePal</Logo>
       <Slogan>Measuring your life metrics.</Slogan>
       <ButtonsContainer>
-        <AppleButton
-          buttonStyle={AppleButton.Style.BLACK}
-          buttonType={AppleButton.Type.SIGN_IN}
-          style={{
-            width: 300,
-            height: 45,
-          }}
-          onPress={() => console.log('NOT IMPLEMENTED')}
-        />
+        <AppleLoginButton onPress={() => console.log('NOT IMPLEMENTED')} />
         <GoogleButton onPress={onGoogleClick}>
           <GoogleIcon />
           <GoogleText>Continue with Google</GoogleText>
@@ -65,6 +57,14 @@ const ButtonsContainer = styled.View`
   width: 300px;
   margin: 0 auto;
   margin-top: 230px;
+`
+
+const AppleLoginButton = styled(AppleButton).attrs({
+  buttonStyle: AppleButton.Style.BLACK,
+  buttonType: AppleButton.Type.SIGN_IN,
+})`
+  width: 300px;
+  height: 45px;
 `
 
 const GoogleButton = styled.TouchableOpacity`

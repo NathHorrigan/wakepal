@@ -1,11 +1,9 @@
 import React, { SFC } from 'react'
-import { Dimensions } from 'react-native'
 import styled from 'styled-components/native'
 
-import { SleepStage, SleepSpan } from '@api/sleep/SleepRecording'
-import { colors, fonts } from '@utils/theme'
+import { fonts } from '@utils/theme'
 
-const SleepHeader = () => {
+const SleepHeader: SFC = () => {
   return (
     <HeaderConatiner>
       <HeaderTitle>Sleep Diary</HeaderTitle>
