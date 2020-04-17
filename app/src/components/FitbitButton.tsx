@@ -33,12 +33,15 @@ const FitbitButton: SFC<FitbitButtonProps> = ({
 
 export const Button = styled(WideStyledButton)`
   flex-direction: row;
-  width: 250px;
+  width: 300px;
   height: 50px;
   color: white;
   align-items: center;
   justify-content: center;
   padding-bottom: 0px;
+  border-radius: 5px;
+  margin: 0 auto;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.23);
 `
 
 const IconContainer = styled.View`
