@@ -69,22 +69,18 @@ const StepStage: OnboardingStage = ({ value, setValue }) => {
 }
 
 const TrackingStage: OnboardingStage = ({ setValue }) => {
-  const onFitbitClick = () => {
-    setValue('fitbit')
-  }
-
   return (
     <SetupStep>
       <SetupHeading color={colors.coral}>
         How do you want to track activity?
       </SetupHeading>
       <Heart />
-      <FitbitButton onPress={onFitbitClick} />
-      <ConnectButton>
+      <FitbitButton onPress={() => setValue('FITBIT')} />
+      <ConnectButton onPress={() => setValue('HEALTHKIT')}>
         <HealthKitLogo />
         <HealthkitText>Sync with HealthKit</HealthkitText>
       </ConnectButton>
-      <ConnectButton>
+      <ConnectButton onPress={() => setValue('GOOGLE')}>
         <GoogleFitLogo />
         <GoogleFitText>Connect to Google Fit</GoogleFitText>
       </ConnectButton>
@@ -98,13 +94,13 @@ const OnboardingScreen: SFC = () => {
   const [weight, setWeight] = useState(70)
   const [steps, setSteps] = useState(10000)
 
-  const onCompleteOnboarding = () => {
+  const onCompleteOnboarding = (trackingMethod: string) => {
     // This will result in a redux update in the future.
     console.log({
-      stage,
+      steps,
       intake,
       weight,
-      trackingMethod: null,
+      trackingMethod,
     })
   }
 
