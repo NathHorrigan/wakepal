@@ -50,29 +50,41 @@ const WaterModal: React.SFC<WaterModalProps> = ({
         <WaterIcon>
           <Water width={80} height={80} />
         </WaterIcon>
-
-        <ControlRow>
-          <IconButton onPress={() => updateValue(value - 1)}>
-            <Minus />
-          </IconButton>
-          <ValueText
-            maxLength={2}
-            onSubmit={Keyboard.dismiss}
-            returnKeyType="done"
-            keyboardType={'numeric'}
-            onChangeText={newValue => updateValue(newValue)}
-          >
-            {value}
-          </ValueText>
-          <UnitText>{unit}</UnitText>
-          <IconButton onPress={() => updateValue(value + 1)}>
-            <Plus />
-          </IconButton>
-        </ControlRow>
+        <WaterControlRow value={value} unit={unit} updateValue={updateValue} />
       </ModalContent>
     </StyledModal>
   )
 }
+
+export const WaterControlRow = ({
+  color = 'white',
+  value,
+  unit,
+  updateValue,
+  increment = 1,
+}) => (
+  <ControlRow>
+    <IconButton
+      onPress={() => (value !== 0 ? updateValue(value - increment) : null)}
+    >
+      <Minus fill={color} />
+    </IconButton>
+    <ValueText
+      color={color}
+      maxLength={2}
+      onSubmit={Keyboard.dismiss}
+      returnKeyType="done"
+      keyboardType={'numeric'}
+      onChangeText={newValue => updateValue(newValue)}
+    >
+      {value}
+    </ValueText>
+    <UnitText color={color}>{unit}</UnitText>
+    <IconButton onPress={() => updateValue(value + increment)}>
+      <Plus fill={color} />
+    </IconButton>
+  </ControlRow>
+)
 
 const StyledModal = styled(Modal)`
   justify-content: flex-end;
@@ -142,17 +154,17 @@ const ControlRow = styled.View`
 `
 
 const ValueText = styled.TextInput`
-  color: white;
+  color: ${props => props.color};
   font-size: 35px;
   font-family: ${fonts.bold};
 `
 
 const UnitText = styled.Text`
   opacity: 0.6;
-  color: white;
+  color: ${props => props.color};
   font-family: ${fonts.semiBold};
-  font-size: 27px;
-  margin-top: 4px;
+  font-size: 20px;
+  margin-top: 10px;
   margin-left: 5px;
 `
 
