@@ -8,7 +8,7 @@ export const colors = {
   darkBlue: '#035388',
   blue: '#2680C2',
   paleBlue: '#62B0E8',
-  orange: '#F97F51',
+  orange: '#FFAA49',
   fitbit: '#4dadb7',
 }
 
