@@ -8,17 +8,24 @@ interface LoadingScreenProps {
 
 const LoadingScreen: SFC<LoadingScreenProps> = ({ navigation }) => {
   // Extract from state if we're logged in...
-  const isAuthenticated = useSelector(
-    (state: any) => state.authentication.userAuthenticated
+  const { userAuthenticated, userOnboarded } = useSelector(
+    (state: any) => state.authentication
   )
 
-  if (!isAuthenticated) {
-    // if not logged in then load the LoginScreen
+  // if not logged in then load the LoginScreen
+  if (!userAuthenticated) {
     navigation.navigate('Login')
-  } else {
-    // if logged in then load the HomeScreen
-    navigation.navigate('Home')
+    return null
   }
+
+  // Check the user has been onboarded (and therefor we have their details)
+  if (!userOnboarded) {
+    navigation.navigate('Onboarding')
+    return null
+  }
+
+  // if logged in and onboarded then load the HomeScreen
+  navigation.navigate('Home')
 
   // Hmmm something has gone wrong if this is reached!
   return null

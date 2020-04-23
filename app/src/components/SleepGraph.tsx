@@ -4,7 +4,7 @@ import styled from 'styled-components/native'
 import differenceInHours from 'date-fns/difference_in_hours'
 import addHours from 'date-fns/add_hours'
 
-import { SleepStage } from '@api/sleep/SleepRecording'
+import { SleepStage } from '@api/fitness/SleepRecording'
 import { colors, fonts } from '@utils/theme'
 
 interface SleepStageSegment {

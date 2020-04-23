@@ -1,12 +1,15 @@
 import React, { SFC, useState } from 'react'
 import styled from 'styled-components/native'
 import LottieView from 'lottie-react-native'
+import { useDispatch } from 'react-redux'
+import { SafeAreaView } from 'react-native-safe-area-context'
 
 import FitbitButton from '@components/FitbitButton'
 import { WaterControlRow } from '@components/WaterModal'
 import { ButtonText } from '@components/ActionButton'
 import { HealthKitLogo, GoogleFitLogo } from '@components/icons'
-
+import { FitnessTracker } from '@api/fitness'
+import { setOnboardingData } from '@redux/actions'
 import { fonts, colors } from '@utils/theme'
 
 interface OnboardingStageProps {
@@ -75,12 +78,12 @@ const TrackingStage: OnboardingStage = ({ setValue }) => {
         How do you want to track activity?
       </SetupHeading>
       <Heart />
-      <FitbitButton onPress={() => setValue('FITBIT')} />
-      <ConnectButton onPress={() => setValue('HEALTHKIT')}>
+      <FitbitButton onPress={() => setValue(FitnessTracker.Fitbit)} />
+      <ConnectButton onPress={() => setValue(FitnessTracker.Healthkit)}>
         <HealthKitLogo />
         <HealthkitText>Sync with HealthKit</HealthkitText>
       </ConnectButton>
-      <ConnectButton onPress={() => setValue('GOOGLE')}>
+      <ConnectButton onPress={() => setValue(FitnessTracker.GoogleFit)}>
         <GoogleFitLogo />
         <GoogleFitText>Connect to Google Fit</GoogleFitText>
       </ConnectButton>
@@ -89,6 +92,9 @@ const TrackingStage: OnboardingStage = ({ setValue }) => {
 }
 
 const OnboardingScreen: SFC = () => {
+  // Global State
+  const dispatch = useDispatch()
+  // Local State
   const [stage, setStage] = useState(0)
   const [intake, setIntake] = useState(3)
   const [weight, setWeight] = useState(70)
@@ -96,12 +102,7 @@ const OnboardingScreen: SFC = () => {
 
   const onCompleteOnboarding = (trackingMethod: string) => {
     // This will result in a redux update in the future.
-    console.log({
-      steps,
-      intake,
-      weight,
-      trackingMethod,
-    })
+    dispatch(setOnboardingData(steps, intake, weight, trackingMethod))
   }
 
   const renderStage = () => {
@@ -118,25 +119,27 @@ const OnboardingScreen: SFC = () => {
   }
 
   return (
-    <OnboardingContainer>
-      <Heading>Let's get started!</Heading>
-      {renderStage()}
+    <SafeAreaView>
+      <OnboardingContainer>
+        <Heading>Let's get started!</Heading>
+        {renderStage()}
 
-      <OnboardingControl>
-        <OnboardingButton
-          onPress={() => setStage(stage - 1)}
-          disabled={stage < 1}
-        >
-          <OnboardingButtonText>Prev</OnboardingButtonText>
-        </OnboardingButton>
-        <OnboardingButton
-          onPress={() => setStage(stage + 1)}
-          disabled={stage === 3}
-        >
-          <OnboardingButtonText>Next</OnboardingButtonText>
-        </OnboardingButton>
-      </OnboardingControl>
-    </OnboardingContainer>
+        <OnboardingControl>
+          <OnboardingButton
+            onPress={() => setStage(stage - 1)}
+            disabled={stage < 1}
+          >
+            <OnboardingButtonText>Prev</OnboardingButtonText>
+          </OnboardingButton>
+          <OnboardingButton
+            onPress={() => setStage(stage + 1)}
+            disabled={stage === 3}
+          >
+            <OnboardingButtonText>Next</OnboardingButtonText>
+          </OnboardingButton>
+        </OnboardingControl>
+      </OnboardingContainer>
+    </SafeAreaView>
   )
 }
 

@@ -1,7 +1,7 @@
 import React, { SFC } from 'react'
 import styled from 'styled-components/native'
 import { getSleepSummary } from '@components/SleepGraph'
-import { SleepSpan } from '@api/sleep/SleepRecording'
+import { SleepSpan } from '@api/fitness/SleepRecording'
 import { colors, fonts } from '@utils/theme'
 
 export interface ActionButtonProps {
