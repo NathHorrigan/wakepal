@@ -75,6 +75,7 @@ const LeftColumn = styled.View`
 const RightColumn = styled(LeftColumn)`
   align-items: flex-end;
   justify-content: flex-end;
+  top: -1px;
 `
 
 const DateText = styled.Text`
@@ -84,7 +85,7 @@ const DateText = styled.Text`
 `
 
 const WeatherText = styled(DateText)`
-  font-size: 20px;
+  font-size: 15px;
   text-transform: capitalize;
 `
 

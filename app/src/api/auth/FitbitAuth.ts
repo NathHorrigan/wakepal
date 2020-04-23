@@ -16,8 +16,6 @@ const config = {
 }
 
 export class FitbitAuthProvider extends OAuthProvider {
-  private static session?: OAuthSession
-
   static async authenticate(): Promise<OAuthSession> {
     // Trigger prompt for the user to login with Fitbit
     const authState = await authorize(config)

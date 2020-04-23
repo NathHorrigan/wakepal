@@ -20,6 +20,7 @@ module.exports = {
           '@components': './src/components',
           '@animations': './src/animations',
           '@screens': './src/screens',
+          '@redux': './src/redux',
           '@utils': './src/utils',
           '@api': './src/api',
         },
