@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using PRCO204.Models;
 
 namespace PRCO204.Controllers
 {
-    public class SleepsController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class SleepsController : ControllerBase
     {
         private readonly maindbContext _context;
 
@@ -18,137 +20,99 @@ namespace PRCO204.Controllers
             _context = context;
         }
 
-        // GET: Sleeps
-        public async Task<IActionResult> Index()
+        // GET: api/Sleeps
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<Sleep>>> GetSleep()
         {
-            var maindbContext = _context.Sleep.Include(s => s.User);
-            return View(await maindbContext.ToListAsync());
+            return await _context.Sleep.ToListAsync();
         }
 
-        // GET: Sleeps/Details/5
-        public async Task<IActionResult> Details(int? id)
+        // GET: api/Sleeps/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<Sleep>> GetSleep(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var sleep = await _context.Sleep
-                .Include(s => s.User)
-                .FirstOrDefaultAsync(m => m.SleepId == id);
-            if (sleep == null)
-            {
-                return NotFound();
-            }
-
-            return View(sleep);
-        }
-
-        // GET: Sleeps/Create
-        public IActionResult Create()
-        {
-            ViewData["UserId"] = new SelectList(_context.Users, "UserId", "Email");
-            return View();
-        }
-
-        // POST: Sleeps/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("SleepId,UserId,Awake,Light,Deep,Rem,SleepDate")] Sleep sleep)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(sleep);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["UserId"] = new SelectList(_context.Users, "UserId", "Email", sleep.UserId);
-            return View(sleep);
-        }
-
-        // GET: Sleeps/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
             var sleep = await _context.Sleep.FindAsync(id);
+
             if (sleep == null)
             {
                 return NotFound();
             }
-            ViewData["UserId"] = new SelectList(_context.Users, "UserId", "Email", sleep.UserId);
-            return View(sleep);
+
+            return sleep;
         }
 
-        // POST: Sleeps/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("SleepId,UserId,Awake,Light,Deep,Rem,SleepDate")] Sleep sleep)
+        // PUT: api/Sleeps/5
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        // more details see https://aka.ms/RazorPagesCRUD.
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutSleep(int id, Sleep sleep)
         {
             if (id != sleep.SleepId)
             {
-                return NotFound();
+                return BadRequest();
             }
 
-            if (ModelState.IsValid)
+            _context.Entry(sleep).State = EntityState.Modified;
+
+            try
             {
-                try
-                {
-                    _context.Update(sleep);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!SleepExists(sleep.SleepId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+                await _context.SaveChangesAsync();
             }
-            ViewData["UserId"] = new SelectList(_context.Users, "UserId", "Email", sleep.UserId);
-            return View(sleep);
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!SleepExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
         }
 
-        // GET: Sleeps/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        // POST: api/Sleeps
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        // more details see https://aka.ms/RazorPagesCRUD.
+        [HttpPost]
+        public async Task<ActionResult<Sleep>> PostSleep(Sleep sleep)
         {
-            if (id == null)
+            _context.Sleep.Add(sleep);
+            try
             {
-                return NotFound();
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateException)
+            {
+                if (SleepExists(sleep.SleepId))
+                {
+                    return Conflict();
+                }
+                else
+                {
+                    throw;
+                }
             }
 
-            var sleep = await _context.Sleep
-                .Include(s => s.User)
-                .FirstOrDefaultAsync(m => m.SleepId == id);
+            return CreatedAtAction("GetSleep", new { id = sleep.SleepId }, sleep);
+        }
+
+        // DELETE: api/Sleeps/5
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<Sleep>> DeleteSleep(int id)
+        {
+            var sleep = await _context.Sleep.FindAsync(id);
             if (sleep == null)
             {
                 return NotFound();
             }
 
-            return View(sleep);
-        }
-
-        // POST: Sleeps/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var sleep = await _context.Sleep.FindAsync(id);
             _context.Sleep.Remove(sleep);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+
+            return sleep;
         }
 
         private bool SleepExists(int id)

@@ -8644,11 +8644,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\patrick\\Documents\\Coursework\\PRCO204\\PRCO204\\PRCO204\\PRCO204.csproj",
+      "projectUniqueName": "C:\\Users\\patrick\\Documents\\wakepal\\wakepal\\server\\PRCO204\\PRCO204\\PRCO204.csproj",
       "projectName": "PRCO204",
-      "projectPath": "C:\\Users\\patrick\\Documents\\Coursework\\PRCO204\\PRCO204\\PRCO204\\PRCO204.csproj",
+      "projectPath": "C:\\Users\\patrick\\Documents\\wakepal\\wakepal\\server\\PRCO204\\PRCO204\\PRCO204.csproj",
       "packagesPath": "C:\\Users\\patrick\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\patrick\\Documents\\Coursework\\PRCO204\\PRCO204\\PRCO204\\obj\\",
+      "outputPath": "C:\\Users\\patrick\\Documents\\wakepal\\wakepal\\server\\PRCO204\\PRCO204\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"

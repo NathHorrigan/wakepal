@@ -2,14 +2,16 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using PRCO204.Models;
 
 namespace PRCO204.Controllers
 {
-    public class PasswordResetsController : Controller
+    [Route("api/[controller]")]
+    [ApiController]
+    public class PasswordResetsController : ControllerBase
     {
         private readonly maindbContext _context;
 
@@ -18,137 +20,99 @@ namespace PRCO204.Controllers
             _context = context;
         }
 
-        // GET: PasswordResets
-        public async Task<IActionResult> Index()
+        // GET: api/PasswordResets
+        [HttpGet]
+        public async Task<ActionResult<IEnumerable<PasswordResets>>> GetPasswordResets()
         {
-            var maindbContext = _context.PasswordResets.Include(p => p.Reset);
-            return View(await maindbContext.ToListAsync());
+            return await _context.PasswordResets.ToListAsync();
         }
 
-        // GET: PasswordResets/Details/5
-        public async Task<IActionResult> Details(int? id)
+        // GET: api/PasswordResets/5
+        [HttpGet("{id}")]
+        public async Task<ActionResult<PasswordResets>> GetPasswordResets(int id)
         {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var passwordResets = await _context.PasswordResets
-                .Include(p => p.Reset)
-                .FirstOrDefaultAsync(m => m.ResetId == id);
-            if (passwordResets == null)
-            {
-                return NotFound();
-            }
-
-            return View(passwordResets);
-        }
-
-        // GET: PasswordResets/Create
-        public IActionResult Create()
-        {
-            ViewData["ResetId"] = new SelectList(_context.Users, "UserId", "Email");
-            return View();
-        }
-
-        // POST: PasswordResets/Create
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ResetId,UserId,Code,CreationDate,ExpirationDate")] PasswordResets passwordResets)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(passwordResets);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            ViewData["ResetId"] = new SelectList(_context.Users, "UserId", "Email", passwordResets.ResetId);
-            return View(passwordResets);
-        }
-
-        // GET: PasswordResets/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
             var passwordResets = await _context.PasswordResets.FindAsync(id);
+
             if (passwordResets == null)
             {
                 return NotFound();
             }
-            ViewData["ResetId"] = new SelectList(_context.Users, "UserId", "Email", passwordResets.ResetId);
-            return View(passwordResets);
+
+            return passwordResets;
         }
 
-        // POST: PasswordResets/Edit/5
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for 
-        // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ResetId,UserId,Code,CreationDate,ExpirationDate")] PasswordResets passwordResets)
+        // PUT: api/PasswordResets/5
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        // more details see https://aka.ms/RazorPagesCRUD.
+        [HttpPut("{id}")]
+        public async Task<IActionResult> PutPasswordResets(int id, PasswordResets passwordResets)
         {
             if (id != passwordResets.ResetId)
             {
-                return NotFound();
+                return BadRequest();
             }
 
-            if (ModelState.IsValid)
+            _context.Entry(passwordResets).State = EntityState.Modified;
+
+            try
             {
-                try
-                {
-                    _context.Update(passwordResets);
-                    await _context.SaveChangesAsync();
-                }
-                catch (DbUpdateConcurrencyException)
-                {
-                    if (!PasswordResetsExists(passwordResets.ResetId))
-                    {
-                        return NotFound();
-                    }
-                    else
-                    {
-                        throw;
-                    }
-                }
-                return RedirectToAction(nameof(Index));
+                await _context.SaveChangesAsync();
             }
-            ViewData["ResetId"] = new SelectList(_context.Users, "UserId", "Email", passwordResets.ResetId);
-            return View(passwordResets);
+            catch (DbUpdateConcurrencyException)
+            {
+                if (!PasswordResetsExists(id))
+                {
+                    return NotFound();
+                }
+                else
+                {
+                    throw;
+                }
+            }
+
+            return NoContent();
         }
 
-        // GET: PasswordResets/Delete/5
-        public async Task<IActionResult> Delete(int? id)
+        // POST: api/PasswordResets
+        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
+        // more details see https://aka.ms/RazorPagesCRUD.
+        [HttpPost]
+        public async Task<ActionResult<PasswordResets>> PostPasswordResets(PasswordResets passwordResets)
         {
-            if (id == null)
+            _context.PasswordResets.Add(passwordResets);
+            try
             {
-                return NotFound();
+                await _context.SaveChangesAsync();
+            }
+            catch (DbUpdateException)
+            {
+                if (PasswordResetsExists(passwordResets.ResetId))
+                {
+                    return Conflict();
+                }
+                else
+                {
+                    throw;
+                }
             }
 
-            var passwordResets = await _context.PasswordResets
-                .Include(p => p.Reset)
-                .FirstOrDefaultAsync(m => m.ResetId == id);
+            return CreatedAtAction("GetPasswordResets", new { id = passwordResets.ResetId }, passwordResets);
+        }
+
+        // DELETE: api/PasswordResets/5
+        [HttpDelete("{id}")]
+        public async Task<ActionResult<PasswordResets>> DeletePasswordResets(int id)
+        {
+            var passwordResets = await _context.PasswordResets.FindAsync(id);
             if (passwordResets == null)
             {
                 return NotFound();
             }
 
-            return View(passwordResets);
-        }
-
-        // POST: PasswordResets/Delete/5
-        [HttpPost, ActionName("Delete")]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> DeleteConfirmed(int id)
-        {
-            var passwordResets = await _context.PasswordResets.FindAsync(id);
             _context.PasswordResets.Remove(passwordResets);
             await _context.SaveChangesAsync();
-            return RedirectToAction(nameof(Index));
+
+            return passwordResets;
         }
 
         private bool PasswordResetsExists(int id)
