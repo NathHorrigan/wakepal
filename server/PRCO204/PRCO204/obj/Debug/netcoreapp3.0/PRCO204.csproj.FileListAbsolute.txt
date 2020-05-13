@@ -331,7 +331,6 @@ C:\Users\patrick\Documents\wakepal\wakepal\server\PRCO204\PRCO204\bin\Debug\netc
 C:\Users\patrick\Documents\wakepal\wakepal\server\PRCO204\PRCO204\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.1\System.Security.Principal.Windows.dll
 C:\Users\patrick\Documents\wakepal\wakepal\server\PRCO204\PRCO204\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp2.0\System.Text.Encoding.CodePages.dll
 C:\Users\patrick\Documents\wakepal\wakepal\server\PRCO204\PRCO204\bin\Debug\netcoreapp3.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
-C:\Users\patrick\Documents\wakepal\wakepal\server\PRCO204\PRCO204\obj\Debug\netcoreapp3.0\PRCO204.csprojAssemblyReference.cache
 C:\Users\patrick\Documents\wakepal\wakepal\server\PRCO204\PRCO204\obj\Debug\netcoreapp3.0\staticwebassets\PRCO204.StaticWebAssets.Manifest.cache
 C:\Users\patrick\Documents\wakepal\wakepal\server\PRCO204\PRCO204\obj\Debug\netcoreapp3.0\staticwebassets\PRCO204.StaticWebAssets.xml
 C:\Users\patrick\Documents\wakepal\wakepal\server\PRCO204\PRCO204\obj\Debug\netcoreapp3.0\PRCO204.MvcApplicationPartsAssemblyInfo.cache
@@ -385,3 +384,5 @@ C:\Users\patrick\Documents\wakepal\wakepal\server\PRCO204\PRCO204\obj\Debug\netc
 C:\Users\patrick\Documents\wakepal\wakepal\server\PRCO204\PRCO204\obj\Debug\netcoreapp3.0\PRCO204.csproj.CopyComplete
 C:\Users\patrick\Documents\wakepal\wakepal\server\PRCO204\PRCO204\obj\Debug\netcoreapp3.0\PRCO204.dll
 C:\Users\patrick\Documents\wakepal\wakepal\server\PRCO204\PRCO204\obj\Debug\netcoreapp3.0\PRCO204.pdb
+C:\Users\patrick\Documents\wakepal\wakepal\server\PRCO204\PRCO204\bin\Debug\netcoreapp3.0\web.config
+C:\Users\patrick\Documents\wakepal\wakepal\server\PRCO204\PRCO204\obj\Debug\netcoreapp3.0\PRCO204.csprojAssemblyReference.cache

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using System.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -27,7 +28,7 @@ namespace PRCO204
         {
             services.AddControllersWithViews();
 
-            services.AddDbContext<maindbContext>(options => options.UseSqlServer("PRCO204"));
+            services.AddDbContext<maindbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("db")));
 
         }
 
