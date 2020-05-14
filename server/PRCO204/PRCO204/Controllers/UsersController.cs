@@ -120,7 +120,7 @@ namespace PRCO204.Controllers
         }
 
 
-
+        [AllowAnonymous]
         [HttpPost]
         public async Task<ActionResult<Users>> PostUsers(Users users)
         {

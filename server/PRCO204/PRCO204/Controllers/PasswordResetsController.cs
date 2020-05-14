@@ -6,9 +6,12 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using PRCO204.Models;
+using Microsoft.AspNetCore.Authorization;
+
 
 namespace PRCO204.Controllers
 {
+    [Authorize]
     [Route("api/[controller]")]
     [ApiController]
     public class PasswordResetsController : ControllerBase
