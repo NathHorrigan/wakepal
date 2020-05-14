@@ -24,6 +24,8 @@ namespace PRCO204.Models
         public virtual DbSet<Sleep> Sleep { get; set; }
         public virtual DbSet<Users> Users { get; set; }
 
+
+
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
