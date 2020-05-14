@@ -24,6 +24,7 @@ namespace PRCO204.Models
         public string Email { get; set; }
         public string Password { get; set; }
 
+
         public virtual PasswordResets PasswordResets { get; set; }
         public virtual ICollection<DailyFitness> DailyFitness { get; set; }
         public virtual ICollection<FriendshipRequests> FriendshipRequestsRecipient { get; set; }
