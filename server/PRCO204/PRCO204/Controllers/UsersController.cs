@@ -6,8 +6,14 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Authorization;
+using System.IdentityModel.Tokens.Jwt;
+using Microsoft.IdentityModel.Tokens;
+using System.Security.Claims;
+using System.Text;
 using PRCO204.Models;
 using PRCO204.Services;
+using Microsoft.Extensions.Configuration;
+
 
 namespace PRCO204.Controllers
 {
@@ -16,12 +22,16 @@ namespace PRCO204.Controllers
     [ApiController]
     public class UsersController : ControllerBase
     {
+        public IConfiguration Configuration;
         private readonly maindbContext _context;
         private IUserService _userService;
-        public UsersController(maindbContext context, IUserService userService)
+        
+
+        public UsersController(maindbContext context, IUserService userService, IConfiguration configuration)
         {
             _context = context;
             _userService = userService;
+            Configuration = configuration;
         }
 
         // GET: api/Users
@@ -77,9 +87,7 @@ namespace PRCO204.Controllers
             return NoContent();
         }
 
-        // POST: api/Users
-        // To protect from overposting attacks, please enable the specific properties you want to bind to, for
-        // more details see https://aka.ms/RazorPagesCRUD.
+        
 
         [AllowAnonymous]
         [HttpPost("authenticate")]
@@ -90,8 +98,30 @@ namespace PRCO204.Controllers
             if (user == null)
                 return BadRequest(new { message = "Username or password is incorrect" });
 
-            return Ok(user);
+            var tokenHandler = new JwtSecurityTokenHandler();
 
+            var key = Encoding.ASCII.GetBytes("Super Secret Big Boy String");
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(new Claim[]
+                {
+                    new Claim(ClaimTypes.Name, user.UserId.ToString())
+                }),
+                Expires = DateTime.UtcNow.AddDays(7),
+                SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
+            };
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            var tokenString = tokenHandler.WriteToken(token);
+
+            // return basic user info and authentication token
+            return Ok(new
+            {
+                UserId = user.UserId,
+                Email = user.Email,
+                FirstName = user.FirstName,
+                LastName = user.LastName,
+                Token = tokenString
+            });
         }
 
 
