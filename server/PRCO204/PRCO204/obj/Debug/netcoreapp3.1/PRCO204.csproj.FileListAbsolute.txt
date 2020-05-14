@@ -1,0 +1,7 @@
+C:\Users\patrick\Documents\wakepal\wakepal\server\PRCO204\PRCO204\obj\Debug\netcoreapp3.1\PRCO204.csprojAssemblyReference.cache
+C:\Users\patrick\Documents\wakepal\wakepal\server\PRCO204\PRCO204\obj\Debug\netcoreapp3.1\PRCO204.RazorAssemblyInfo.cache
+C:\Users\patrick\Documents\wakepal\wakepal\server\PRCO204\PRCO204\obj\Debug\netcoreapp3.1\PRCO204.RazorAssemblyInfo.cs
+C:\Users\patrick\Documents\wakepal\wakepal\server\PRCO204\PRCO204\obj\Debug\netcoreapp3.1\PRCO204.AssemblyInfoInputs.cache
+C:\Users\patrick\Documents\wakepal\wakepal\server\PRCO204\PRCO204\obj\Debug\netcoreapp3.1\PRCO204.AssemblyInfo.cs
+C:\Users\patrick\Documents\wakepal\wakepal\server\PRCO204\PRCO204\obj\Debug\netcoreapp3.1\PRCO204.TagHelpers.input.cache
+C:\Users\patrick\Documents\wakepal\wakepal\server\PRCO204\PRCO204\obj\Debug\netcoreapp3.1\PRCO204.TagHelpers.output.cache
