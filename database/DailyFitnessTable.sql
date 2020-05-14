@@ -16,3 +16,6 @@ CREATE TABLE dbo.DailyFitness
 ALTER TABLE dbo.DailyFitness
 ADD CONSTRAINT FK_dailyFitnessUser
 FOREIGN KEY (userId) REFERENCES dbo.Users(userId)
+
+ALTER TABLE dbo.DailyFitness
+ALTER COLUMN fitnessDate DATE
