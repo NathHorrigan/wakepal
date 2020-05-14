@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.IdentityModel.Tokens.Jwt;
-using System.IdentityModel.Tokens;
+using Microsoft.IdentityModel.Tokens;
 using PRCO204.Entities;
 using PRCO204.Helpers;
 using System.Text;
