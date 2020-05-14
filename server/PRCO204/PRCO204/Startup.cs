@@ -27,7 +27,6 @@ namespace PRCO204
 
         public IConfiguration Configuration { get; }
 
-        // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
@@ -35,7 +34,6 @@ namespace PRCO204
             services.AddDbContext<maindbContext>(options => options.UseSqlServer(Configuration.GetConnectionString("db")));
 
 
-            // configure jwt authentication
             var key = Encoding.ASCII.GetBytes("Super Secret Big Boy String");
             services.AddAuthentication(x =>
             {
@@ -70,12 +68,10 @@ namespace PRCO204
                 };
             });
 
-            // configure DI for application services
             services.AddScoped<IUserService, UserService>();
 
         }
 
-        // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
             if (env.IsDevelopment())
@@ -85,7 +81,6 @@ namespace PRCO204
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
                 app.UseHsts();
             }
             app.UseHttpsRedirection();

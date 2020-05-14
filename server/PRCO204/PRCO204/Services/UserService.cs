@@ -34,7 +34,6 @@ namespace PRCO204.Services
         {
             var user = _context.Users.SingleOrDefault(x => x.Email == email  && x.Password == password);
 
-            // return null if user not found
             if (user == null)
                 return null;
 
