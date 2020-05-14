@@ -15,3 +15,6 @@ CREATE TABLE dbo.Sleep
 ALTER TABLE dbo.Sleep
 ADD CONSTRAINT FK_SleepUser
 FOREIGN KEY (userId) REFERENCES dbo.Users(userId)
+
+ALTER TABLE dbo.Sleep
+ALTER COLUMN sleepDate DATE
