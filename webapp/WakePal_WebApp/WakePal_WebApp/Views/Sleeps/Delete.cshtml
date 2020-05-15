@@ -1,0 +1,57 @@
+﻿@model WakePal_WebApp.Models.Sleep
+
+@{
+    ViewData["Title"] = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Sleep</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Awake)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Awake)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Light)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Light)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Deep)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Deep)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Rem)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Rem)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SleepDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SleepDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.User)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.User.Email)
+        </dd>
+    </dl>
+    
+    <form asp-action="Delete">
+        <input type="hidden" asp-for="SleepId" />
+        <input type="submit" value="Delete" class="btn btn-default" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>

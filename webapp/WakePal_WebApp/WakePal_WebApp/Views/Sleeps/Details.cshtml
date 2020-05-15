@@ -1,0 +1,54 @@
+﻿@model WakePal_WebApp.Models.Sleep
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Sleep</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Awake)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Awake)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Light)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Light)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Deep)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Deep)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.Rem)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.Rem)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.SleepDate)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.SleepDate)
+        </dd>
+        <dt>
+            @Html.DisplayNameFor(model => model.User)
+        </dt>
+        <dd>
+            @Html.DisplayFor(model => model.User.Email)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.SleepId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
