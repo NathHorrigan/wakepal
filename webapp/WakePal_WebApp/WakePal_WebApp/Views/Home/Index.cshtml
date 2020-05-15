@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>WakePal - Health tracker app</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="images/logo-text.png" height="50"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/NathHorrigan/wakepal">Explore the WakePal project on Github</a>
+                </li>
+            </ul>
+
+            <form class="form-inline my-2 my-lg-0" action="wakepal.azurewebsites.net/api/users/authenticate" method="POST">
+                <input class="form-control mr-sm-2" type="email" placeholder="username" aria-label="username">
+                <input class="form-control mr-sm-2" type="password" placeholder="password" aria-label="password">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login to WakePal</button>
+            </form>
+            <a class="bbutton b-pink" asp-controller="Sleeps" asp-action="Index">Dashboard</a>
+        </div>
+    </nav>
+
+    <div class="jumbotron">
+        <h1 class="display-4">WakePal is a sleep and health monitoring app</h1>
+        <p class="lead">WakePal is a project built by Nathan Horrigan, Patrick Waugh, Jonathan Harrison and Sławomir
+            Woźniak for the PRCO204 module</p>
+        <hr class="my-4">
+        <p>Monitor your sleep in detail, live a healthier lifestyle.</p>
+        <p>The app interacts with your FitBit wrist band and talks with the FitBit API.</p>
+        <p>The IOS app uses Facebook's React Native framework for Javascript.</p>
+        <p>The backend uses Microsoft's ASP.NET.</p>
+        <br>
+        <br>
+
+
+        <!-- <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a> -->
+    </div>
+
+    <div class="col-lg-12">
+        <h2>Screenshots</h2>
+
+    </div>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/dash.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Dashboard</h5>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/water.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Hydration monitoring</h5>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="col-md-4 col-sm-12">
+
+                <div class="card" style="width: 18rem;">
+                    <img src="images/steps.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Step counting</h5>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

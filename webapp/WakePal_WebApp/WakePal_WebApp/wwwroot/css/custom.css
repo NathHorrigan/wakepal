@@ -1,0 +1,100 @@
+.jumbotron {
+    background-image: url(../../wwwroot/images/bg-sea.jpg);
+    background-position: center;
+}
+
+
+.ctn {
+    display: block;
+    margin: auto;
+    text-align: center;
+}
+
+.b-pink,
+.b-pink:before {
+    background: rgba(231, 72, 234, 1);
+    background: -moz-linear-gradient(45deg, rgba(231, 72, 234, 1) 0%, rgba(75, 26, 188, 1) 100%);
+    background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(231, 72, 234, 1)), color-stop(100%, rgba(75, 26, 188, 1)));
+    background: -webkit-linear-gradient(45deg, rgba(231, 72, 234, 1) 0%, rgba(75, 26, 188, 1) 100%);
+    background: -o-linear-gradient(45deg, rgba(231, 72, 234, 1) 0%, rgba(75, 26, 188, 1) 100%);
+    background: -ms-linear-gradient(45deg, rgba(231, 72, 234, 1) 0%, rgba(75, 26, 188, 1) 100%);
+    background: linear-gradient(45deg, rgba(231, 72, 234, 1) 0%, rgba(75, 26, 188, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e748ea', endColorstr='#4b1abc', GradientType=1);
+}
+
+.bbutton {
+    display: inline-block;
+    position: relative;
+    border-radius: 3px;
+    text-decoration: none;
+    padding: .5em;
+    margin: .5em;
+    font-size: 2em;
+    font-weight: bold;
+    transition: all .5s;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+    .bbutton:hover {
+        text-shadow: 0px 0px 0px rgba(255, 255, 255, .75);
+    }
+
+        .bbutton:hover:after {
+            left: 100%;
+            top: 100%;
+            bottom: 100%;
+            right: 100%;
+        }
+
+    .bbutton:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: -1;
+        border-radius: 5px;
+        transition: all .5s;
+    }
+
+    .bbutton:after {
+        content: '';
+        display: block;
+        position: absolute;
+        left: 2px;
+        top: 2px;
+        bottom: 2px;
+        right: 2px;
+        z-index: -1;
+        border-radius: 5px;
+        transition: all .5s;
+    }
+
+.bbutton2 {
+    display: inline-block;
+    font-size: 2em;
+    margin: .5em;
+    padding: .5em;
+    border-radius: 5px;
+    transition: all .5s;
+    filter: hue-rotate(0deg);
+    color: #FFF;
+    text-decoration: none;
+}
+/*END BASE BUTTON*/
+/*ROTATE*/
+.rot-360-noscoop:hover {
+    filter: hue-rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.rot-135:hover {
+    filter: hue-rotate(135deg);
+}
+
+.rot-90:hover {
+    filter: hue-rotate(90deg);
+}

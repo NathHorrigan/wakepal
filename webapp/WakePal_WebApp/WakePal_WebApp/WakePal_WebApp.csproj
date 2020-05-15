@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Content Remove="wwwroot\images\bg-sea.jpg" />
+    <Content Remove="wwwroot\images\bg-sun.jpg" />
+    <Content Remove="wwwroot\images\dash.png" />
+    <Content Remove="wwwroot\images\logo-text.png" />
+    <Content Remove="wwwroot\images\sign in.png" />
+    <Content Remove="wwwroot\images\steps.png" />
+    <Content Remove="wwwroot\images\water.png" />
+    <Content Remove="wwwroot\images\weight.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="wwwroot\css\custom.css" />
+    <None Include="wwwroot\images\bg-sea.jpg" />
+    <None Include="wwwroot\images\bg-sun.jpg" />
+    <None Include="wwwroot\images\dash.png" />
+    <None Include="wwwroot\images\logo-text.png" />
+    <None Include="wwwroot\images\sign in.png" />
+    <None Include="wwwroot\images\steps.png" />
+    <None Include="wwwroot\images\water.png" />
+    <None Include="wwwroot\images\weight.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="EntityFramework" Version="6.4.4" />
+    <PackageReference Include="Microsoft.AspNetCore.App" />
+    <PackageReference Include="Microsoft.AspNetCore.Razor.Design" Version="2.1.2" PrivateAssets="All" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="2.1.11" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.1.9" />
+  </ItemGroup>
+
+</Project>
