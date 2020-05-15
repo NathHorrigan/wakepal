@@ -2,7 +2,7 @@ DROP TABLE IF EXISTS dbo.Sleep
  
 CREATE TABLE dbo.Sleep
 (
-    sleepId INT NOT NULL,
+    sleepId INT NOT NULL IDENTITY(1,1),
     userId INT NOT NULL,
     awake TIME NULL, 
     light TIME NULL,

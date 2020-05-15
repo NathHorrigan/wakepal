@@ -2,7 +2,7 @@ DROP TABLE IF EXISTS dbo.Users
 
 CREATE TABLE dbo.Users
 ( 
-    userId INT NOT NULL,
+    userId INT NOT NULL IDENTITY(1,1),
     firstName VARCHAR(25) NOT NULL,
     lastName VARCHAR(25) NOT NULL,
     age INT NOT NULL,

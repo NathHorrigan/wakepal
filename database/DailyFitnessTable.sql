@@ -2,7 +2,7 @@ DROP TABLE IF EXISTS dbo.DailyFitness
 
 CREATE TABLE dbo.DailyFitness
 (
-    fitnessId INT NOT NULL,
+    fitnessId INT NOT NULL IDENTITY(1,1),
     userId INT NOT NULL,
     fitnessDate DATETIME NOT NULL,
 	weight NUMERIC(18, 3) NOT NULL,

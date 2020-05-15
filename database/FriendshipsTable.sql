@@ -2,7 +2,7 @@ DROP TABLE IF EXISTS dbo.Friendships
   
 CREATE TABLE dbo.Friendships
 ( 
-    friendshipId INT NOT NULL,
+    friendshipId INT NOT NULL IDENTITY(1,1),
     userId INT NOT NULL,
     friendId INT NOT NULL,
     CONSTRAINT PK_friendship PRIMARY KEY (friendshipId)
