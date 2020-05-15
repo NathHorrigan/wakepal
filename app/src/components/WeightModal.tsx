@@ -33,6 +33,10 @@ interface WeightModalProps {
   data: WeightRecording[]
 }
 
+interface ActionableProps {
+  active: Boolean
+}
+
 const WeightModal: React.SFC<WeightModalProps> = ({
   visible,
   onClose,
@@ -65,10 +69,10 @@ const WeightModal: React.SFC<WeightModalProps> = ({
 
   // How the label data is formatting, January, 28th etc
   const graphLabelFormats = {
-    '1week': date => format(date, 'Do'),
-    '1month': date => format(date, 'Do'),
-    '3months': date => format(date, 'MMM'),
-    '6months': date => format(date, 'MMM'),
+    '1week': (date: Date) => format(date, 'Do'),
+    '1month': (date: Date) => format(date, 'Do'),
+    '3months': (date: Date) => format(date, 'MMM'),
+    '6months': (date: Date) => format(date, 'MMM'),
   }
 
   // List of filters the user can use
@@ -94,7 +98,7 @@ const WeightModal: React.SFC<WeightModalProps> = ({
     // If we're at the last datapoint then we should always use the most recent datapoint.
     if (i === activeGraphLabels.length - 1) {
       const latestRecording = data[data.length - 1]
-      graphData.push(latestRecording.weight)
+      graphData.push(latestRecording.weight ?? 0)
     }
 
     // Generate a list of weight recordings between two points on the x-axis
@@ -234,14 +238,14 @@ const FiltersContainer = styled.View`
   margin-bottom: 15px;
 `
 
-const FilterBubble = styled.TouchableOpacity`
+const FilterBubble = styled.TouchableOpacity<ActionableProps>`
   padding: 4px 8px;
   border-radius: 10px;
   margin-right: 5px;
   background: rgba(255, 255, 255, ${props => (props.active ? 1 : 0.2)});
 `
 
-const FilterText = styled.Text`
+const FilterText = styled.Text<ActionableProps>`
   color: ${props => (props.active ? colors.paleGreen : 'white')};
   font-size: 13px;
   font-family: ${fonts.medium};

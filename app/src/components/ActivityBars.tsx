@@ -59,6 +59,7 @@ const BarsContainer = styled.View`
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
+  padding-bottom: 10px;
 `
 
 const Activity = styled.View`

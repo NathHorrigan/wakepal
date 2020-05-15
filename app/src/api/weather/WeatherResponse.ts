@@ -14,7 +14,7 @@ export enum WeatherIcon {
 
 // Response that must be returned by any Weather Api controller
 export class WeatherResponse {
-  private createdAt: number
+  public createdAt: number
   private temperature: number
   private icon: WeatherIcon
   private summary: string

@@ -1,6 +1,7 @@
 import React, { SFC } from 'react'
 import { StackNavigationProp } from '@react-navigation/stack'
 import { useSelector } from 'react-redux'
+import { State } from '@redux/reducers'
 
 interface LoadingScreenProps {
   navigation: any
@@ -9,7 +10,7 @@ interface LoadingScreenProps {
 const LoadingScreen: SFC<LoadingScreenProps> = ({ navigation }) => {
   // Extract from state if we're logged in...
   const { userAuthenticated, userOnboarded } = useSelector(
-    (state: any) => state.authentication
+    (state: State) => state.authentication
   )
 
   // if not logged in then load the LoginScreen

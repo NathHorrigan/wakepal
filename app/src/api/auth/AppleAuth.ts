@@ -6,9 +6,22 @@ import appleAuth, {
 import { OAuthProvider, OAuthSession } from './OAuthProvider'
 
 export class AppleAuthProvider extends OAuthProvider {
-  private static session?: OAuthSession
+  private static client: AppleAuthProvider
 
-  static async authenticate(): Promise<OAuthSession> {
+  constructor() {
+    // Set the session id for saving
+    super('apple-auth')
+  }
+
+  static getClient(): AppleAuthProvider {
+    if (!AppleAuthProvider.client) {
+      AppleAuthProvider.client = new AppleAuthProvider()
+    }
+
+    return AppleAuthProvider.client
+  }
+
+  async authenticate(): Promise<OAuthSession> {
     // Trigger prompt for the user to login with Google
     const appleAuthRequestResponse = await appleAuth.performRequest({
       requestedOperation: AppleAuthRequestOperation.LOGIN,
@@ -33,21 +46,27 @@ export class AppleAuthProvider extends OAuthProvider {
      */
     const session = this.createSession(appleAuthRequestResponse)
     // Save the session
-    this.session = session
+    this.saveSession(session)
     // Return the session
     return session
   }
 
-  static async logout() {
-    // Revoke token
-    const appleAuthRequestResponse = await appleAuth.performRequest({
-      requestedOperation: AppleAuthRequestOperation.LOGOUT,
-    })
-    // Delete session cache
-    this.session = undefined
+  static reauthenticate() {
+    // Stub
   }
 
-  private static createSession(appleResponse: any): OAuthSession {
+  async logout() {
+    // Revoke token
+    if (this.session) {
+      await appleAuth.performRequest({
+        requestedOperation: AppleAuthRequestOperation.LOGOUT,
+      })
+      // Delete session cache
+      this.saveSession(session)
+    }
+  }
+
+  private createSession(appleResponse: any): OAuthSession {
     return {
       accessToken: appleResponse.authorizationCode,
       userId: '0', // This method will eventually talk to Wakepal servers and get a real user id

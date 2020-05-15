@@ -1,12 +1,14 @@
 import React, { SFC } from 'react'
 import styled from 'styled-components/native'
 
+import { Icon as SVGIcon } from '@components/icons/base'
 import { colors, fonts } from '@utils/theme'
 
 export interface ActionButtonProps {
-  icon: React.SFC
+  icon?: SVGIcon
   label: string
   wide?: boolean
+  disabled?: boolean
   color?: string
   onPress(): null
 }
@@ -16,27 +18,32 @@ const ActionButton: SFC<ActionButtonProps> = ({
   label,
   wide,
   color = colors.coral,
-  onPress,
+  onPress = () => null,
+  disabled,
   ...props
 }) => {
   const ButtonContainer = wide ? WideStyledButton : StyledButton
 
   return (
     <ButtonContainer
+      disabled={disabled}
       activeOpacity={0.85}
       onPress={onPress}
       color={color}
       {...props}
     >
-      <IconContainer>
-        <Icon />
-      </IconContainer>
+      <IconContainer>{Icon && <Icon />}</IconContainer>
       <ButtonText>{label}</ButtonText>
     </ButtonContainer>
   )
 }
 
-export const StyledButton = styled.TouchableOpacity`
+export interface ButtonProps {
+  color?: string
+  width?: Number
+}
+
+export const StyledButton = styled.TouchableOpacity<ButtonProps>`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -50,6 +57,7 @@ export const StyledButton = styled.TouchableOpacity`
   border-radius: 10px;
   padding-bottom: 15px;
   overflow: hidden;
+  opacity: ${props => (props.disabled ? 0.2 : 1)};
 `
 
 export const WideStyledButton = styled(StyledButton)`

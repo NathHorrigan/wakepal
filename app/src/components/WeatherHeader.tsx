@@ -2,6 +2,7 @@ import React, { SFC } from 'react'
 import styled from 'styled-components/native'
 
 import WeatherIcons from '@components/icons/weather'
+import { Chevron } from '@components/icons'
 import { WeatherResponse } from '@api/weather/WeatherResponse'
 import { colors, fonts } from '@utils/theme'
 
@@ -9,14 +10,19 @@ interface WeatherHeaderProps {
   name: string
   dateLabel: string
   weather: WeatherResponse
+  showBackLink: boolean
+  onBackPress: Function
 }
 
 const WeatherHeader: SFC<WeatherHeaderProps> = ({
   name,
   dateLabel,
   weather,
+  showBackLink = false,
+  onBackPress,
 }) => {
-  const WeatherIcon = WeatherIcons[weather.getIcon()]
+  const backToTodayCallback = showBackLink && onBackPress
+  const WeatherIcon = weather && WeatherIcons[weather.getIcon()]
   return (
     <HeaderContainer>
       <LeftColumn>
@@ -25,13 +31,23 @@ const WeatherHeader: SFC<WeatherHeaderProps> = ({
         </WelcomeText>
         <DateText>{dateLabel}</DateText>
       </LeftColumn>
-      <RightColumn>
-        <WeatherIcon />
-        <WeatherText>
-          <HighlightText>{weather.getTemperature()}° </HighlightText>
-          {weather.getSummary()}
-        </WeatherText>
-      </RightColumn>
+      {/* To allow of lazy loading of weather data */}
+      {weather && !showBackLink && (
+        <RightColumn>
+          <WeatherIcon />
+          <WeatherText>
+            <HighlightText>{weather.getTemperature()}° </HighlightText>
+            {weather.getSummary()}
+          </WeatherText>
+        </RightColumn>
+      )}
+      {/* Allow clicking to go back to today focus */}
+      {backToTodayCallback && (
+        <BackButton onPress={backToTodayCallback}>
+          <BackText>Back to Today</BackText>
+          <Chevron />
+        </BackButton>
+      )}
     </HeaderContainer>
   )
 }
@@ -46,11 +62,11 @@ function getGreeting(): string {
     return 'Afternoon'
   }
 
-  if (hourOfDay < 18) {
+  if (hourOfDay > 17 && hourOfDay < 21) {
     return 'Evening'
   }
 
-  if (hourOfDay < 21) {
+  if (hourOfDay > 21) {
     return 'Goodnight'
   }
 
@@ -82,6 +98,20 @@ const DateText = styled.Text`
   color: black;
   font-family: ${fonts.semiBold};
   font-size: 25px;
+`
+
+const BackButton = styled.TouchableOpacity`
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-bottom: 25px;
+`
+
+const BackText = styled.Text`
+  color: ${colors.coral};
+  font-family: ${fonts.semiBold};
+  font-size: 15px;
+  padding-right: 3px;
 `
 
 const WeatherText = styled(DateText)`

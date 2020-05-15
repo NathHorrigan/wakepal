@@ -7,6 +7,6 @@ test('Weather API: Returns serialized data', async () => {
 
   // We can't test the data so testing the types instead
   expect(typeof location.createdAt).toBe('number')
-  expect(typeof location.temperature).toBe('number')
-  expect(typeof location.summary).toBe('string')
+  expect(typeof location.getTemperature()).toBe('number')
+  expect(typeof location.getSummary()).toBe('string')
 })

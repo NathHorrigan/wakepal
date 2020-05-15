@@ -9,6 +9,7 @@ exports[`renders correctly 1`] = `
         "display": "flex",
         "flexDirection": "row",
         "justifyContent": "flex-start",
+        "paddingBottom": 10,
         "width": "90%",
       },
     ]

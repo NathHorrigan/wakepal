@@ -7,8 +7,10 @@ import { PersistGate } from 'redux-persist/integration/react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 import { SafeAreaProvider } from 'react-native-safe-area-context'
+import { ActionSheetProvider } from '@expo/react-native-action-sheet'
 
-import LoginScreen from '@screens/Login'
+import LoginScreen from '@screens/Welcome'
+import RegisterScreen from '@screens/Register'
 import LoadingScreen from '@screens/Loading'
 import OnboardingScreen from '@screens/Onboarding'
 import HomeScreen from '@screens/Home'
@@ -27,25 +29,38 @@ const App = () => {
     <>
       <StatusBar barStyle="dark-content" />
       <Provider store={store}>
-        <PersistGate persistor={persistor} loading={null}>
-          <SafeAreaProvider>
-            <NavigationContainer>
-              <Stack.Navigator initialRouteName="Loading" headerMode="none">
-                {/*
+        <ActionSheetProvider>
+          <PersistGate persistor={persistor} loading={null}>
+            <SafeAreaProvider>
+              <NavigationContainer>
+                <Stack.Navigator initialRouteName="Loading" headerMode="none">
+                  {/*
                 The LoadingScreen is used to determine which screen should be loaded based on state,
                 Worth noting that this runs in the backgroud...
               */}
-                <Stack.Screen name="Loading" component={LoadingScreen} />
-                {/* Used to login the user... */}
-                <Stack.Screen name="Login" component={LoginScreen} />
-                {/* UGet intial details about the user... */}
-                <Stack.Screen name="Onboarding" component={OnboardingScreen} />
-                {/* Main Screen used by the user... */}
-                <Stack.Screen name="Home" component={HomeScreen} />
-              </Stack.Navigator>
-            </NavigationContainer>
-          </SafeAreaProvider>
-        </PersistGate>
+                  <Stack.Screen name="Loading" component={LoadingScreen} />
+                  {/* Used to login the user... */}
+                  <Stack.Screen name="Login" component={LoginScreen} />
+                  {/* Used for manual login/register */}
+                  <Stack.Screen name="Register" component={RegisterScreen} />
+                  {/* Get intial details about the user... */}
+                  <Stack.Screen
+                    name="Onboarding"
+                    component={OnboardingScreen}
+                  />
+                  {/* Main Screen used by the user... */}
+                  <Stack.Screen
+                    name="Home"
+                    component={HomeScreen}
+                    options={{
+                      gestureEnabled: false,
+                    }}
+                  />
+                </Stack.Navigator>
+              </NavigationContainer>
+            </SafeAreaProvider>
+          </PersistGate>
+        </ActionSheetProvider>
       </Provider>
     </>
   )

@@ -66,6 +66,7 @@ exports[`renders correctly 1`] = `
           "display": "flex",
           "flexDirection": "column",
           "justifyContent": "flex-end",
+          "top": -1,
         },
       ]
     }
@@ -122,7 +123,7 @@ exports[`renders correctly 1`] = `
           Object {
             "color": "black",
             "fontFamily": "SFProRounded-SemiBold",
-            "fontSize": 20,
+            "fontSize": 15,
             "textTransform": "capitalize",
           },
         ]

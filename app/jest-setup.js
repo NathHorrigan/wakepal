@@ -1,3 +1,5 @@
+import mockAsyncStorage from '@react-native-community/async-storage/jest/async-storage-mock'
+
 // Mock functions to make tests work in node env
 global.fetch = require('node-fetch')
 global.navigator = {
@@ -9,3 +11,7 @@ global.navigator = {
       }),
   },
 }
+
+jest.mock('@react-native-community/async-storage', () => mockAsyncStorage)
+jest.mock('@react-native-community/google-signin', () => {})
+jest.mock('@invertase/react-native-apple-authentication', () => {})

@@ -9,7 +9,9 @@ export const colors = {
   blue: '#2680C2',
   paleBlue: '#62B0E8',
   orange: '#FFAA49',
+  purple: '#3B5FF6',
   fitbit: '#4dadb7',
+  red: '#eb4d4b',
 }
 
 export const fonts = {

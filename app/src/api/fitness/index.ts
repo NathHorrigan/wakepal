@@ -1,4 +1,5 @@
 import { FitbitTracker } from './FitbitTracker'
+import { HealthKitTracker } from './HealthKitTracker'
 
 export enum FitnessTracker {
   HealthKit = 'healthkit',
@@ -8,6 +9,8 @@ export enum FitnessTracker {
 
 export const trackers = {
   fitbit: FitbitTracker.getClient(),
-  googlefit: null,
-  healthkit: null,
+  googlefit: HealthKitTracker.getClient(),
+  healthkit: HealthKitTracker.getClient(),
 }
+
+export { SleepRecoring } from './SleepRecording'

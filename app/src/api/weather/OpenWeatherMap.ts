@@ -25,13 +25,13 @@ class OpenWeatherMap implements WeatherStation {
   private getCurrentLocation(): Promise<Location> {
     return new Promise((resolve, reject) => {
       Geolocation.getCurrentPosition(
-        (position: any): Promise<Location> =>
+        (position: any) =>
           resolve({
             latitude: position.coords.latitude,
             longitude: position.coords.longitude,
           }),
-        (error: Error) => reject(error),
-        { enableHighAccuracy: false, timeout: 1000 }
+        (error: any) => reject(error),
+        { enableHighAccuracy: false, timeout: 3000 }
       )
     })
   }
@@ -50,14 +50,14 @@ class OpenWeatherMap implements WeatherStation {
         // Date created at
         Date.now(),
         // Temperature (in Celcius)
-        data.main.temp,
+        data.main.temp.toFixed(1),
         // Summary of weather
         data.weather[0].description,
         // Icon to be used for the UI
         this.getIcon(data.weather.icon)
       )
     } catch (e) {
-      console.error(e)
+      return Promise.reject(e)
     }
   }
 

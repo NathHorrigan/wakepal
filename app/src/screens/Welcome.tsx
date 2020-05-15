@@ -1,4 +1,5 @@
 import React, { SFC } from 'react'
+import { Platform } from 'react-native'
 import styled from 'styled-components/native'
 import LottieView from 'lottie-react-native'
 import { useDispatch } from 'react-redux'
@@ -9,7 +10,7 @@ import { loginWithProvider } from '@redux/actions'
 import { fonts, colors } from '@utils/theme'
 import { AuthProviders } from '@api/auth'
 
-const LoginScreen: SFC = () => {
+const LoginScreen: SFC = ({ navigation }) => {
   const dispatch = useDispatch()
   // Google Sign in callback
   const onGoogleClick = () => dispatch(loginWithProvider(AuthProviders.Google))
@@ -21,11 +22,14 @@ const LoginScreen: SFC = () => {
       <Logo>WakePal</Logo>
       <Slogan>Measuring your life metrics.</Slogan>
       <ButtonsContainer>
-        <AppleLoginButton onPress={onAppleClick} />
+        {Platform.OS === 'ios' && <AppleLoginButton onPress={onAppleClick} />}
         <GoogleButton onPress={onGoogleClick}>
           <GoogleIcon />
           <GoogleText>Continue with Google</GoogleText>
         </GoogleButton>
+        <ManualLoginButton onPress={() => navigation.navigate('Register')}>
+          <ManualLoginText>Register / Login with Email</ManualLoginText>
+        </ManualLoginButton>
       </ButtonsContainer>
       <Sloth />
       <Exercise />
@@ -58,6 +62,27 @@ const ButtonsContainer = styled.View`
   width: 300px;
   margin: 0 auto;
   margin-top: 230px;
+  z-index: 10;
+`
+
+const ManualLoginButton = styled.TouchableOpacity`
+  height: 50px;
+  width: 300px;
+  margin-top: 10px;
+  background: ${colors.coral};
+  border-radius: 6px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.23);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`
+
+const ManualLoginText = styled.Text`
+  color: white;
+  font-size: 16px;
+  font-family: ${fonts.semiBold};
+  text-align: center;
 `
 
 const AppleLoginButton = styled(AppleButton).attrs({

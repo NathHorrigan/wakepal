@@ -5,7 +5,7 @@ import { SET_AUTH_SESSION, SET_USER_ONBOARDED, LOGOUT } from '@redux/actions'
 type AuthProviderStorage = Object
 
 // Types for the data object for how we use
-interface AuthenticationState {
+export interface AuthenticationState {
   userOnboarded: boolean
   userAuthenticated: boolean
   userProvider: string | null

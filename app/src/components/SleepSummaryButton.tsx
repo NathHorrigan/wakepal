@@ -1,12 +1,12 @@
 import React, { SFC } from 'react'
 import styled from 'styled-components/native'
 import { getSleepSummary } from '@components/SleepGraph'
-import { SleepSpan } from '@api/fitness/SleepRecording'
+import { SleepStageSegment } from '@api/fitness/SleepRecording'
 import { colors, fonts } from '@utils/theme'
 
 export interface ActionButtonProps {
   date: string
-  segments: SleepSpan
+  segments: SleepStageSegment[]
 }
 
 const SleepSummaryButton: SFC<ActionButtonProps> = ({
