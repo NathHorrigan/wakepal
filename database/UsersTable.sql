@@ -9,6 +9,6 @@ CREATE TABLE dbo.Users
     height NUMERIC(18,3) NOT NULL,
     weight NUMERIC(18,3) NOT NULL,
     email VARCHAR(50) NOT NULL,
-    password VARCHAR NOT NULL,
+    password VARCHAR(50) NOT NULL,
     CONSTRAINT PK_User PRIMARY KEY (userId) 
 ); 
