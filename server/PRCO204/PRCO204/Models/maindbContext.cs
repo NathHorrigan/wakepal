@@ -1,7 +1,4 @@
-﻿using System;
-using System.Configuration;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Metadata;
+﻿using Microsoft.EntityFrameworkCore;
 
 namespace PRCO204.Models
 {
@@ -41,15 +38,13 @@ namespace PRCO204.Models
                 entity.HasKey(e => e.FitnessId)
                     .HasName("PK_dailyFitness");
 
-                entity.Property(e => e.FitnessId)
-                    .HasColumnName("fitnessId")
-                    .ValueGeneratedNever();
+                entity.Property(e => e.FitnessId).HasColumnName("fitnessId");
 
                 entity.Property(e => e.Calories).HasColumnName("calories");
 
                 entity.Property(e => e.FitnessDate)
                     .HasColumnName("fitnessDate")
-                    .HasColumnType("datetime");
+                    .HasColumnType("date");
 
                 entity.Property(e => e.Floors).HasColumnName("floors");
 
@@ -75,9 +70,7 @@ namespace PRCO204.Models
                 entity.HasKey(e => e.RequestId)
                     .HasName("PK_friendshipRequests");
 
-                entity.Property(e => e.RequestId)
-                    .HasColumnName("requestId")
-                    .ValueGeneratedNever();
+                entity.Property(e => e.RequestId).HasColumnName("requestId");
 
                 entity.Property(e => e.RecipientId).HasColumnName("recipientId");
 
@@ -101,9 +94,7 @@ namespace PRCO204.Models
                 entity.HasKey(e => e.FriendshipId)
                     .HasName("PK_friendship");
 
-                entity.Property(e => e.FriendshipId)
-                    .HasColumnName("friendshipId")
-                    .ValueGeneratedNever();
+                entity.Property(e => e.FriendshipId).HasColumnName("friendshipId");
 
                 entity.Property(e => e.FriendId).HasColumnName("friendId");
 
@@ -151,9 +142,7 @@ namespace PRCO204.Models
 
             modelBuilder.Entity<Sleep>(entity =>
             {
-                entity.Property(e => e.SleepId)
-                    .HasColumnName("sleepId")
-                    .ValueGeneratedNever();
+                entity.Property(e => e.SleepId).HasColumnName("sleepId");
 
                 entity.Property(e => e.Awake).HasColumnName("awake");
 
@@ -165,7 +154,7 @@ namespace PRCO204.Models
 
                 entity.Property(e => e.SleepDate)
                     .HasColumnName("sleepDate")
-                    .HasColumnType("datetime");
+                    .HasColumnType("date");
 
                 entity.Property(e => e.UserId).HasColumnName("userId");
 
@@ -181,10 +170,8 @@ namespace PRCO204.Models
                 entity.HasKey(e => e.UserId)
                     .HasName("PK_User");
 
-                entity.Property(e => e.UserId)
-                    .HasColumnName("userId")
-                    .ValueGeneratedNever();
-
+                entity.Property(e => e.UserId).HasColumnName("userId");
+                    
                 entity.Property(e => e.Age).HasColumnName("age");
 
                 entity.Property(e => e.Email)
@@ -212,7 +199,7 @@ namespace PRCO204.Models
                 entity.Property(e => e.Password)
                     .IsRequired()
                     .HasColumnName("password")
-                    .HasMaxLength(1)
+                    .HasMaxLength(50)
                     .IsUnicode(false);
 
                 entity.Property(e => e.Weight)
