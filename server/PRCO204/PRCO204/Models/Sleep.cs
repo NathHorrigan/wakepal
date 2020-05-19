@@ -11,7 +11,7 @@ namespace PRCO204.Models
         public TimeSpan? Light { get; set; }
         public TimeSpan? Deep { get; set; }
         public TimeSpan? Rem { get; set; }
-        public DateTime SleepDate { get; set; }
+        public DateTime? SleepDate { get; set; }
 
         public virtual Users User { get; set; }
     }
