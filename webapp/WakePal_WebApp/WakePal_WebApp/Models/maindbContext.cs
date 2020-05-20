@@ -26,7 +26,6 @@ namespace WakePal_WebApp.Models
         {
             if (!optionsBuilder.IsConfigured)
             {
-#warning To protect potentially sensitive information in your connection string, you should move it out of source code. See http://go.microsoft.com/fwlink/?LinkId=723263 for guidance on storing connection strings.
                 optionsBuilder.UseSqlServer("Server=wakepal.cfkxkhkgqmap.us-east-2.rds.amazonaws.com;Database=maindb;User Id=admin; Password=PZZUtrCx7unTU2eVwPkpsBkBNCcWG6vmquifhJpn");
             }
         }

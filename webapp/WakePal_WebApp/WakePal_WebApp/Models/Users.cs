@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 
 namespace WakePal_WebApp.Models
 {
@@ -21,7 +22,14 @@ namespace WakePal_WebApp.Models
         public int Age { get; set; }
         public decimal Height { get; set; }
         public decimal Weight { get; set; }
+
+
+        [StringLength(20)]
+        [Required(ErrorMessage = "Please enter your login email")]
         public string Email { get; set; }
+
+        [StringLength(20)]
+        [Required(ErrorMessage = "Please enter your password")]
         public string Password { get; set; }
 
         public PasswordResets PasswordResets { get; set; }

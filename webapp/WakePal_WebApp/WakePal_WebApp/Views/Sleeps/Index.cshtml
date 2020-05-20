@@ -2,14 +2,16 @@
 
 @{
     ViewData["Title"] = "Index";
-    Layout = "~/Views/Shared/AdminLayout.cshtml";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
 }
 
-<h2>SLEEP DATA</h2>
+
+<h2>Index</h2>
 
 <p>
     <a asp-action="Create">Create New</a>
 </p>
+
 <table class="table">
     <thead>
         <tr>
@@ -35,32 +37,33 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Awake)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Light)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Deep)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Rem)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.SleepDate)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.User.Email)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.SleepId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.SleepId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.SleepId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Awake)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Light)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Deep)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Rem)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.SleepDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.User.Email)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.SleepId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.SleepId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.SleepId">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>
