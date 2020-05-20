@@ -12603,11 +12603,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\!ARCHIVUM\\coursework\\WAKE PAL\\WakePal_WebApp\\WakePal_WebApp\\WakePal_WebApp.csproj",
+      "projectUniqueName": "C:\\!ARCHIVUM\\coursework\\wakepal\\webapp\\WakePal_WebApp\\WakePal_WebApp\\WakePal_WebApp.csproj",
       "projectName": "WakePal_WebApp",
-      "projectPath": "C:\\!ARCHIVUM\\coursework\\WAKE PAL\\WakePal_WebApp\\WakePal_WebApp\\WakePal_WebApp.csproj",
+      "projectPath": "C:\\!ARCHIVUM\\coursework\\wakepal\\webapp\\WakePal_WebApp\\WakePal_WebApp\\WakePal_WebApp.csproj",
       "packagesPath": "C:\\Users\\s\\.nuget\\packages\\",
-      "outputPath": "C:\\!ARCHIVUM\\coursework\\WAKE PAL\\WakePal_WebApp\\WakePal_WebApp\\obj\\",
+      "outputPath": "C:\\!ARCHIVUM\\coursework\\wakepal\\webapp\\WakePal_WebApp\\WakePal_WebApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

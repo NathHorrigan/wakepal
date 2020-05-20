@@ -1,4 +1,6 @@
-﻿<!DOCTYPE html>
+﻿@model WakePal_WebApp.Models.Users
+
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -7,14 +9,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>WakePal - Health tracker app</title>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous">
+    </script>
+
+
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="custom.css">
+          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="~/css/custom.css">
 </head>
 
 <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="images/logo-text.png" height="50"></a>
+        <a class="navbar-brand" href="#"><img src="~/images/logo-text.png" height="50"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
             aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -27,12 +33,37 @@
                 </li>
             </ul>
 
-            <form class="form-inline my-2 my-lg-0" action="wakepal.azurewebsites.net/api/users/authenticate" method="POST">
-                <input class="form-control mr-sm-2" type="email" placeholder="username" aria-label="username">
-                <input class="form-control mr-sm-2" type="password" placeholder="password" aria-label="password">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login to WakePal</button>
+            <form asp-controller="Users" asp-action="loginRedirect" class="form-inline my-2 my-lg-0">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group border-1">
+
+                    <input asp-for="Email" class="form-control mr-sm-2" placeholder="username"/>
+                    <span asp-validation-for="Email" class="text-danger"></span>
+                </div>
+                <div class="form-group border-1">
+
+                    <input asp-for="Password" class="form-control mr-sm-2" placeholder="password"/>
+                    <span asp-validation-for="Password" class="text-danger"></span>
+                </div>
+                <div class="form-group margin">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Login to WakePal</button>
+                </div>
             </form>
-            <a class="bbutton b-pink" asp-controller="Sleeps" asp-action="Index">Dashboard</a>
+
+            @{
+                if (ViewBag.success != null)
+                {
+                    <div class="row margin">
+                        <div class="col-sm-2">
+                            <div class="card bg-success mb-3">
+                                <div class="card-header bg-success text-center text-white">Login succesfully authenticated!</div>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+
+
         </div>
     </nav>
 
@@ -62,7 +93,7 @@
             <div class="col-md-4 col-sm-12">
 
                 <div class="card" style="width: 18rem;">
-                    <img src="images/dash.png" class="card-img-top" alt="...">
+                    <img src="~/images/dash.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Dashboard</h5>
                     </div>
@@ -73,7 +104,7 @@
             <div class="col-md-4 col-sm-12">
 
                 <div class="card" style="width: 18rem;">
-                    <img src="images/water.png" class="card-img-top" alt="...">
+                    <img src="~/images/water.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Hydration monitoring</h5>
                     </div>
@@ -84,7 +115,7 @@
             <div class="col-md-4 col-sm-12">
 
                 <div class="card" style="width: 18rem;">
-                    <img src="images/steps.png" class="card-img-top" alt="...">
+                    <img src="~/images/steps.png" class="card-img-top" alt="...">
                     <div class="card-body">
                         <h5 class="card-title">Step counting</h5>
                     </div>
@@ -95,9 +126,7 @@
     </div>
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
-    </script>
+    
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
         integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
     </script>

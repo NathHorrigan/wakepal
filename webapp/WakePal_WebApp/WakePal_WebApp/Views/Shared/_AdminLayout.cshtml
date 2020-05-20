@@ -7,6 +7,9 @@
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
     <link rel="stylesheet" href="~/css/AdminLayout.css">
 </head>
 <body>
@@ -18,11 +21,15 @@
                     <span class="sr-only">Toggle Menu</span>
                 </button>
             </div>
-            <h1><a asp-area="" asp-controller="Home" asp-action="Index" class="logo">Home</a></h1>
+            <a asp-area="" asp-controller="Home" asp-action="Index" class="logo"><img src="~/images/logo-text-white.png" height="50"></a>
             <ul class="list-unstyled components mb-5">
                 <li class="active">
-                    <a asp-area="" asp-controller="Admin" asp-action="Index">
-                    <span class="fa fa-home mr-3"></span> Homepage</a>
+                    <a asp-area="" asp-controller="Sleeps" asp-action="Index">
+                    <span class=""></span>Sleep analysis</a>
+                </li>
+                <li class="active">
+                    <a asp-area="" asp-controller="DailyFitnesses" asp-action="Index">
+                        <span class=""></span>Daily fitness analysis</a>
                 </li>
            
              
