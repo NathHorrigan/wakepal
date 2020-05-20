@@ -6,6 +6,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="wwwroot\css\water.png" />
     <Content Remove="wwwroot\images\bg-sea.jpg" />
     <Content Remove="wwwroot\images\bg-sun.jpg" />
     <Content Remove="wwwroot\images\dash.png" />
@@ -17,7 +18,26 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Remove="Views\DailyFitnesses\favicon.ico" />
+    <None Remove="Views\Home\favicon.ico" />
+    <None Remove="Views\Sleeps\favicon.ico" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Views\DailyFitnesses\favicon.ico">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Home\favicon.ico">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Views\Sleeps\favicon.ico">
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
     <None Include="wwwroot\css\custom.css" />
+    <None Include="wwwroot\css\water.png" />
     <None Include="wwwroot\images\bg-sea.jpg" />
     <None Include="wwwroot\images\bg-sun.jpg" />
     <None Include="wwwroot\images\dash.png" />

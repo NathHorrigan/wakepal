@@ -84,7 +84,7 @@ namespace WakePal_WebApp.Controllers
                 return RedirectToAction("Index", "Sleeps", new { area = "" });
             } else
             {
-                return View();
+                return RedirectToAction("Index", "Home");
             }
             
         }

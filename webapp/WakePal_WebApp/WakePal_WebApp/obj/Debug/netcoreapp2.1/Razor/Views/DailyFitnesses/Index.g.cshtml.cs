@@ -67,7 +67,7 @@ using WakePal_WebApp.Models;
             WriteLiteral("\r\n<h2>Daily fitness data</h2>\r\n\r\n<p>\r\n    ");
             EndContext();
             BeginContext(206, 37, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "a9e4784e56734a05ae2fd477dee4bffb", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "3a963442902546a18187b511fd0f0f83", async() => {
                 BeginContext(229, 10, true);
                 WriteLiteral("Create New");
                 EndContext();
@@ -237,7 +237,7 @@ using WakePal_WebApp.Models;
             WriteLiteral("\r\n            </td>\r\n            <td>\r\n                ");
             EndContext();
             BeginContext(1823, 60, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "9829d77b84ac42dfbed85c30f8e4f857", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f8f48b4793de48a5aeb0d6511063e8b5", async() => {
                 BeginContext(1875, 4, true);
                 WriteLiteral("Edit");
                 EndContext();
@@ -272,7 +272,7 @@ using WakePal_WebApp.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(1903, 66, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6144417b1f7f4b6bbeafc053f14c5329", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "2da4980129d4496f94ada5b5cc3a4876", async() => {
                 BeginContext(1958, 7, true);
                 WriteLiteral("Details");
                 EndContext();
@@ -307,7 +307,7 @@ using WakePal_WebApp.Models;
             WriteLiteral(" |\r\n                ");
             EndContext();
             BeginContext(1989, 64, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "7561af53ac7e4133981526503ae5886a", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("a", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "d4fed1baac8c4ebbbb709a1028bb1506", async() => {
                 BeginContext(2043, 6, true);
                 WriteLiteral("Delete");
                 EndContext();
