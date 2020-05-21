@@ -15,7 +15,7 @@ const exampleWeather = new WeatherResponse(
 )
 
 storiesOf('Sleep', module)
-  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .addDecorator((getStory) => <CenterView>{getStory()}</CenterView>)
   .add('Weather Header', () => (
     <WeatherHeader name="Nathan" dateLabel="Today" weather={exampleWeather} />
   ))

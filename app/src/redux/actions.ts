@@ -29,7 +29,7 @@ export const setAuthSession = (providerId: string, session: AuthSession) => {
 }
 
 // Logout of main applicatoon
-export const logout = () => async dispatch => {
+export const logout = () => async (dispatch) => {
   // Logout everything
   logoutAllProviders()
   // Reset State
@@ -39,7 +39,7 @@ export const logout = () => async dispatch => {
 }
 
 // Login in to the main application with the following provider...
-export const loginWithProvider = (providerId: string) => async dispatch => {
+export const loginWithProvider = (providerId: string) => async (dispatch) => {
   try {
     const provider = authProvders[providerId]
     const session = await provider.login()
@@ -51,10 +51,9 @@ export const loginWithProvider = (providerId: string) => async dispatch => {
 }
 
 // Login with basic username and password
-export const loginWithBasic = (
-  email: string,
-  password: string
-) => async dispatch => {
+export const loginWithBasic = (email: string, password: string) => async (
+  dispatch
+) => {
   const session = await WakePalAuthProvider.getClient().login(email, password)
   dispatch(setAuthSession('wakepal', session))
 }
@@ -90,7 +89,7 @@ export const setOnboardingData = (
   floorsGoal: number,
   caloriesGoal: number,
   trackingMethod: string
-) => async dispatch => {
+) => async (dispatch) => {
   // Authenticate the user suing the chosen tracking method
   const fitnessProvider = trackers[trackingMethod]
 

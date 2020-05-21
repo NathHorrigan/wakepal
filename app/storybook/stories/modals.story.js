@@ -62,6 +62,6 @@ const ExampleWeightModal = () => {
 }
 
 storiesOf('Activity Elements', module)
-  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .addDecorator((getStory) => <CenterView>{getStory()}</CenterView>)
   .add('Water Modal', () => <ExampleWaterModal />)
   .add('Weight Modal', () => <ExampleWeightModal />)

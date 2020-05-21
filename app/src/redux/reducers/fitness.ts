@@ -88,7 +88,7 @@ export function fitnessReducer(state: FitnessState, action: any) {
       )
       // Sort the data
       const mergedRecordings = _.values(mergedData)
-        .filter(a => a !== null)
+        .filter((a) => a !== null)
         .sort(
           (a: DailyFitnessRecording, b: DailyFitnessRecording) =>
             new Date(a.date).getTime() - new Date(b.date).getTime()
@@ -124,7 +124,7 @@ export function fitnessReducer(state: FitnessState, action: any) {
         // Find the last weight recording
         const lastWeight = state.recordings
           .reverse()
-          .find(recording => !!recording.weight)
+          .find((recording) => !!recording.weight)
         // Create a new recording for today
         const newRecording: DailyFitnessRecording = {
           weight: lastWeight,

@@ -9,7 +9,7 @@
     "test": "jest",
     "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
     "lint:fix": "eslint --fix . --ext .js,.jsx,.ts,.tsx",
-    "prettier": "prettier --write '{.,app,storybook,__tests__}/**/*.{js,ts, tsx}'",
+    "prettier": "prettier --write '{.,src,storybook,__tests__}/**/*.{js,ts, tsx}'",
     "storybook": "start-storybook -p 7007"
   },
   "dependencies": {
@@ -72,7 +72,7 @@
     "lint-staged": "^10.0.8",
     "metro-react-native-babel-preset": "^0.56.0",
     "node-fetch": "^2.6.0",
-    "prettier": "1.19.1",
+    "prettier": "^2.0.5",
     "react-dom": "^16.9.0",
     "react-native-jest-mocks": "^1.5.0",
     "react-test-renderer": "16.9.0",

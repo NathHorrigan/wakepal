@@ -19,7 +19,7 @@ export abstract class BaseAuthProvider implements AuthProvider {
 
   constructor(sessionId: string) {
     this.sessionId = sessionId
-    AsyncStorage.getItem(sessionId, undefined).then(session => {
+    AsyncStorage.getItem(sessionId, undefined).then((session) => {
       if (session) {
         this.session = JSON.parse(session)
       }

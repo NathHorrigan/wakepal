@@ -11,7 +11,7 @@ import { colors } from '@utils/theme'
 import { FitbitAuthProvider } from '@api/auth/FitbitAuth'
 
 storiesOf('Buttons', module)
-  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .addDecorator((getStory) => <CenterView>{getStory()}</CenterView>)
   .add('Small', () => <ActionButton icon={Watch} label="Sync" />)
   .add('Wide', () => (
     <ActionButton wide icon={Friends} label="Friends" color={colors.cyan} />

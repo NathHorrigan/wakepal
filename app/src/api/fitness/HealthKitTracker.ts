@@ -45,7 +45,7 @@ export class HealthKitTracker implements SleepTracker {
 
   async authenticate(): boolean | Promise<any> {
     return new Promise((resolve, reject) => {
-      AppleHealthKit.initHealthKit(options, err => {
+      AppleHealthKit.initHealthKit(options, (err) => {
         if (err) {
           return reject(err)
         }
@@ -58,7 +58,7 @@ export class HealthKitTracker implements SleepTracker {
   async getSteps(date: Date): Promise<HealthKitRecording> {
     const config = { date: date.toISOString() }
     return new Promise((resolve, reject) => {
-      AppleHealthKit.initHealthKit(options, err => {
+      AppleHealthKit.initHealthKit(options, (err) => {
         if (err) {
           return reject(err)
         }
@@ -86,7 +86,7 @@ export class HealthKitTracker implements SleepTracker {
       endDate: endOfDay(date).toISOString(),
     }
     return new Promise((resolve, reject) => {
-      AppleHealthKit.initHealthKit(options, err => {
+      AppleHealthKit.initHealthKit(options, (err) => {
         if (err) {
           return reject(err)
         }
@@ -101,7 +101,7 @@ export class HealthKitTracker implements SleepTracker {
               label: 'calories',
               value: results.length
                 ? results
-                    .map(recording => recording.value)
+                    .map((recording) => recording.value)
                     .reduce((a, b) => a + b)
                 : 0,
             })
@@ -114,7 +114,7 @@ export class HealthKitTracker implements SleepTracker {
   async getFloors(date: Date): Promise<HealthKitRecording> {
     const config = { date: date.toISOString() }
     return new Promise((resolve, reject) => {
-      AppleHealthKit.initHealthKit(options, err => {
+      AppleHealthKit.initHealthKit(options, (err) => {
         if (err) {
           return reject(err)
         }
@@ -141,7 +141,7 @@ export class HealthKitTracker implements SleepTracker {
       endDate: addDays(date, 1).toISOString(),
     }
     return new Promise((resolve, reject) => {
-      AppleHealthKit.initHealthKit(options, err => {
+      AppleHealthKit.initHealthKit(options, (err) => {
         if (err) {
           return reject(err)
         }
@@ -154,7 +154,7 @@ export class HealthKitTracker implements SleepTracker {
             }
             resolve({
               label: 'sleep',
-              value: results.map(sleep => {
+              value: results.map((sleep) => {
                 const start = parse(sleep.startDate)
                 const end = parse(sleep.endDate)
                 return {
@@ -179,7 +179,7 @@ export class HealthKitTracker implements SleepTracker {
       limit: 1,
     }
     return new Promise((resolve, reject) => {
-      AppleHealthKit.initHealthKit(options, err => {
+      AppleHealthKit.initHealthKit(options, (err) => {
         if (err) {
           return reject(err)
         }

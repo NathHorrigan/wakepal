@@ -66,7 +66,7 @@ export class FitbitTracker implements SleepTracker {
   }
 
   parseFitbitSleepToSegments(sleepRecording): SleepStageSegment[] {
-    return sleepRecording.map(segment => ({
+    return sleepRecording.map((segment) => ({
       id: `${segment.dateTime}`,
       stage: this.classifyFitbitStage(segment.level),
       startTime: new Date(segment.dateTime),
@@ -88,8 +88,8 @@ export class FitbitTracker implements SleepTracker {
       const res = await req.json()
       // Serialize data to WakePal format
       const sleepData = res.sleep
-        ?.filter(sleep => sleep.isMainSleep)
-        .map(sleep => {
+        ?.filter((sleep) => sleep.isMainSleep)
+        .map((sleep) => {
           return {
             date: sleep.dateOfSleep,
             segments: this.parseFitbitSleepToSegments(sleep.levels.data),
@@ -112,7 +112,7 @@ export class FitbitTracker implements SleepTracker {
     const activityData = {}
     // Resolve each activity type to data between two dates
     const rawData = await Promise.all(
-      activities.map(async activity => {
+      activities.map(async (activity) => {
         // Requesr data from fitbit
         const urlSuffix = dateEnd ? `/${dateEnd}` : ''
         const req = await this.createRequest(
@@ -138,11 +138,11 @@ export class FitbitTracker implements SleepTracker {
     const startDate = new Date(dateStart)
     const endDate = dateEnd ? new Date(dateEnd) : startDate
     // Get all the dates in the range
-    const datesBetween = eachDay(startDate, endDate).map(date =>
+    const datesBetween = eachDay(startDate, endDate).map((date) =>
       format(date, 'YYYY-MM-DD')
     )
     // Create a collection of data for each date
-    const dailyRecords = datesBetween.map(date => {
+    const dailyRecords = datesBetween.map((date) => {
       const getData = (data: any) =>
         data?.find(({ dateTime: matchDate }) => matchDate == date).value
       return {

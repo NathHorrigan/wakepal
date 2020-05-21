@@ -9,16 +9,16 @@ import rootReducer from './reducers'
 // Middleware to encrypt state
 const encryptor = createEncryptor({
   secretKey: Config.ENCRYPTION_KEY,
-  onError: function(error: Error) {
+  onError: function (error: Error) {
     console.error(error)
-  }
+  },
 })
 
 // Configure how we will store state between app openings...
 const persistConfig = {
   key: 'root',
   storage: AsyncStorage,
-  transforms: [encryptor]
+  transforms: [encryptor],
 }
 
 // Create a persitable reducer instance

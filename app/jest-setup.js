@@ -22,7 +22,7 @@ jest.mock('@react-native-community/geolocation', () => ({
       coords: {
         latitude: 50.368168,
         longitude: -4.125115,
-      }
+      },
     })
-  }
+  },
 }))

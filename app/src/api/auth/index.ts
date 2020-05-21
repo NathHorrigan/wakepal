@@ -18,7 +18,7 @@ export const providers: { [key: string]: any } = {
 export const logoutAllProviders = async () => {
   try {
     await Promise.all(
-      Object.values(providers).map(async provider => await provider.logout())
+      Object.values(providers).map(async (provider) => await provider.logout())
     )
   } catch (error) {
     console.log(error)
