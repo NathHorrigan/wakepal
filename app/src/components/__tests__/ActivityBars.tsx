@@ -23,7 +23,7 @@ it('renders correctly', () => {
             value: 4,
             goal: 6,
             color: colors.paleBlue,
-            unit: 'Pints',
+            unit: 'Litres',
           },
         ]}
       />

@@ -4,6 +4,8 @@ import Modal from 'react-native-modal'
 import styled from 'styled-components/native'
 import Svg, { Path } from 'react-native-svg'
 import { Water, Plus, Minus, Cross } from './icons'
+
+import { ButtonProps } from '@components/ActionButton'
 import { fonts } from '@utils/theme'
 
 interface WaterModalProps {
@@ -153,13 +155,13 @@ const ControlRow = styled.View`
   margin-top: 40px;
 `
 
-const ValueText = styled.TextInput`
+const ValueText = styled.TextInput<ButtonProps>`
   color: ${props => props.color};
   font-size: 35px;
   font-family: ${fonts.bold};
 `
 
-const UnitText = styled.Text`
+const UnitText = styled.Text<ButtonProps>`
   opacity: 0.6;
   color: ${props => props.color};
   font-family: ${fonts.semiBold};

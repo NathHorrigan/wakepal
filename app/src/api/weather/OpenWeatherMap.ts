@@ -1,4 +1,5 @@
 import Config from 'react-native-config'
+import Geolocation from '@react-native-community/geolocation'
 
 import { WeatherStation } from '@api/weather/WeatherStation'
 import { WeatherResponse, WeatherIcon } from '@api/weather/WeatherResponse'
@@ -23,10 +24,15 @@ class OpenWeatherMap implements WeatherStation {
 
   private getCurrentLocation(): Promise<Location> {
     return new Promise((resolve, reject) => {
-      navigator.geolocation.getCurrentPosition(
-        (position: Location) => resolve(position),
-        (error: Error) => reject(error),
-        { enableHighAccuracy: false, timeout: 1000 }
+      Geolocation.getCurrentPosition(
+        (position: any) => {
+          return resolve({
+            latitude: position.coords.latitude,
+            longitude: position.coords.longitude,
+          })
+        },
+        (error: any) => reject(error),
+        { enableHighAccuracy: false, timeout: 3000 }
       )
     })
   }
@@ -45,14 +51,14 @@ class OpenWeatherMap implements WeatherStation {
         // Date created at
         Date.now(),
         // Temperature (in Celcius)
-        data.main.temp,
+        data.main.temp.toFixed(1),
         // Summary of weather
         data.weather[0].description,
         // Icon to be used for the UI
         this.getIcon(data.weather.icon)
       )
     } catch (e) {
-      console.error(e)
+      return Promise.reject(e)
     }
   }
 
@@ -82,4 +88,5 @@ class OpenWeatherMap implements WeatherStation {
   }
 }
 
+export type WeatherResponse = WeatherResponse
 export default OpenWeatherMap

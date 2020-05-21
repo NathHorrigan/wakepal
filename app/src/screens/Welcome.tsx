@@ -1,46 +1,35 @@
 import React, { SFC } from 'react'
+import { Platform } from 'react-native'
 import styled from 'styled-components/native'
 import LottieView from 'lottie-react-native'
-import {
-  GoogleSignin,
-  statusCodes,
-} from '@react-native-community/google-signin'
+import { useDispatch } from 'react-redux'
 import { AppleButton } from '@invertase/react-native-apple-authentication'
 
 import { GoogleIcon } from '@components/icons'
+import { loginWithProvider } from '@redux/actions'
 import { fonts, colors } from '@utils/theme'
+import { AuthProviders } from '@api/auth'
 
-GoogleSignin.configure()
-const LoginScreen: SFC = () => {
+const LoginScreen: SFC = ({ navigation }) => {
+  const dispatch = useDispatch()
   // Google Sign in callback
-  const onGoogleClick = async () => {
-    try {
-      await GoogleSignin.hasPlayServices()
-      const userInfo = await GoogleSignin.signIn()
-      console.log(userInfo)
-    } catch (error) {
-      if (error.code === statusCodes.SIGN_IN_CANCELLED) {
-        // user cancelled the login flow
-      } else if (error.code === statusCodes.IN_PROGRESS) {
-        // operation (e.g. sign in) is in progress already
-      } else if (error.code === statusCodes.PLAY_SERVICES_NOT_AVAILABLE) {
-        // play services not available or outdated
-      } else {
-        // some other error happened
-      }
-    }
-  }
+  const onGoogleClick = () => dispatch(loginWithProvider(AuthProviders.Google))
+  // Apple Sign in callback
+  const onAppleClick = () => dispatch(loginWithProvider(AuthProviders.Apple))
 
   return (
     <LoginContainer>
       <Logo>WakePal</Logo>
       <Slogan>Measuring your life metrics.</Slogan>
       <ButtonsContainer>
-        <AppleLoginButton onPress={() => console.log('NOT IMPLEMENTED')} />
+        {Platform.OS === 'ios' && <AppleLoginButton onPress={onAppleClick} />}
         <GoogleButton onPress={onGoogleClick}>
           <GoogleIcon />
           <GoogleText>Continue with Google</GoogleText>
         </GoogleButton>
+        <ManualLoginButton onPress={() => navigation.navigate('Register')}>
+          <ManualLoginText>Register / Login with Email</ManualLoginText>
+        </ManualLoginButton>
       </ButtonsContainer>
       <Sloth />
       <Exercise />
@@ -51,12 +40,49 @@ const LoginScreen: SFC = () => {
 const LoginContainer = styled.View`
   width: 100%;
   height: 100%;
+  background: white;
+`
+
+const Logo = styled.Text`
+  font-size: 40px;
+  margin-top: 130px;
+  text-align: center;
+  font-family: ${fonts.semiBold};
+`
+
+const Slogan = styled.Text`
+  font-size: 18px;
+  margin-top: 10px;
+  text-align: center;
+  color: ${colors.coral};
+  font-family: ${fonts.semiBold};
 `
 
 const ButtonsContainer = styled.View`
   width: 300px;
   margin: 0 auto;
   margin-top: 230px;
+  z-index: 10;
+`
+
+const ManualLoginButton = styled.TouchableOpacity`
+  height: 50px;
+  width: 300px;
+  margin-top: 10px;
+  background: ${colors.coral};
+  border-radius: 6px;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.23);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+`
+
+const ManualLoginText = styled.Text`
+  color: white;
+  font-size: 16px;
+  font-family: ${fonts.semiBold};
+  text-align: center;
 `
 
 const AppleLoginButton = styled(AppleButton).attrs({
@@ -68,7 +94,7 @@ const AppleLoginButton = styled(AppleButton).attrs({
 `
 
 const GoogleButton = styled.TouchableOpacity`
-  height: 45px;
+  height: 50px;
   width: 300px;
   margin-top: 10px;
   background: white;
@@ -82,7 +108,7 @@ const GoogleButton = styled.TouchableOpacity`
 
 const GoogleText = styled.Text`
   color: black;
-  font-size: 15px;
+  font-size: 18px;
   font-family: ${fonts.semiBold};
   margin-left: 4px;
 `
@@ -95,7 +121,7 @@ const Sloth = styled(LottieView).attrs({
   position: absolute;
   height: 200px;
   right: -2px;
-  top: 60px;
+  top: 70px;
 `
 
 const Exercise = styled(LottieView).attrs({
@@ -108,21 +134,6 @@ const Exercise = styled(LottieView).attrs({
   right: 0;
   left: 0;
   bottom: -20px;
-`
-
-const Logo = styled.Text`
-  font-size: 40px;
-  margin-top: 80px;
-  text-align: center;
-  font-family: ${fonts.semiBold};
-`
-
-const Slogan = styled.Text`
-  font-size: 18px;
-  margin-top: 10px;
-  text-align: center;
-  color: ${colors.coral};
-  font-family: ${fonts.semiBold};
 `
 
 export default LoginScreen

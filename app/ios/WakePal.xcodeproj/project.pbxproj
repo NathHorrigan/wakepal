@@ -22,6 +22,8 @@
 		3138B6C481E24602A224FE43 /* SFProRounded-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 27737AC6FCCD48C88ECBC23D /* SFProRounded-Heavy.ttf */; };
 		418D62E610DF85DAB5398F2A /* libPods-WakePal-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A831315AF5515D5B7AB6D0E7 /* libPods-WakePal-tvOSTests.a */; };
 		4BDBB72D34D44CB597809182 /* SFProRounded-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8B23492AE341476D9E1C6AC9 /* SFProRounded-Light.ttf */; };
+		4CB9C6F1C175317C2A73018D /* Pods_WakePalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 122836920A50E7280CD15953 /* Pods_WakePalTests.framework */; };
+		632B632D246DDDF50045BA35 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 632B632C246DDDF50045BA35 /* HealthKit.framework */; };
 		63616F642445E73500AD6540 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 63616F632445E73500AD6540 /* GoogleService-Info.plist */; };
 		63616F682445E8E400AD6540 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63616F672445E8E400AD6540 /* AddressBook.framework */; };
 		63616F6A2445E8EB00AD6540 /* SafariServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63616F692445E8EB00AD6540 /* SafariServices.framework */; };
@@ -29,9 +31,13 @@
 		63616F6E2445E8FA00AD6540 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 63616F6D2445E8FA00AD6540 /* libz.tbd */; };
 		63DA8F4B2445F00E00258068 /* GoogleSignIn.bundle in Frameworks */ = {isa = PBXBuildFile; fileRef = 63DA8F4A2445F00E00258068 /* GoogleSignIn.bundle */; };
 		63DA8F4C2445F02400258068 /* GoogleSignIn.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63616F6F2445E95900AD6540 /* GoogleSignIn.framework */; };
+		63E0B91F246BD91B005B85B3 /* Intents.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63E0B91E246BD91B005B85B3 /* Intents.framework */; };
 		81479427683D48038ED08FA8 /* SFProRounded-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D4A66B53406B410D815D21F0 /* SFProRounded-Medium.ttf */; };
+		8D2BDFD21DF0D0CD888FB48C /* libPods-WakePal-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 32BA50A79E4A4430ACEB9541 /* libPods-WakePal-tvOSTests.a */; };
 		AB879E8F20A737C23041CF58 /* libPods-WakePal-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E621573CA5395C3435662A9 /* libPods-WakePal-tvOS.a */; };
 		D6B9121321EC435F9B73EF51 /* SFProRounded-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 24D908E2A4CC4151817BD2B7 /* SFProRounded-Bold.ttf */; };
+		DF4466F357CB4E0A38597F6B /* libPods-WakePal-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D6394F820AFA9659489E4A3 /* libPods-WakePal-tvOS.a */; };
+		E791C6C0593097E2C6D23A23 /* Pods_WakePal.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EB03BD4ADEF5E709510F95D /* Pods_WakePal.framework */; };
 		FC9466313DC84378895001E6 /* SFProRounded-Semibold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = AF20C228035949019C7C4AD7 /* SFProRounded-Semibold.ttf */; };
 		FD77E7A5F578445882046B9D /* SFProRounded-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 051F75AA25314AA68D2639FF /* SFProRounded-Black.ttf */; };
 		FEE25C2FED0E48A4876FB6EE /* SFProRounded-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0F1D6DEA96DD406C8962D21C /* SFProRounded-Regular.ttf */; };
@@ -61,6 +67,7 @@
 		00E356F21AD99517003FC87E /* WakePalTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WakePalTests.m; sourceTree = "<group>"; };
 		051F75AA25314AA68D2639FF /* SFProRounded-Black.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProRounded-Black.ttf"; path = "../src/assets/fonts/SFProRounded-Black.ttf"; sourceTree = "<group>"; };
 		0F1D6DEA96DD406C8962D21C /* SFProRounded-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProRounded-Regular.ttf"; path = "../src/assets/fonts/SFProRounded-Regular.ttf"; sourceTree = "<group>"; };
+		122836920A50E7280CD15953 /* Pods_WakePalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WakePalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* WakePal.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WakePal.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = WakePal/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = WakePal/AppDelegate.m; sourceTree = "<group>"; };
@@ -68,13 +75,16 @@
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = WakePal/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = WakePal/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = WakePal/main.m; sourceTree = "<group>"; };
+		1EB03BD4ADEF5E709510F95D /* Pods_WakePal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WakePal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		24D908E2A4CC4151817BD2B7 /* SFProRounded-Bold.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProRounded-Bold.ttf"; path = "../src/assets/fonts/SFProRounded-Bold.ttf"; sourceTree = "<group>"; };
 		27737AC6FCCD48C88ECBC23D /* SFProRounded-Heavy.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProRounded-Heavy.ttf"; path = "../src/assets/fonts/SFProRounded-Heavy.ttf"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* WakePal-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "WakePal-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* WakePal-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "WakePal-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		32BA50A79E4A4430ACEB9541 /* libPods-WakePal-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WakePal-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		393E0DD91A04B88D26A3A8D5 /* Pods-WakePal.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakePal.release.xcconfig"; path = "Target Support Files/Pods-WakePal/Pods-WakePal.release.xcconfig"; sourceTree = "<group>"; };
 		58045044DB4BB4877A12432F /* Pods-WakePalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakePalTests.debug.xcconfig"; path = "Target Support Files/Pods-WakePalTests/Pods-WakePalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5CFD04C9667F43F81A376BE4 /* Pods_WakePalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WakePalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		632B632C246DDDF50045BA35 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
 		63616F5C2445D07A00AD6540 /* liblottie-ios.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = "liblottie-ios.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		63616F5F2445E4F400AD6540 /* RNGoogleSignin.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = RNGoogleSignin.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		63616F632445E73500AD6540 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
@@ -84,12 +94,15 @@
 		63616F6B2445E8F100AD6540 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		63616F6D2445E8FA00AD6540 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		63616F6F2445E95900AD6540 /* GoogleSignIn.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSignIn.framework; path = Pods/GoogleSignIn/Frameworks/GoogleSignIn.framework; sourceTree = "<group>"; };
+		63AFD747244B74B7008564D5 /* WakePal.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = WakePal.entitlements; path = WakePal/WakePal.entitlements; sourceTree = "<group>"; };
 		63DA8F4A2445F00E00258068 /* GoogleSignIn.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = GoogleSignIn.bundle; path = Pods/GoogleSignIn/Resources/GoogleSignIn.bundle; sourceTree = "<group>"; };
+		63E0B91E246BD91B005B85B3 /* Intents.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Intents.framework; path = System/Library/Frameworks/Intents.framework; sourceTree = SDKROOT; };
 		63EE350232B6969CA660CB05 /* libPods-WakePal.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WakePal.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		706E92E4E181244F14081429 /* Pods-WakePal-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakePal-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-WakePal-tvOS/Pods-WakePal-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		7581516714DE4F7EA6F6EA43 /* SFProRounded-Thin.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProRounded-Thin.ttf"; path = "../src/assets/fonts/SFProRounded-Thin.ttf"; sourceTree = "<group>"; };
 		76565A95D006110F55A2AB42 /* Pods-WakePalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakePalTests.release.xcconfig"; path = "Target Support Files/Pods-WakePalTests/Pods-WakePalTests.release.xcconfig"; sourceTree = "<group>"; };
 		8B23492AE341476D9E1C6AC9 /* SFProRounded-Light.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "SFProRounded-Light.ttf"; path = "../src/assets/fonts/SFProRounded-Light.ttf"; sourceTree = "<group>"; };
+		8D6394F820AFA9659489E4A3 /* libPods-WakePal-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WakePal-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		903F0E67B307D703A2878A8D /* Pods_WakePal.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WakePal.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E621573CA5395C3435662A9 /* libPods-WakePal-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-WakePal-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A0D01D9F702BC6391A185C94 /* Pods-WakePal-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WakePal-tvOS.release.xcconfig"; path = "Target Support Files/Pods-WakePal-tvOS/Pods-WakePal-tvOS.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +122,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				16718F29FA2D0420DC1BFCB9 /* Pods_WakePalTests.framework in Frameworks */,
+				4CB9C6F1C175317C2A73018D /* Pods_WakePalTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,11 +132,14 @@
 			files = (
 				63616F6E2445E8FA00AD6540 /* libz.tbd in Frameworks */,
 				63DA8F4B2445F00E00258068 /* GoogleSignIn.bundle in Frameworks */,
+				63E0B91F246BD91B005B85B3 /* Intents.framework in Frameworks */,
 				63DA8F4C2445F02400258068 /* GoogleSignIn.framework in Frameworks */,
 				63616F6C2445E8F100AD6540 /* SystemConfiguration.framework in Frameworks */,
 				63616F6A2445E8EB00AD6540 /* SafariServices.framework in Frameworks */,
 				63616F682445E8E400AD6540 /* AddressBook.framework in Frameworks */,
 				0C89B89557B08E33BA004D1D /* Pods_WakePal.framework in Frameworks */,
+				E791C6C0593097E2C6D23A23 /* Pods_WakePal.framework in Frameworks */,
+				632B632D246DDDF50045BA35 /* HealthKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -131,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB879E8F20A737C23041CF58 /* libPods-WakePal-tvOS.a in Frameworks */,
+				DF4466F357CB4E0A38597F6B /* libPods-WakePal-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -139,6 +157,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				418D62E610DF85DAB5398F2A /* libPods-WakePal-tvOSTests.a in Frameworks */,
+				8D2BDFD21DF0D0CD888FB48C /* libPods-WakePal-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,6 +184,7 @@
 		087FEB77AE164E7BBC4BBE11 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				051F75AA25314AA68D2639FF /* SFProRounded-Black.ttf */,
 				24D908E2A4CC4151817BD2B7 /* SFProRounded-Bold.ttf */,
 				27737AC6FCCD48C88ECBC23D /* SFProRounded-Heavy.ttf */,
@@ -195,6 +215,7 @@
 		13B07FAE1A68108700A75B9A /* WakePal */ = {
 			isa = PBXGroup;
 			children = (
+				63AFD747244B74B7008564D5 /* WakePal.entitlements */,
 				63616F632445E73500AD6540 /* GoogleService-Info.plist */,
 				008F07F21AC5B25A0029DE68 /* main.jsbundle */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
@@ -210,6 +231,7 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				63E0B91E246BD91B005B85B3 /* Intents.framework */,
 				63616F6D2445E8FA00AD6540 /* libz.tbd */,
 				63616F6B2445E8F100AD6540 /* SystemConfiguration.framework */,
 				63DA8F4A2445F00E00258068 /* GoogleSignIn.bundle */,
@@ -244,9 +266,9 @@
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* WakePalTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
-				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				0A7CAB06D0C7462049BF0454 /* Pods */,
 				087FEB77AE164E7BBC4BBE11 /* Resources */,
+				A77880F40D5E1CF887D6C6C4 /* Frameworks */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -262,6 +284,18 @@
 				2D02E4901E0B4A5D006451C7 /* WakePal-tvOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		A77880F40D5E1CF887D6C6C4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				632B632C246DDDF50045BA35 /* HealthKit.framework */,
+				1EB03BD4ADEF5E709510F95D /* Pods_WakePal.framework */,
+				8D6394F820AFA9659489E4A3 /* libPods-WakePal-tvOS.a */,
+				32BA50A79E4A4430ACEB9541 /* libPods-WakePal-tvOSTests.a */,
+				122836920A50E7280CD15953 /* Pods_WakePalTests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -358,10 +392,11 @@
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
 						CreatedOnToolsVersion = 6.2;
-						TestTargetID = 13B07F861A680F5B00A75B9A;
+						DevelopmentTeam = WLVPA79URR;
 					};
 					13B07F861A680F5B00A75B9A = {
 						DevelopmentTeam = WLVPA79URR;
+						LastSwiftMigration = 1140;
 						ProvisioningStyle = Automatic;
 					};
 					2D02E47A1E0B4A5D006451C7 = {
@@ -528,8 +563,15 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/PromisesObjC/FBLPromises.framework",
+				"${BUILT_PRODUCTS_DIR}/RCTAppleHealthKit/RCTAppleHealthKit.framework",
 				"${BUILT_PRODUCTS_DIR}/RCTTypeSafety/RCTTypeSafety.framework",
+				"${BUILT_PRODUCTS_DIR}/RNCAsyncStorage/RNCAsyncStorage.framework",
+				"${BUILT_PRODUCTS_DIR}/RNCMaskedView/RNCMaskedView.framework",
+				"${BUILT_PRODUCTS_DIR}/RNGestureHandler/RNGestureHandler.framework",
+				"${BUILT_PRODUCTS_DIR}/RNReanimated/RNReanimated.framework",
 				"${BUILT_PRODUCTS_DIR}/RNSVG/RNSVG.framework",
+				"${BUILT_PRODUCTS_DIR}/RNScreens/RNScreens.framework",
+				"${BUILT_PRODUCTS_DIR}/RNSiriShortcuts/RNSiriShortcuts.framework",
 				"${BUILT_PRODUCTS_DIR}/React-Core/React.framework",
 				"${BUILT_PRODUCTS_DIR}/React-CoreModules/CoreModules.framework",
 				"${BUILT_PRODUCTS_DIR}/React-RCTActionSheet/RCTActionSheet.framework",
@@ -553,6 +595,8 @@
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 				"${BUILT_PRODUCTS_DIR}/react-native-app-auth/react_native_app_auth.framework",
 				"${BUILT_PRODUCTS_DIR}/react-native-config/react_native_config.framework",
+				"${BUILT_PRODUCTS_DIR}/react-native-geolocation/react_native_geolocation.framework",
+				"${BUILT_PRODUCTS_DIR}/react-native-safe-area-context/react_native_safe_area_context.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
@@ -564,8 +608,15 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBLPromises.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTAppleHealthKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTTypeSafety.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCAsyncStorage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNCMaskedView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNGestureHandler.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNReanimated.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNSVG.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNScreens.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RNSiriShortcuts.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/React.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CoreModules.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RCTActionSheet.framework",
@@ -589,6 +640,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_app_auth.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_config.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_geolocation.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/react_native_safe_area_context.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -764,8 +817,8 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 58045044DB4BB4877A12432F /* Pods-WakePalTests.debug.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
+				DEVELOPMENT_TEAM = WLVPA79URR;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -780,7 +833,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WakePal.app/WakePal";
 			};
 			name = Debug;
 		};
@@ -788,9 +840,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 76565A95D006110F55A2AB42 /* Pods-WakePalTests.release.xcconfig */;
 			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
 				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				COPY_PHASE_STRIP = NO;
+				DEVELOPMENT_TEAM = WLVPA79URR;
 				INFOPLIST_FILE = WakePalTests/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -801,7 +853,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/WakePal.app/WakePal";
 			};
 			name = Release;
 		};
@@ -809,7 +860,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = F5BAEAC8B59532F4FE8BC4DF /* Pods-WakePal.debug.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Icons;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = WakePal/WakePal.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -820,9 +873,9 @@
 					"$(PROJECT_DIR)/Pods/GoogleSignIn/Frameworks",
 				);
 				INFOPLIST_FILE = WakePal/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 0.1.2;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -832,7 +885,10 @@
 				PRODUCT_NAME = WakePal;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRIP_SWIFT_SYMBOLS = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_OBJC_BRIDGING_HEADER = "WakePal-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Debug;
@@ -841,7 +897,9 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 393E0DD91A04B88D26A3A8D5 /* Pods-WakePal.release.xcconfig */;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = Icons;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = WakePal/WakePal.entitlements;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -851,9 +909,9 @@
 					"$(PROJECT_DIR)/Pods/GoogleSignIn/Frameworks",
 				);
 				INFOPLIST_FILE = WakePal/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				MARKETING_VERSION = 0.0.1;
+				MARKETING_VERSION = 0.1.2;
 				OTHER_LDFLAGS = (
 					"$(inherited)",
 					"-ObjC",
@@ -863,7 +921,9 @@
 				PRODUCT_NAME = WakePal;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				STRIP_SWIFT_SYMBOLS = NO;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				SWIFT_OBJC_BRIDGING_HEADER = "WakePal-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
 			name = Release;

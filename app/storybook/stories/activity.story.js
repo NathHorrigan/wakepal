@@ -6,7 +6,7 @@ import ActivityBars from '@components/ActivityBars'
 import { colors } from '@utils/theme'
 
 storiesOf('Activity Elements', module)
-  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .addDecorator((getStory) => <CenterView>{getStory()}</CenterView>)
   .add('Activity Bars', () => (
     <ActivityBars
       activities={[

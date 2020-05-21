@@ -4,7 +4,7 @@ import { storiesOf } from '@storybook/react-native'
 import CenterView from './CenterView'
 import WeatherHeader from '@components/WeatherHeader'
 import SleepGraph from '@components/SleepGraph'
-import { SleepStage } from '@api/sleep/SleepRecording'
+import { SleepStage } from '@api/fitness/SleepRecording'
 import { WeatherResponse, WeatherIcon } from '@api/weather/WeatherResponse'
 
 const exampleWeather = new WeatherResponse(
@@ -15,7 +15,7 @@ const exampleWeather = new WeatherResponse(
 )
 
 storiesOf('Sleep', module)
-  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .addDecorator((getStory) => <CenterView>{getStory()}</CenterView>)
   .add('Weather Header', () => (
     <WeatherHeader name="Nathan" dateLabel="Today" weather={exampleWeather} />
   ))

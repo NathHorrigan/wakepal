@@ -12,6 +12,7 @@
 #import <React/RCTRootView.h>
 #import <RNGoogleSignin/RNGoogleSignin.h>
 @import Firebase;
+@import RNSiriShortcuts;
 
 @implementation AppDelegate
 
@@ -30,6 +31,12 @@
   [FIRApp configure];
   self.window.rootViewController = rootViewController;
   [self.window makeKeyAndVisible];
+  
+  // Check if the app launched with any shortcuts
+  BOOL launchedFromShortcut = [launchOptions objectForKey:@"UIApplicationLaunchOptionsUserActivityDictionaryKey"] != nil;
+  // Add a boolean to the initialProperties to let the app know you got the initial shortcut
+  NSDictionary *initialProperties = @{ @"launchedFromShortcut":@(launchedFromShortcut) };
+  
   return YES;
 }
 
@@ -44,6 +51,26 @@
 
 - (BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *, id> *) options {
   return [RNGoogleSignin application:app openURL:url options:options] || [self.authorizationFlowManagerDelegate resumeExternalUserAgentFlowWithURL:url];
+}
+
+// This method checks for shortcuts issued to the app
+- (BOOL)application:(UIApplication *)application
+continueUserActivity:(NSUserActivity *)userActivity
+ restorationHandler:(void (^)(NSArray<id<UIUserActivityRestoring>> *restorableObjects))restorationHandler
+{
+  UIViewController *viewController = [self.window rootViewController];
+  RCTRootView *rootView = (RCTRootView*) [viewController view];
+ 
+  // If the initial properties say the app launched from a shortcut (see above), tell the library about it.
+  if ([[rootView.appProperties objectForKey:@"launchedFromShortcut"] boolValue]) {
+    ShortcutsModule.initialUserActivity = userActivity;
+ 
+    rootView.appProperties = @{ @"launchedFromShortcut":@NO };
+  }
+ 
+  [ShortcutsModule onShortcutReceivedWithUserActivity:userActivity];
+ 
+  return YES;
 }
 
 @end

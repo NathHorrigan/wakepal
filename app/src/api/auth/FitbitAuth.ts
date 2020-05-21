@@ -16,43 +16,74 @@ const config = {
 }
 
 export class FitbitAuthProvider extends OAuthProvider {
-  private static session?: OAuthSession
+  private static client: FitbitAuthProvider
+  private session: OAuthSession | undefined
 
-  static async authenticate(): Promise<OAuthSession> {
+  constructor() {
+    // Set the session id for saving
+    super('fibit-auth')
+  }
+
+  static getClient(): FitbitAuthProvider {
+    if (!FitbitAuthProvider.client) {
+      FitbitAuthProvider.client = new FitbitAuthProvider()
+    }
+
+    return FitbitAuthProvider.client
+  }
+
+  async authenticate(): Promise<OAuthSession> {
     // Trigger prompt for the user to login with Fitbit
     const authState = await authorize(config)
     // Create an authentication session that can be used
     const session = this.createSession(authState)
     // Save the session
-    this.session = session
+    this.saveSession(session)
     // Return the session
     return session
   }
 
-  static async reauthenticate(): Promise<OAuthSession> {
-    const { refreshToken } = this.session
-    // Revalidate token
-    const refreshedState = await refresh(config, {
-      refreshToken,
-    })
-    // reset local cache
-    const session = this.createSession(refreshedState)
-    this.session = session
-    return session
+  async reauthenticate(): Promise<OAuthSession> {
+    try {
+      const { refreshToken } = this.session
+      // Revalidate token
+      const refreshedState = await refresh(config, {
+        refreshToken,
+      })
+      // reset local cache
+      const session = this.refreshSession(refreshedState)
+      // Save the session
+      this.saveSession(session)
+      return session
+    } catch (e) {
+      console.log(e)
+      return await this.authenticate()
+    }
   }
 
-  static async logout() {
-    const { refreshToken } = this.session
-    // Revoke token
-    await revoke(config, {
-      tokenToRevoke: refreshToken,
-      includeBasicAuth: true,
-    })
-    // Clear local cache
-    this.session = undefined
+  async logout() {
+    if (this.session?.accessToken) {
+      // Revoke token
+      await revoke(config, {
+        tokenToRevoke: this.session.accessToken,
+        sendClientId: true,
+        includeBasicAuth: true,
+      })
+      // Clear local cache
+      this.saveSession(null)
+    }
   }
 
-  private static createSession(fitbitResponse): OAuthSession {
+  private refreshSession(fitbitResponse): OAuthSession {
+    return {
+      accessToken: fitbitResponse.accessToken,
+      refreshToken: fitbitResponse.refreshToken,
+      userId: fitbitResponse.additionalParameters.user_id,
+      tokenExpiration: Date.parse(fitbitResponse.accessTokenExpirationDate),
+    }
+  }
+
+  private createSession(fitbitResponse): OAuthSession {
     return {
       accessToken: fitbitResponse.accessToken,
       refreshToken: fitbitResponse.refreshToken,

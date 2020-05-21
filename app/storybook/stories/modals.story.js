@@ -18,7 +18,7 @@ const ExampleWaterModal = () => {
         onClose={() => setVisible(false)}
         value={Math.max(value, 0)}
         goalValue={6}
-        unit="Pints"
+        unit="Litres"
         updateValue={setValue}
       />
     </>
@@ -62,6 +62,6 @@ const ExampleWeightModal = () => {
 }
 
 storiesOf('Activity Elements', module)
-  .addDecorator(getStory => <CenterView>{getStory()}</CenterView>)
+  .addDecorator((getStory) => <CenterView>{getStory()}</CenterView>)
   .add('Water Modal', () => <ExampleWaterModal />)
   .add('Weight Modal', () => <ExampleWeightModal />)

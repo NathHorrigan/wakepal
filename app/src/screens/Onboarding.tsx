@@ -1,17 +1,28 @@
 import React, { SFC, useState } from 'react'
 import styled from 'styled-components/native'
 import LottieView from 'lottie-react-native'
+import { useDispatch } from 'react-redux'
+import { SafeAreaView } from 'react-native-safe-area-context'
+import { presentShortcut } from 'react-native-siri-shortcut'
+import AddToSiriButton, {
+  SiriButtonStyles,
+} from 'react-native-siri-shortcut/AddToSiriButton'
 
 import FitbitButton from '@components/FitbitButton'
 import { WaterControlRow } from '@components/WaterModal'
 import { ButtonText } from '@components/ActionButton'
 import { HealthKitLogo, GoogleFitLogo } from '@components/icons'
-
+import { FitnessTracker } from '@api/fitness'
+import { setOnboardingData } from '@redux/actions'
 import { fonts, colors } from '@utils/theme'
 
 interface OnboardingStageProps {
   value?: Number
   setValue: Function
+}
+
+interface SetupHeadingProps {
+  color?: string
 }
 
 type OnboardingStage = SFC<OnboardingStageProps>
@@ -20,14 +31,14 @@ const WaterStage: OnboardingStage = ({ value, setValue }) => {
   return (
     <SetupStep>
       <SetupHeading color={colors.blue}>
-        How much pints of water do you drink per day?
+        How much litres of water do you drink per day?
       </SetupHeading>
       <Water />
       <WaterControlRow
         color={colors.blue}
         value={value}
         updateValue={setValue}
-        unit="pints"
+        unit="Litres"
       />
     </SetupStep>
   )
@@ -68,6 +79,42 @@ const StepStage: OnboardingStage = ({ value, setValue }) => {
   )
 }
 
+const FloorsStage: OnboardingStage = ({ value, setValue }) => {
+  return (
+    <SetupStep>
+      <SetupHeading color={colors.red}>
+        How many floors do you aim to climb per day?
+      </SetupHeading>
+      <Rooftop />
+      <WaterControlRow
+        color={colors.red}
+        value={value}
+        increment={1}
+        updateValue={setValue}
+        unit="floors"
+      />
+    </SetupStep>
+  )
+}
+
+const CaloriesStage: OnboardingStage = ({ value, setValue }) => {
+  return (
+    <SetupStep>
+      <SetupHeading color={colors.purple}>
+        How many calories do you aim to burn per day?
+      </SetupHeading>
+      <Food />
+      <WaterControlRow
+        color={colors.purple}
+        value={value}
+        increment={100}
+        updateValue={setValue}
+        unit="calories"
+      />
+    </SetupStep>
+  )
+}
+
 const TrackingStage: OnboardingStage = ({ setValue }) => {
   return (
     <SetupStep>
@@ -75,33 +122,70 @@ const TrackingStage: OnboardingStage = ({ setValue }) => {
         How do you want to track activity?
       </SetupHeading>
       <Heart />
-      <FitbitButton onPress={() => setValue('FITBIT')} />
-      <ConnectButton onPress={() => setValue('HEALTHKIT')}>
+      <FitbitButton onPress={() => setValue(FitnessTracker.Fitbit)} />
+      <ConnectButton onPress={() => setValue(FitnessTracker.HealthKit)}>
         <HealthKitLogo />
         <HealthkitText>Sync with HealthKit</HealthkitText>
       </ConnectButton>
-      <ConnectButton onPress={() => setValue('GOOGLE')}>
+      {/* <ConnectButton onPress={() => setValue(FitnessTracker.GoogleFit)}>
         <GoogleFitLogo />
         <GoogleFitText>Connect to Google Fit</GoogleFitText>
-      </ConnectButton>
+      </ConnectButton> */}
+    </SetupStep>
+  )
+}
+
+// Siri Shortcut configuration
+const opts = {
+  activityType: 'com.wakepal.showSleep',
+  title: "Show last night's sleep",
+  userInfo: {
+    foo: 1,
+    bar: 'baz',
+    baz: 34.5,
+  },
+  keywords: ['sleep', 'wakepal', 'sleep stages'],
+  // persistentIdentifier: 'yourPersistentIdentifier',
+  isEligibleForSearch: true,
+  isEligibleForPrediction: true,
+  suggestedInvocationPhrase: 'How was my sleep last night?',
+  needsSave: true,
+}
+
+const SiriStage: OnboardingStage = () => {
+  return (
+    <SetupStep>
+      <SetupHeading color={colors.coral}>
+        Make your like easier and us to Siri?
+      </SetupHeading>
+      <Siri />
+      <AddToSiriButton
+        style={{ width: '100%' }}
+        buttonStyle={SiriButtonStyles.blackOutline}
+        onPress={() => {
+          presentShortcut(opts, () => null)
+        }}
+      />
     </SetupStep>
   )
 }
 
 const OnboardingScreen: SFC = () => {
+  // Global State
+  const dispatch = useDispatch()
+  // Local State
   const [stage, setStage] = useState(0)
   const [intake, setIntake] = useState(3)
+  const [floors, setFloors] = useState(5)
   const [weight, setWeight] = useState(70)
   const [steps, setSteps] = useState(10000)
+  const [calories, setCalories] = useState(2200)
 
   const onCompleteOnboarding = (trackingMethod: string) => {
     // This will result in a redux update in the future.
-    console.log({
-      steps,
-      intake,
-      weight,
-      trackingMethod,
-    })
+    dispatch(
+      setOnboardingData(steps, intake, weight, floors, calories, trackingMethod)
+    )
   }
 
   const renderStage = () => {
@@ -113,32 +197,44 @@ const OnboardingScreen: SFC = () => {
       case 2:
         return <StepStage value={steps} setValue={setSteps} />
       case 3:
+        return <FloorsStage value={floors} setValue={setFloors} />
+      case 4:
+        return <CaloriesStage value={calories} setValue={setCalories} />
+      case 5:
+        return <SiriStage />
+      case 6:
         return <TrackingStage setValue={onCompleteOnboarding} />
     }
   }
 
   return (
-    <OnboardingContainer>
-      <Heading>Let's get started!</Heading>
-      {renderStage()}
+    <SafeArea>
+      <OnboardingContainer>
+        <Heading>Let's get started!</Heading>
+        {renderStage()}
 
-      <OnboardingControl>
-        <OnboardingButton
-          onPress={() => setStage(stage - 1)}
-          disabled={stage < 1}
-        >
-          <OnboardingButtonText>Prev</OnboardingButtonText>
-        </OnboardingButton>
-        <OnboardingButton
-          onPress={() => setStage(stage + 1)}
-          disabled={stage === 3}
-        >
-          <OnboardingButtonText>Next</OnboardingButtonText>
-        </OnboardingButton>
-      </OnboardingControl>
-    </OnboardingContainer>
+        <OnboardingControl>
+          <OnboardingButton
+            onPress={() => setStage(stage - 1)}
+            disabled={stage < 1}
+          >
+            <OnboardingButtonText>Prev</OnboardingButtonText>
+          </OnboardingButton>
+          <OnboardingButton
+            onPress={() => setStage(stage + 1)}
+            disabled={stage === 6}
+          >
+            <OnboardingButtonText>Next</OnboardingButtonText>
+          </OnboardingButton>
+        </OnboardingControl>
+      </OnboardingContainer>
+    </SafeArea>
   )
 }
+
+const SafeArea = styled(SafeAreaView)`
+  background-color: #f2f3f4;
+`
 
 const OnboardingContainer = styled.View`
   width: 100%;
@@ -147,10 +243,10 @@ const OnboardingContainer = styled.View`
 
 const SetupStep = styled.View`
   height: 300px;
-  margin-top: 50px;
+  margin-top: 20px;
 `
 
-const SetupHeading = styled.Text`
+const SetupHeading = styled.Text<SetupHeadingProps>`
   color: ${props => props.color};
   text-align: center;
   font-size: 22px;
@@ -196,10 +292,40 @@ const Heart = styled(LottieView).attrs({
   margin: 0 auto;
 `
 
+const Rooftop = styled(LottieView).attrs({
+  source: require('@animations/floors.json'),
+  autoPlay: true,
+  loop: true,
+})`
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 8px;
+`
+
+const Food = styled(LottieView).attrs({
+  source: require('@animations/food.json'),
+  autoPlay: true,
+  loop: true,
+})`
+  height: 200px;
+  margin: 0 auto;
+  margin-top: 8px;
+`
+
+const Siri = styled(LottieView).attrs({
+  source: require('@animations/siri.json'),
+  autoPlay: true,
+  loop: true,
+})`
+  height: 250px;
+  width: 100%;
+  margin: 0 auto;
+`
+
 const Heading = styled.Text`
   font-size: 30px;
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 60px;
   text-align: center;
   font-family: ${fonts.semiBold};
 `

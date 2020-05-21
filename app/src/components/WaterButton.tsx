@@ -12,11 +12,13 @@ import {
 interface WaterButtonProps {
   label: string
   onPress(): null
+  disabled: boolean
 }
 
-const WaterButton: SFC<WaterButtonProps> = ({ label, onPress }) => {
+const WaterButton: SFC<WaterButtonProps> = ({ label, onPress, disabled }) => {
   return (
     <WaterStyledButton
+      disabled={disabled}
       activeOpacity={0.85}
       onPress={onPress}
       color={colors.darkBlue}
@@ -48,6 +50,7 @@ const WaterWaveShape = () => (
 
 const WaterStyledButton = styled(BaseStyledButton)`
   position: relative;
+  width: 210px;
   background: #2680c2;
 `
 

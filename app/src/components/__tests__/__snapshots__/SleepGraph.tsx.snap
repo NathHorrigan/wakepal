@@ -214,23 +214,25 @@ exports[`renders correctly 1`] = `
     }
   >
     <View
+      applyMinWidth={false}
       color="#035388"
-      left={230.76923076923077}
-      right={461.53846153846155}
+      left={228.79222222222225}
+      right={NaN}
       style={
         Array [
           Object {
             "backgroundColor": "#035388",
             "borderRadius": 7,
             "height": 7,
-            "left": 230.76923076923077,
+            "left": 228.79222222222225,
+            "minWidth": 1,
             "position": "absolute",
-            "right": 461.53846153846155,
-            "width": 230.76923076923077,
+            "right": "NaNpx",
+            "width": "NaNpx",
           },
         ]
       }
-      width={230.76923076923077}
+      width={NaN}
     />
     <View
       style={
@@ -260,23 +262,25 @@ exports[`renders correctly 1`] = `
     }
   >
     <View
+      applyMinWidth={false}
       color="#2680C2"
-      left={461.53846153846155}
-      right={740}
+      left={436.0084920634921}
+      right={NaN}
       style={
         Array [
           Object {
             "backgroundColor": "#2680C2",
             "borderRadius": 7,
             "height": 7,
-            "left": 461.53846153846155,
+            "left": 436.0084920634921,
+            "minWidth": 1,
             "position": "absolute",
-            "right": 740,
-            "width": 278.46153846153845,
+            "right": "NaNpx",
+            "width": "NaNpx",
           },
         ]
       }
-      width={278.46153846153845}
+      width={NaN}
     />
     <View
       style={
@@ -306,23 +310,25 @@ exports[`renders correctly 1`] = `
     }
   >
     <View
+      applyMinWidth={false}
       color="#62B0E8"
-      left={115.38461538461539}
-      right={230.76923076923077}
+      left={124.35809523809525}
+      right={NaN}
       style={
         Array [
           Object {
             "backgroundColor": "#62B0E8",
             "borderRadius": 7,
             "height": 7,
-            "left": 115.38461538461539,
+            "left": 124.35809523809525,
+            "minWidth": 1,
             "position": "absolute",
-            "right": 230.76923076923077,
-            "width": 115.38461538461539,
+            "right": "NaNpx",
+            "width": "NaNpx",
           },
         ]
       }
-      width={115.38461538461539}
+      width={NaN}
     />
     <View
       style={
@@ -352,23 +358,25 @@ exports[`renders correctly 1`] = `
     }
   >
     <View
+      applyMinWidth={true}
       color="#A3D9A5"
-      left={10}
-      right={115.38461538461539}
+      left={20.785873015873015}
+      right={NaN}
       style={
         Array [
           Object {
             "backgroundColor": "#A3D9A5",
             "borderRadius": 7,
             "height": 7,
-            "left": 10,
+            "left": 20.785873015873015,
+            "minWidth": 5,
             "position": "absolute",
-            "right": 115.38461538461539,
-            "width": 105.38461538461539,
+            "right": "NaNpx",
+            "width": "NaNpx",
           },
         ]
       }
-      width={105.38461538461539}
+      width={NaN}
     />
     <View
       style={
@@ -597,6 +605,20 @@ exports[`renders correctly 1`] = `
     >
       08
     </Text>
+    <Text
+      style={
+        Array [
+          Object {
+            "color": "rgba(0, 0, 0, 0.4)",
+            "fontFamily": "SFProRounded-Bold",
+            "fontSize": 7,
+            "textAlign": "center",
+          },
+        ]
+      }
+    >
+      09
+    </Text>
   </View>
   <View
     style={
@@ -633,7 +655,7 @@ exports[`renders correctly 1`] = `
           ]
         }
       >
-        11
+        NaN
       </Text>
       <Text
         style={
@@ -647,7 +669,8 @@ exports[`renders correctly 1`] = `
           ]
         }
       >
-        Hours Asleep
+        Mins
+         Asleep
       </Text>
     </View>
     <View
@@ -673,7 +696,7 @@ exports[`renders correctly 1`] = `
           ]
         }
       >
-        2
+        NaN
       </Text>
       <Text
         style={
@@ -687,7 +710,8 @@ exports[`renders correctly 1`] = `
           ]
         }
       >
-        Hours Awake
+        Mins
+         Awake
       </Text>
     </View>
     <View
@@ -713,7 +737,7 @@ exports[`renders correctly 1`] = `
           ]
         }
       >
-        85
+        NaN
       </Text>
       <Text
         style={

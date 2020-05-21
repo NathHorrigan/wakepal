@@ -1,50 +1,57 @@
 import React, { SFC } from 'react'
 import { Dimensions } from 'react-native'
 import styled from 'styled-components/native'
-import differenceInHours from 'date-fns/difference_in_hours'
-import addHours from 'date-fns/add_hours'
+import { differenceInSeconds, differenceInHours, addHours } from 'date-fns'
 
-import { SleepStage } from '@api/sleep/SleepRecording'
+import { SleepStage, SleepStageSegment } from '@api/fitness/SleepRecording'
 import { colors, fonts } from '@utils/theme'
-
-interface SleepStageSegment {
-  stage: SleepStage
-  startTime: Date
-  endTime: Date
-}
 
 interface SleepGraphProps {
   segments: SleepStageSegment[]
 }
 
 const SleepGraph: React.SFC<SleepGraphProps> = ({ segments }) => {
+  // Generate timespan object between falling asleep and waking up
   const timespan = generateTimeline(segments)
-  const stageColors = [
-    colors.darkBlue,
-    colors.blue,
-    colors.paleBlue,
-    colors.paleGreen,
-  ]
-
+  const timespanLabels = timespan.map(hour =>
+    hour.getHours().toLocaleString('en-US', {
+      minimumIntegerDigits: 2,
+      useGrouping: false,
+    })
+  )
+  // Organize graph by colar
+  const stageColors = {
+    Rem: colors.darkBlue,
+    Deep: colors.blue,
+    Light: colors.paleBlue,
+    Awake: colors.paleGreen,
+  }
+  // Sort sleep recordings into categories
   const sortSegment = (stage: SleepStage) =>
     segments.filter(segment => segment.stage === stage)
-
+  // Apply sorting fn
   const sortedSegements = {
     Rem: sortSegment(SleepStage.Rem),
     Deep: sortSegment(SleepStage.Deep),
     Light: sortSegment(SleepStage.Light),
     Awake: sortSegment(SleepStage.Awake),
   }
-
+  // Get all populated traces
   const stages = Object.keys(sortedSegements)
-  const { awakeHours, asleepHours, efficiency } = getSleepSummary(segments)
+  const {
+    awakeTime,
+    awakeUnits,
+    asleepTime,
+    asleepUnits,
+    efficiency,
+  } = getSleepSummary(segments)
 
   return (
     <GraphContainer>
       <LabelRow>
-        {stages.map((stage, index) => (
+        {stages.map(stage => (
           <StageKey key={`${stage}-key`}>
-            <StageDot color={stageColors[index]} />
+            <StageDot color={stageColors[stage]} />
             <StageLabel>{stage}</StageLabel>
           </StageKey>
         ))}
@@ -53,8 +60,9 @@ const SleepGraph: React.SFC<SleepGraphProps> = ({ segments }) => {
         <StageRow key={`${stage}-row`}>
           {sortedSegements[stage].map(segment => (
             <StageBar
-              key={`${stage}-${index}-bar`}
-              color={stageColors[index]}
+              key={`${segment.id}-bar`}
+              color={stageColors[stage]}
+              applyMinWidth={stage == 'Awake'}
               {...getSegementSpan(segment, timespan)}
             />
           ))}
@@ -62,7 +70,7 @@ const SleepGraph: React.SFC<SleepGraphProps> = ({ segments }) => {
         </StageRow>
       ))}
       <Timeline>
-        {timespan.map(hour => (
+        {timespanLabels.map(hour => (
           <Hour key={`hour-${hour}`}>{hour}</Hour>
         ))}
       </Timeline>
@@ -70,15 +78,15 @@ const SleepGraph: React.SFC<SleepGraphProps> = ({ segments }) => {
       <SummaryContainer>
         <SleepSummary>
           <SummaryValueText color={colors.paleBlue}>
-            {asleepHours}
+            {asleepTime}
           </SummaryValueText>
-          <SummayLabelText>Hours Asleep</SummayLabelText>
+          <SummayLabelText>{asleepUnits} Asleep</SummayLabelText>
         </SleepSummary>
         <SleepSummary>
           <SummaryValueText color={colors.paleGreen}>
-            {awakeHours}
+            {awakeTime}
           </SummaryValueText>
-          <SummayLabelText>Hours Awake</SummayLabelText>
+          <SummayLabelText>{awakeUnits} Awake</SummayLabelText>
         </SleepSummary>
         <SleepSummary>
           <SummaryValueText color={colors.coral}>{efficiency}</SummaryValueText>
@@ -137,6 +145,7 @@ const StageTrace = styled.View`
 const StageBar = styled.View`
   height: 7px;
   width: ${props => props.width}px;
+  min-width: ${props => (props.applyMinWidth ? 5 : 1)}px;
   background: ${props => props.color};
   border-radius: 7px;
   position: absolute;
@@ -188,74 +197,111 @@ const SummayLabelText = styled.Text`
   text-align: center;
 `
 
-const getSleepSummary = (segments: SleepStageSegment[]) => {
-  let segmentHours = segments.map(({ startTime, endTime, stage }) => ({
-    stage,
-    duration: differenceInHours(endTime, startTime),
-  }))
+// Convert 2.5 hours to 2:30 (string)
+const convertToTimeFormat = (hours: number): string => {
+  const hour = Math.floor(hours)
+  const mins = Math.ceil((hours % hour) * 60).toLocaleString('en-US', {
+    minimumIntegerDigits: 2,
+    useGrouping: false,
+  })
+  return `${hour}:${mins}`
+}
 
+export const getSleepSummary = (segments: SleepStageSegment[]) => {
+  // Allow for an empty array to be passed
+  if (!segments.length) {
+    return {
+      awakeTime: 0,
+      awakeUnits: 'Hours',
+      asleepTime: 0,
+      asleepUnits: 'Hours',
+      efficiency: 0,
+    }
+  }
+  // Calculate Hours in session
   let calculateHours = filterFn =>
-    segmentHours
+    segments
       .filter(filterFn)
       .map(segment => segment.duration)
       .reduce((a, b) => a + b)
 
-  const awakeHours = calculateHours(
-    segment => segment.stage === SleepStage.Awake
-  )
+  // Total time in bed
+  const duration = segments
+    .map(segment => segment.duration)
+    .reduce((a, b) => a + b)
+  // How long were they asleep
   const asleepHours = calculateHours(
     segment => segment.stage !== SleepStage.Awake
   )
-  const efficiency = Math.ceil((asleepHours / (awakeHours + asleepHours)) * 100)
+  // Easily calculation to find awake time
+  const awakeHours = duration - asleepHours
+
+  // Units for wake/sleep time (Hours vs Mins)
+  const awakeTime =
+    awakeHours > 1
+      ? convertToTimeFormat(awakeHours)
+      : Math.ceil(awakeHours * 60)
+  const awakeUnits = awakeHours > 1 ? 'Hours' : 'Mins'
+  const asleepTime =
+    asleepHours > 1 ? convertToTimeFormat(asleepHours) : asleepHours * 60
+  const asleepUnits = asleepHours > 1 ? 'Hours' : 'Mins'
+
+  // Percentae of asleep vs awake
+  const efficiency = Math.floor((asleepHours / duration) * 100)
 
   return {
-    awakeHours,
-    asleepHours,
+    awakeTime,
+    awakeUnits,
+    asleepTime,
+    asleepUnits,
     efficiency,
   }
+}
+
+function roundMinutes(date: Date) {
+  date.setHours(date.getHours())
+  date.setMinutes(0, 0, 0) // Resets also seconds and milliseconds
+  return date
 }
 
 const getSegementSpan = (
   segment: SleepStageSegment,
   timeline: string[]
 ): number[] => {
-  const { startTime, endTime } = segment
-  const numTimeline = timeline.map(hour => Number(hour))
-
-  // Calculate the positions of where each timeline starts
-  const startHour = numTimeline.indexOf(startTime.getHours())
-  const endHour = numTimeline.indexOf(endTime.getHours())
-  const screenWidth = Dimensions.get('window').width
-  const percentage = screenWidth / (numTimeline.length - 1)
-
-  // Covert to percentage and add margins of 20px each side
-  const startLeft = Math.max(10, startHour * percentage)
-  const endRight = Math.min(screenWidth - 10, endHour * percentage)
+  const { startTime } = segment
+  // Calculate width of line on graph
+  const screenWidth = Dimensions.get('window').width - 20
+  const hourToPixelRatio = (screenWidth - 6) / (timeline.length - 1)
+  const width = hourToPixelRatio * segment.duration
+  // Get beginning of timeline
+  const begining = timeline[0]
+  // Calculate offset to left of screen
+  const hourOffset = differenceInSeconds(startTime, begining) / 3600
+  // Convert width + offset to bounds on graph
+  const left = hourOffset * hourToPixelRatio + 3 + 10
+  const right = left + width
 
   return {
-    width: endRight - startLeft,
-    left: startLeft,
-    right: endRight,
+    width,
+    left,
+    right,
   }
 }
 
-const generateTimeline = (segments: SleepStageSegment[]): string[] => {
+const generateTimeline = (segments: SleepStageSegment[]): Date[] => {
   // Start and finish of sleep
-  const startTime = segments[0].startTime
-  const endTime = segments[segments.length - 1].endTime
-  // How long their asleep
-  const hourDiff = differenceInHours(endTime, startTime)
-  // Generate array of hours, For example [19, 20, 21, ..., 09, 10]
-  return Array(hourDiff + 1)
-    .fill(0)
-    .map((_, index) =>
-      addHours(startTime, index)
-        .getHours()
-        .toLocaleString('en-US', {
-          minimumIntegerDigits: 2,
-          useGrouping: false,
-        })
-    )
+  if (segments.length) {
+    const startTime = roundMinutes(new Date(segments[0].startTime))
+    const endTime = new Date(segments[segments.length - 1].endTime)
+    // How long their asleep
+    const hourDiff = differenceInHours(endTime, startTime) + 2
+    // Generate array of hours, For example [19, 20, 21, ..., 09, 10]
+    return Array(hourDiff)
+      .fill(0)
+      .map((_, index) => addHours(startTime, index))
+  }
+
+  return []
 }
 
 export default SleepGraph

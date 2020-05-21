@@ -9,6 +9,7 @@ exports[`renders correctly 1`] = `
         "display": "flex",
         "flexDirection": "row",
         "justifyContent": "flex-start",
+        "paddingBottom": 10,
         "width": "90%",
       },
     ]
@@ -337,7 +338,7 @@ exports[`renders correctly 1`] = `
       /
       6
        
-      Pints
+      Litres
     </Text>
   </View>
 </View>
