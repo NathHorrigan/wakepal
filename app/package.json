@@ -7,8 +7,7 @@
     "ios": "react-native run-ios",
     "start": "react-native start",
     "test": "jest",
-    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
-    "lint:fix": "eslint --fix . --ext .js,.jsx,.ts,.tsx",
+    "lint": "prettier --check '{.,src,storybook,__tests__}/**/*.{js,ts, tsx}'",
     "prettier": "prettier --write '{.,src,storybook,__tests__}/**/*.{js,ts, tsx}'",
     "storybook": "start-storybook -p 7007"
   },
