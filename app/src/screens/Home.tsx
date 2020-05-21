@@ -72,6 +72,12 @@ const HomeScreen: React.SFC = () => {
   }))
 
   // Update global record of todays weight
+  const lastRecordedWeight = weightRecordings
+    .reverse()
+    .find(recording => recording.weight != 0)
+
+  console.log(weightRecordings)
+
   const updateCurrentWeight = (value: number) => {
     setCurrentWeight(value)
     dispatch(
@@ -148,7 +154,7 @@ const HomeScreen: React.SFC = () => {
       {/* Modal that allows user to input current weight */}
       <WeightModal
         visible={activeModal === ModalState.Weight}
-        value={currentWeight ?? fitnessMetrics?.weight ?? 0}
+        value={currentWeight ?? (fitnessMetrics?.weight || lastRecordedWeight)}
         unit="kg"
         updateValue={updateCurrentWeight}
         onClose={() => setActiveModal(null)}
@@ -225,7 +231,7 @@ const HomeScreen: React.SFC = () => {
                 value: fitnessMetrics?.waterIntake ?? 0,
                 goal: fitnessGoals?.waterIntakeGoal ?? 0,
                 color: colors.paleBlue,
-                unit: 'Pints',
+                unit: 'Litres',
               },
             ]}
           />
@@ -240,7 +246,7 @@ const HomeScreen: React.SFC = () => {
               label={`${Math.max(
                 fitnessGoals?.waterIntakeGoal - currentWater ?? 0,
                 0
-              )} pints to go...`}
+              )} Litres to go...`}
             />
             <FriendsButton
               onPress={() => Alert.alert('Friends is not implemented yet...')}

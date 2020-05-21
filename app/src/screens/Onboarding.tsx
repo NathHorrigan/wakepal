@@ -31,14 +31,14 @@ const WaterStage: OnboardingStage = ({ value, setValue }) => {
   return (
     <SetupStep>
       <SetupHeading color={colors.blue}>
-        How much pints of water do you drink per day?
+        How much litres of water do you drink per day?
       </SetupHeading>
       <Water />
       <WaterControlRow
         color={colors.blue}
         value={value}
         updateValue={setValue}
-        unit="pints"
+        unit="Litres"
       />
     </SetupStep>
   )

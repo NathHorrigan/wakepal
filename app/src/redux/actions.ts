@@ -86,7 +86,7 @@ export const setSyncStatus = (isSyncing: Boolean) => {
 export const setOnboardingData = (
   stepsGoal: number,
   waterIntakeGoal: number,
-  weightGoal: number,
+  currentWeight: number,
   floorsGoal: number,
   caloriesGoal: number,
   trackingMethod: string
@@ -117,7 +117,7 @@ export const setOnboardingData = (
         type: SET_INITIAL_FITNESS_DATA,
         stepsGoal,
         waterIntakeGoal,
-        weightGoal,
+        currentWeight,
         caloriesGoal,
         floorsGoal,
         trackingMethod,

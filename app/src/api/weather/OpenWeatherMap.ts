@@ -25,11 +25,12 @@ class OpenWeatherMap implements WeatherStation {
   private getCurrentLocation(): Promise<Location> {
     return new Promise((resolve, reject) => {
       Geolocation.getCurrentPosition(
-        (position: any) =>
-          resolve({
+        (position: any) => {
+          return resolve({
             latitude: position.coords.latitude,
             longitude: position.coords.longitude,
-          }),
+          })
+        },
         (error: any) => reject(error),
         { enableHighAccuracy: false, timeout: 3000 }
       )

@@ -1,7 +1,7 @@
 import React from 'react'
 import renderer from 'react-test-renderer'
 
-import { SleepStage } from '../../api/sleep/SleepRecording'
+import { SleepStage } from '../../api/fitness/SleepRecording'
 import SleepGraph from '../SleepGraph'
 
 it('renders correctly', () => {

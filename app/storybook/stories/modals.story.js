@@ -18,7 +18,7 @@ const ExampleWaterModal = () => {
         onClose={() => setVisible(false)}
         value={Math.max(value, 0)}
         goalValue={6}
-        unit="Pints"
+        unit="Litres"
         updateValue={setValue}
       />
     </>
